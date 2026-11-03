@@ -1,0 +1,140 @@
+{
+ "kunye_surumu": 1,
+ "kod": "M10",
+ "ad": "Teklif hazırlama",
+ "surum": "0.1.1",
+ "cekirdek": ">=10.2",
+ "sahip": "A ekibi",
+ "aciklama": "Müşteri talebinden onaylı teklifin müşteriye gönderilmesine kadar: talep ve sürümleri (V1, V2…), maliyet kalemleri, departman işçiliği, basit takvim ve en erken teslim, fiyat, teklif PDF'i, onay kapısı, müşteriler, ayarlar ve geçmiş proje formu. Teklif çekirdeğe açılmaz, modülde kalır (K-30); sipariş gelince proje M1.1A'da açılır.",
+ "servis_kimligi": "SRV-M10",
+ "arka_yuz": true,
+ "olay_yolu": "YOK",
+ "kapilar": {
+  "okumalar": [
+   "KISILER",
+   "BIRIMLER",
+   "PROJE",
+   "PROJELER"
+  ],
+  "servis_okumalari": [],
+  "olaylar": [],
+  "plan": false,
+  "belge_surumu": false,
+  "bildirimler": [
+   {
+    "kural": "TEKLIF_ONAYI",
+    "ad": "Teklif onay bekliyor",
+    "onem": "BILGI",
+    "kayit_turleri": [
+     "MODUL"
+    ],
+    "alici_turleri": [
+     "ROL"
+    ],
+    "roller": [
+     "YETKILI"
+    ]
+   }
+  ],
+  "abonelikler": [],
+  "dosyalar": true
+ },
+ "nesne_turleri": [],
+ "tur_uzantilari": [],
+ "roller": [
+  {
+   "kod": "SATIS",
+   "ad": "Satış yöneticisi"
+  }
+ ],
+ "kod_listeleri": [],
+ "yetki_onerileri": [
+  {
+   "eylem_kodu": "PROJE.ACTIM",
+   "kimler": [
+    "SATIS"
+   ],
+   "kapsam": "FIRMA"
+  }
+ ],
+ "veritabani": {
+  "sema": "mod_m10",
+  "gocler": "veritabani/"
+ },
+ "on_yuz": {
+  "tur": "UYGULAMA_ICI",
+  "derin_baglantilar": []
+ },
+ "saglananlar": [
+  {
+   "ad": "M10.KAZANAN_SURUM",
+   "parametreler": [
+    "surum"
+   ],
+   "gorme": "ROL",
+   "kisisel": true,
+   "para": true,
+   "aciklama": "Kazanan ve müşteriye gönderilmiş teklif sürümünün donmuş içeriği: müşteri, fiyat, para birimi ve kurlar, maliyet kırılımı (bütçe kalemiyle), işçilik, takvim, gereksinimler, kapsam, dosya kayıtları, müşteri PDF'i. Yalnızca SATIS, YETKILI ve yönetim birimleri"
+  },
+  {
+   "ad": "M10.KATALOG_TEMIN_SURELERI",
+   "parametreler": [],
+   "gorme": "KAYDI_GOREN",
+   "kisisel": false,
+   "para": false,
+   "aciklama": "Katalog kalemlerinin elle girilen tipik temin süresi ve kritik işareti; fiyat yok"
+  },
+  {
+   "ad": "M10.KAZANAN_SURUMLER",
+   "parametreler": [],
+   "gorme": "ROL",
+   "kisisel": true,
+   "para": true,
+   "aciklama": "Siparişe dönüştürülebilecek gönderilmiş/kazanılmış sürümlerin izinli seçimi; müşteri ve konu adları."
+  }
+ ],
+ "bagimliliklar": [],
+ "kisisel_veri": [
+  {
+   "alan": "musteri_kisileri: ad, unvan, telefon, e-posta",
+   "neden": "Müşteri firmanın teklif yazışmasındaki iletişim kişileri; teklifin hazırlanması ve sözleşmenin kurulması için (KVKK m.5/2-c)"
+  }
+ ],
+ "para": true,
+ "sinirlar": {
+  "okuma_dakika": 600,
+  "bildirim_dakika": 120
+ },
+ "istekler": [
+  {
+   "kod": "M10-01",
+   "baslik": "Projesiz modül kaydına bildirim yok: onay bekleyen teklif ve cevap tarihi hatırlatması çekirdeğin bildirim kutusuna düşemiyor",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M10-02",
+   "baslik": "Modüller arası okumaların yönlendirmesi yok: oku('M10.KAZANAN_SURUM') simülatörde TANIMSIZ_VERI",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M10-03",
+   "baslik": "Ortak katalog çekirdekte değil (maliyet unsuru ve bütçe kalemi, etap şablonu); M3'ten ortalama temin süresi ve kapanış farkı geri beslemesi bağımlılık döngüsüne (R08) takılıyor",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M10-04",
+   "baslik": "Kapanan projenin departman bazında gerçek saatleri okunamıyor (PROJE_ISCILIGI simülatörde yok); öğrenme katmanı için",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M10-05",
+   "baslik": "Dosya depolama kapısı yok (yükleme, dosya kimliği, parmak izi); talep dosyaları yalnızca kayıt",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M10-06",
+   "baslik": "Ek iş ve servis talebinde bağlı proje seçilemiyor: PROJELER simülatörde yok, satış yöneticisi projeyi göremiyor (UYELER)",
+   "durum": "ACIK"
+  }
+ ]
+}

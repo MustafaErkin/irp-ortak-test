@@ -1,0 +1,11 @@
+name: irp_cekirdek
+description: Sibernetik IRP çevrimdışı istemci çekirdeği.
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: ^3.13.0
+dependencies:
+  crypto: ^3.0.6
+dev_dependencies:
+  test: ^1.26.0
+  lints: ^6.0.0

@@ -1,0 +1,51 @@
+{
+ "bicim_surumu": 1,
+ "moduller": [
+  {
+   "kod": "M10",
+   "paket": "M10",
+   "ad": "Teklif Yönetimi",
+   "yol": "teklif-yonetimi",
+   "arka_yuz": "m10.api.uygulama:app",
+   "ortam_oneki": "M10",
+   "ekran": "ekran.js",
+   "kimler": [
+    "YETKILI",
+    "SATIS"
+   ],
+   "etkin": true,
+   "onayli_yetki_onerileri": []
+  },
+  {
+   "kod": "M11A",
+   "paket": "M11A",
+   "ad": "Sipariş Ve Bütçe",
+   "yol": "siparis-butce",
+   "arka_yuz": "m11a.api.uygulama:app",
+   "ortam_oneki": "M11A",
+   "ekran": "ekran.js",
+   "kimler": [
+    "YETKILI",
+    "SATIS",
+    "MUHASEBE"
+   ],
+   "etkin": true,
+   "onayli_yetki_onerileri": []
+  },
+  {
+   "kod": "M11B",
+   "paket": "M11B",
+   "ad": "Proje Planlama",
+   "yol": "proje-planlama",
+   "arka_yuz": "m11b.api.uygulama:app",
+   "ortam_oneki": "M11B",
+   "ekran": "ekran.js",
+   "kimler": [
+    "YETKILI",
+    "YONETICI"
+   ],
+   "etkin": true,
+   "onayli_yetki_onerileri": []
+  }
+ ]
+}

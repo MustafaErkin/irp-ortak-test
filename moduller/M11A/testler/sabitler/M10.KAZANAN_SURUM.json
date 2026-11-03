@@ -1,0 +1,241 @@
+{
+ "surum": 57,
+ "etiket": "T-2026-0012/V2",
+ "talep": 12,
+ "talep_no": "T-2026-0012",
+ "durum": "GONDERILDI",
+ "talep_durumu": "KAZANILDI",
+ "kaynak": "YENI_IS",
+ "bagli_proje": null,
+ "tur": "KURUMSAL_SARTNAME",
+ "konu": "710 Projesi Burç Çakma Ekipmanı",
+ "makine_turu": "ROBOTIK_HUCRE",
+ "musteri": {
+  "kimlik": 3,
+  "ad": "Autoliv",
+  "adres": "Bursa",
+  "ulke": "TR",
+  "vergi_dairesi": null,
+  "vergi_no": null,
+  "kisiler": [
+   {
+    "ad": "Ayşe Demir",
+    "unvan": "Satın alma",
+    "telefon": null,
+    "eposta": "ayse@example.com"
+   }
+  ]
+ },
+ "para_birimi": "EUR",
+ "kurlar": [
+  {
+   "para_birimi": "EUR",
+   "kur_try": "35.200000",
+   "kur_tarihi": "2026-10-20"
+  }
+ ],
+ "fiyat": "56000.00",
+ "kar_orani": "28.74",
+ "fiyat_girisi": "FIYAT",
+ "toplamlar": {
+  "maliyet": "43500.00",
+  "kalemler": {
+   "MALZEME": "32500.00",
+   "ISCILIK": "10000.00",
+   "FASON": "1000.00",
+   "GENEL_GIDER": "0.00"
+  },
+  "marj_yuzde": "22.32"
+ },
+ "kalemler": [
+  {
+   "sira": 1,
+   "unsur": "ROBOT",
+   "unsur_adi": "Robot",
+   "butce_kalemi": "MALZEME",
+   "katalog_kodu": "ROB-6E-20",
+   "aciklama": "Robot, 6 eksen, 20 kg",
+   "adet": "1.000",
+   "olcu_birimi": "adet",
+   "birim_fiyat": "28000.00",
+   "para_birimi": "EUR",
+   "tutar": "28000.00",
+   "tutar_teklif": "28000.00",
+   "kaynak_etiketi": "TEDARIKCI_TEKLIFI",
+   "temin_hafta": 10,
+   "kritik": true
+  },
+  {
+   "sira": 2,
+   "unsur": "PLC",
+   "unsur_adi": "PLC ve HMI",
+   "butce_kalemi": "MALZEME",
+   "katalog_kodu": null,
+   "aciklama": "PLC ve HMI seti",
+   "adet": "1.000",
+   "olcu_birimi": "adet",
+   "birim_fiyat": "4500.00",
+   "para_birimi": "EUR",
+   "tutar": "4500.00",
+   "tutar_teklif": "4500.00",
+   "kaynak_etiketi": "GECMIS_PROJE",
+   "temin_hafta": 6,
+   "kritik": false
+  },
+  {
+   "sira": 3,
+   "unsur": "ISIL_ISLEM",
+   "unsur_adi": "Isıl işlem",
+   "butce_kalemi": "FASON",
+   "katalog_kodu": null,
+   "aciklama": "Fikstür ısıl işlem",
+   "adet": "1.000",
+   "olcu_birimi": "adet",
+   "birim_fiyat": "35200.00",
+   "para_birimi": "TRY",
+   "tutar": "35200.00",
+   "tutar_teklif": "1000.00",
+   "kaynak_etiketi": "TAHMIN",
+   "temin_hafta": 2,
+   "kritik": false
+  }
+ ],
+ "iscilik": [
+  {
+   "birim": "MEK_TASARIM",
+   "saat": "120.0",
+   "saat_ucreti": "1760.00",
+   "para_birimi": "TRY",
+   "tutar": "211200.00",
+   "tutar_teklif": "6000.00"
+  },
+  {
+   "birim": "IMALAT",
+   "saat": "100.0",
+   "saat_ucreti": "1408.00",
+   "para_birimi": "TRY",
+   "tutar": "140800.00",
+   "tutar_teklif": "4000.00"
+  }
+ ],
+ "takvim": [
+  {
+   "sira": 1,
+   "etap_kodu": "ACILIS",
+   "ad": "Proje açılışı ve planlama",
+   "paralel_grup": null,
+   "baslangic_hafta": 0,
+   "sure_hafta": 1
+  },
+  {
+   "sira": 2,
+   "etap_kodu": "MEK_TASARIM",
+   "ad": "Mekanik tasarım (3D/2D)",
+   "paralel_grup": "TASARIM",
+   "baslangic_hafta": 1,
+   "sure_hafta": 5
+  },
+  {
+   "sira": 3,
+   "etap_kodu": "OTO_TASARIM",
+   "ad": "Otomasyon tasarımı (elektrik, PLC/HMI mimarisi)",
+   "paralel_grup": "TASARIM",
+   "baslangic_hafta": 1,
+   "sure_hafta": 7
+  },
+  {
+   "sira": 4,
+   "etap_kodu": "SATIN_ALMA",
+   "ad": "Satın alma ve malzeme temini",
+   "paralel_grup": "TEDARIK",
+   "baslangic_hafta": 4,
+   "sure_hafta": 8
+  },
+  {
+   "sira": 5,
+   "etap_kodu": "IMALAT",
+   "ad": "İmalat",
+   "paralel_grup": "TEDARIK",
+   "baslangic_hafta": 7,
+   "sure_hafta": 7
+  },
+  {
+   "sira": 6,
+   "etap_kodu": "MEK_MONTAJ",
+   "ad": "Mekanik, hidrolik ve pnömatik montaj",
+   "paralel_grup": "MONTAJ",
+   "baslangic_hafta": 13,
+   "sure_hafta": 5
+  },
+  {
+   "sira": 7,
+   "etap_kodu": "ELK_YAZILIM",
+   "ad": "Elektrik montajı ve yazılım",
+   "paralel_grup": "MONTAJ",
+   "baslangic_hafta": 14,
+   "sure_hafta": 6
+  },
+  {
+   "sira": 8,
+   "etap_kodu": "TEST_FAT",
+   "ad": "Testler, ön deneme ve ön kabul (FAT)",
+   "paralel_grup": null,
+   "baslangic_hafta": 19,
+   "sure_hafta": 3
+  },
+  {
+   "sira": 9,
+   "etap_kodu": "SEVK_KURULUM",
+   "ad": "Sevkiyat, saha kurulumu ve devreye alma",
+   "paralel_grup": null,
+   "baslangic_hafta": 22,
+   "sure_hafta": 3
+  },
+  {
+   "sira": 10,
+   "etap_kodu": "KESIN_KABUL",
+   "ad": "Kesin kabul",
+   "paralel_grup": null,
+   "baslangic_hafta": 25,
+   "sure_hafta": 1
+  }
+ ],
+ "takvim_teslim_hafta": 25,
+ "en_erken_teslim_hafta": 27,
+ "teslim_suresi_hafta": 28,
+ "gereksinimler": [
+  {
+   "sira": 1,
+   "metin": "Çevrim süresi 45 sn altında",
+   "belirsiz": false,
+   "cevap": null
+  }
+ ],
+ "kapsam": {
+  "dahil": [
+   "Mekanik ve otomasyon tasarımı",
+   "Robot ve fikstür",
+   "FAT"
+  ],
+  "haric": [
+   "Saha elektrik altyapısı"
+  ]
+ },
+ "dosyalar": [
+  {
+   "tur": "SARTNAME",
+   "ad": "Autoliv_710_sartname.pdf",
+   "konum": "\\\\sunucu\\satis\\T-2026-0012\\sartname.pdf",
+   "parmak_izi": null
+  }
+ ],
+ "hazirlayan": "K050",
+ "onaylayan": "K001",
+ "onay_ani": "2026-10-21T10:00:00+03:00",
+ "gonderim_ani": "2026-10-21T14:00:00+03:00",
+ "pdf": {
+  "ad": "T-2026-0012-V2.pdf",
+  "parmak_izi": "<icerigin SHA-256'sı, 64 hex>",
+  "icerik_base64": "<PDF>"
+ }
+}

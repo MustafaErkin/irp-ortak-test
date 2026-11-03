@@ -1,0 +1,404 @@
+[
+  {
+    "kod": "C01",
+    "ad": "Giriş Ve Kullanıcı Oturumu",
+    "durum": "DOGRULANDI",
+    "kapsam": "Önceki canlı sınamada dört gösteri rolünün Supabase girişi ve okumaları geçti. Bu turdaki yerel Auth taklidi yeni bir gerçek giriş kanıtı değildir; modüllerde ortak oturum ayrı başlıktadır.",
+    "okumalar": [
+      "KISILER"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/web_son_duzeltmeler_SONUC.md",
+      "codex/sonuclar/tur23_SONUC.md"
+    ]
+  },
+  {
+    "kod": "C02",
+    "ad": "Kişi, Birim Ve Rol Okumaları",
+    "durum": "DOGRULANDI",
+    "kapsam": "Kişi/birim/kod listelerinin gerçek SQL okuması geçti. Personel yönetiminin bütünü ve yetki devri bu dar okuma kanıtına dahil değildir.",
+    "okumalar": [
+      "KISILER",
+      "BIRIMLER",
+      "KODLAR"
+    ],
+    "kaynaklar": [
+      "urun/veritabani/120_okuma_kapisi.sql",
+      "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json"
+    ]
+  },
+  {
+    "kod": "C03",
+    "ad": "Olay Kabulü Ve Görev Yaşam Döngüsü",
+    "durum": "DOGRULANDI",
+    "kapsam": "Atama, kabul, teslim ve onay gerçek SQL üzerinde geçti; önceki Senaryo 1 dosyasız teslimi de doğruluyor. Tanımlı 91 eylemin bütün dalları bu turda yeniden denenmedi.",
+    "okumalar": [
+      "GOREV",
+      "ONAY_LISTESI"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "codex/sonuclar/web_son_duzeltmeler_SONUC.md"
+    ]
+  },
+  {
+    "kod": "C04",
+    "ad": "Proje Ve Etap Yönetimi",
+    "durum": "DOGRULANDI",
+    "kapsam": "Proje/etap açma ve etap planını yetkiyle değiştirme önceki gerçek SQL Senaryo 1 akışında geçti; mevcut gösteri rollerinin sınırları geçerlidir. Yeni modül rolleri ayrıca eşlenecek.",
+    "okumalar": [
+      "PROJE",
+      "PROJELER",
+      "ETAPLAR",
+      "ETAP"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/senaryo1_SONUC.md",
+      "tasarim/00_kararlar.md"
+    ]
+  },
+  {
+    "kod": "C05",
+    "ad": "Atölye Havuzu Ve Sıralı İşler",
+    "durum": "DOGRULANDI",
+    "kapsam": "Havuzdan kişiye atama bu turda, sürükle bırak ve telefonun Dart çekirdeğiyle atölye/saha teslimleri önceki gerçek SQL Senaryo 1 sınamasında geçti. Bu, yeni bir fiziksel telefon provası değildir.",
+    "okumalar": [
+      "HAVUZ",
+      "LISTE",
+      "EKIP",
+      "IS"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "codex/sonuclar/web_son_duzeltmeler_SONUC.md"
+    ]
+  },
+  {
+    "kod": "C06",
+    "ad": "Çalışma Süresi Ve Gün Özeti",
+    "durum": "DOGRULANDI",
+    "kapsam": "Başlama/mola/devam/teslim ve gün özeti önceki motor/istemci sınamalarında geçti; bu tur gün ve iş okumaları da döndü. Tüm bordro ve uzun dönem hesabı bu başlığın kabul kapsamı değildir.",
+    "okumalar": [
+      "TELEFON",
+      "KISININ_GUNU",
+      "GUN",
+      "GUN_ISLERI"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/tur21_SONUC.md",
+      "codex/sonuclar/web_son_duzeltmeler_SONUC.md"
+    ]
+  },
+  {
+    "kod": "C07",
+    "ad": "Not Ve Birime İstek",
+    "durum": "DOGRULANDI",
+    "kapsam": "Not yazma bu tur gerçek SQL üzerinde, @ ile birime istek önceki Senaryo 1 akışında geçti. Bütün alıcıların görüldü dökümü ayrı açık başlıktır.",
+    "okumalar": [
+      "NOT",
+      "WEB_NOTLAR"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "codex/sonuclar/web_son_duzeltmeler_SONUC.md"
+    ]
+  },
+  {
+    "kod": "C08",
+    "ad": "Bildirim Kutusu Ve Görüldü",
+    "durum": "DOGRULANDI",
+    "kapsam": "Kişinin kendi kutusu okunuyor; doğru dış bildirim kimliğiyle Görüldü işlemi önceki gerçek SQL sınamasında kabul edildi ve görülme zamanı doğrulandı.",
+    "okumalar": [
+      "BILDIRIMLER"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/web_son_duzeltmeler_SONUC.md",
+      "urun/veritabani/115_plan_ve_belge.sql"
+    ]
+  },
+  {
+    "kod": "C09",
+    "ad": "Modül Bildirimi Bırakma Ve Kaldırma",
+    "durum": "DOGRULANDI",
+    "kapsam": "M11B plan onayının bildirimi dar modül kimliğiyle ortak kutuya geldi. Pasifleştirmede kendi açık bildirimleri kapatıldı; çekirdek iş verisi korundu. Bu, projesiz teklif bildirimi çözümü değildir.",
+    "okumalar": [
+      "BILDIRIMLER"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/tur21_SONUC.md",
+      "codex/sonuclar/tur23_SONUC.md",
+      "urun/veritabani/082_modul_bildirimi.sql",
+      "tasarim/27_ortak_modul_baglantisi.md",
+      "codex/sonuclar/modul_ortak_baglanti.json"
+    ]
+  },
+  {
+    "kod": "C10",
+    "ad": "Nesne Ve Belge Sürümleri",
+    "durum": "DOGRULANDI",
+    "kapsam": "Belge sürümü ekleme, ikinci yetkiliyle onay ve geçerli sürümü okuma gerçek SQL web akışında geçti. Gelen modüllerin tüm belge akışları kabul edilmiş değildir.",
+    "okumalar": [
+      "NESNE",
+      "NESNELER",
+      "SURUMLER",
+      "GECERLI_SURUM"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/web1_SONUC.md",
+      "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json"
+    ]
+  },
+  {
+    "kod": "C11",
+    "ad": "Olay Kanıtı Dosya Yolu",
+    "durum": "DOGRULANACAK",
+    "kapsam": "Olay kanıtı yükleme/okuma kodu ve yerel dosyalı teslim testi var. Buluttaki özel kova/izinleri kurulmuş; incelenen sonuçlarda gerçek Storage yüklemesini kanıtlayan açık sonuç yok. Yerel taklit bu açığı kapatmaz; modülün projesiz dosyası da ayrı ihtiyaçtır.",
+    "okumalar": [
+      "DOSYA",
+      "WEB_DOSYALAR"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/web1_SONUC.md",
+      "codex/sonuclar/istemci6_SONUC.md",
+      "urun/veritabani/supabase/950_kanitlar.sql"
+    ]
+  },
+  {
+    "kod": "C12",
+    "ad": "Kişisel Ve Parasal Veri Görünürlüğü",
+    "durum": "DOGRULANDI",
+    "kapsam": "Mevcut yetkili maaşı okur; yetkisiz kişi reddedilir veya hassas alanı alamaz. Yeni odak kontrolünde çalışanın maaş okuması reddedildi. Muhasebeye ayrıca maaş görme yetkisi verme, karar 151 ile sonraya bırakıldı.",
+    "okumalar": [
+      "MAAS",
+      "WEB_KISI",
+      "MAAS_DAGILIMI"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/web_son_duzeltmeler_SONUC.md",
+      "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "tasarim/00_kararlar.md"
+    ]
+  },
+  {
+    "kod": "C13",
+    "ad": "Kapasite, Uygunluk Ve Yük Okumaları",
+    "durum": "DOGRULANACAK",
+    "kapsam": "Ürün okumaları ve önceki karşılaştırmalar var; bu tur kapasite/yük cevapları alındı. Yeni modülün tarih aralığı, veri anlamı ve rol ihtiyacıyla uçtan uca kabulü ayrıca gerekir.",
+    "okumalar": [
+      "KAPASITE",
+      "UYGUNLUK",
+      "YUK",
+      "TEZGAH_UYGUNLUK",
+      "TEZGAH_GOSTERGESI"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/tur22_birlesim_SONUC.md",
+      "urun/veritabani/114_kaynak_takvimleri.sql"
+    ]
+  },
+  {
+    "kod": "C14",
+    "ad": "Onaylı Plan Verisi",
+    "durum": "DOGRULANDI",
+    "kapsam": "Ayrı gerçek SQL firmasında M11B ile dolu B0 ve B1, çekirdek dış ekranından B2, yönetici web ekranından B3 onayı geçti. İlk plan korundu; numara/onaylayan/an/gerekçe ortak çekirdek listesinden okundu. Kanıt: modul_ortak_baglanti.json. Fiziksel plan kanıtı yüklemesi bu kapsamda değildir.",
+    "okumalar": [
+      "PLAN",
+      "PLAN_CAKISMALARI"
+    ],
+    "kaynaklar": [
+      "urun/veritabani/067_plan_onayi.sql",
+      "urun/veritabani/115_plan_ve_belge.sql",
+      "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "tasarim/27_ortak_modul_baglantisi.md",
+      "codex/sonuclar/modul_ortak_baglanti.json"
+    ]
+  },
+  {
+    "kod": "C15",
+    "ad": "Gantt Plan Ve Gerçekleşme Verisi",
+    "durum": "DOGRULANDI",
+    "kapsam": "SQL 153 ile etap gerçekleşeni tüm ilgili işlerden, alt görev ayrıntısı izinli işlerden gelir. CEO ve kısıtlı çalışan aynı etap özeti alırken gizli görev görünmedi. Görev kabul/teslim/onayının Gantt sonucu ve native web çizimi geçti. M11B işlevlerinin tamamı kabul edilmiş sayılmaz.",
+    "okumalar": [
+      "GANTT"
+    ],
+    "kaynaklar": [
+      "urun/veritabani/115_plan_ve_belge.sql",
+      "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "disaridan_moduller/Modules/m1.1b/istekler/M11B-01_gantt_gerceklesen_okuyana_gore.md",
+      "tasarim/27_ortak_modul_baglantisi.md",
+      "codex/sonuclar/modul_ortak_baglanti.json"
+    ]
+  },
+  {
+    "kod": "C16",
+    "ad": "İşçilik, Maliyet Ve Ay Kapanışı",
+    "durum": "DOGRULANACAK",
+    "kapsam": "Hesap ve kapanış kodu mevcut; geçmiş/kapanış düzeltmesi sonrası seçili karşılaştırmalar geçti, bu tur işçilik/maliyet okumaları döndü. Bütün uzun dönem kuralları ve modül bütçesi kabul edilmiş sayılmaz. Tur 22 ilk ara hataları sonraki birleşim sonucuyla okunur.",
+    "okumalar": [
+      "PROJE_ISCILIGI",
+      "PROJE_MALIYETI",
+      "TAHMIN_GERCEK",
+      "MAAS_DAGILIMI"
+    ],
+    "kaynaklar": [
+      "codex/sonuclar/tur22_birlesim_SONUC.md",
+      "codex/sonuclar/tur21_SONUC.md",
+      "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json"
+    ]
+  },
+  {
+    "kod": "C17",
+    "ad": "Proje Erişimi Ve Modül Rolleri",
+    "durum": "DOGRULANACAK",
+    "kapsam": "M11B mevcut CEO/Yönetici rolleri ve proje bağlamıyla bağlandı; yönetici yalnız mevcut etapları planladı. Başka rol ve satış/muhasebe projelerinin eşlenmesi ile tüm etap sorumlusu senaryoları ayrıca kabul edilecek; otomatik tüm proje erişimi verilmedi.",
+    "okumalar": [
+      "PROJE",
+      "PROJELER",
+      "ETAP"
+    ],
+    "kaynaklar": [
+      "urun/veritabani/060_kabul.sql",
+      "tasarim/00_kararlar.md",
+      "codex/sonuclar/moduller_on_inceleme.md",
+      "tasarim/27_ortak_modul_baglantisi.md",
+      "codex/sonuclar/modul_ortak_baglanti.json"
+    ]
+  },
+  {
+    "kod": "C18",
+    "ad": "Not Alıcıları Ve Görüldü Dökümü",
+    "durum": "DOGRULANACAK",
+    "kapsam": "Notun göreve dönüşmesi/kabulü mevcut. Yazana bütün alıcıları ve görülme durumlarını tek yetkili okumayla veren yol doğrulanmadı; M11B-06 açık. Modülün tahmini görev kimlikleriyle taraması kabul edilmiş ortak çözüm değildir.",
+    "okumalar": [
+      "NOT",
+      "GOREV"
+    ],
+    "kaynaklar": [
+      "disaridan_moduller/Modules/m1.1b/istekler/M11B-06_not_alicilari.md",
+      "urun/veritabani/120_okuma_kapisi.sql"
+    ]
+  },
+  {
+    "kod": "C19",
+    "ad": "Modüllerde Ortak Giriş, Menü Ve Bağlam",
+    "durum": "DOGRULANDI",
+    "kapsam": "M10/M11A/M11B aynı beyaz HTML/CSS/JS web, giriş, menü ve proje bağlamında çalışıyor. Ortak oturum/kişi değişimi/yazma kilidi testleri ve gerçek SQL tarayıcı akışı geçti. Kullanıcı kabulü ayrı aşamadır.",
+    "okumalar": [],
+    "kaynaklar": [
+      "istemci/web/erp.js",
+      "modul_kiti/paket/sozlesme/07_on_yuz.md",
+      "codex/sonuclar/moduller_on_inceleme.md",
+      "tasarim/27_ortak_modul_baglantisi.md",
+      "codex/sonuclar/modul_ortak_baglanti.json",
+      "tasarim/28_moduller_gercek_mvp.md",
+      "codex/sonuclar/moduller_mvp.json"
+    ]
+  },
+  {
+    "kod": "C20",
+    "ad": "Gerçek Üründe Servis Okuması",
+    "durum": "DOGRULANDI",
+    "kapsam": "SQL 152 public.servis_oku kapısını gerçek giriş rolüyle doğrular; yalnız künye izinli kişisel olmayan alanlar döner. M11B PROJE okuması yerel gerçek SQL ve mevcut Supabase rolüyle geçti; ham çekirdek tablo okuması engellendi. Bütün 14 servis okumasının bütün parametreleri kabul edilmiş sayılmaz.",
+    "okumalar": [],
+    "kaynaklar": [
+      "modul_kiti/paket/baglanti/surucu_http.py",
+      "modul_kiti/paket/sozlesme/01_baglanti.md",
+      "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "tasarim/27_ortak_modul_baglantisi.md",
+      "codex/sonuclar/modul_ortak_baglanti.json"
+    ]
+  },
+  {
+    "kod": "C21",
+    "ad": "Modüle Özel Üretim Servis Yetkisi",
+    "durum": "DOGRULANDI",
+    "kapsam": "Kurulum ayrı NOLOGIN şema sahibi ve LOGIN çalışma rolü oluşturur; çalışma rolü yalnız kendi verisine erişir, DDL yapamaz. Genel DSN/service_role anahtarı alt sürece verilmez; modüle özel geçit kimliği bellektedir. İlk gerçek Supabase modül rolü ve servis sınırları doğrulandı; bu işletim sistemi kum havuzu değildir.",
+    "okumalar": [],
+    "kaynaklar": [
+      "tasarim/18_modul_sozlesmesi.md",
+      "urun/veritabani/082_modul_bildirimi.sql",
+      "tasarim/27_ortak_modul_baglantisi.md",
+      "codex/sonuclar/modul_ortak_baglanti.json"
+    ]
+  },
+  {
+    "kod": "C22",
+    "ad": "Modüller Arası Genel Okuma Yönlendirmesi",
+    "durum": "DOGRULANDI",
+    "kapsam": "Ortak SDK/geçit künye bağımlılığı ve normal kişiyle M10 kazanımını M11A proje/bütçesine, M11A başlangıç planı/teknik girdilerini M11B devir/planına taşıdı. Tekrar devir, gerçek fiziksel dosya ve yanıt kaybında tek açılış sınandı; bütün gelecekteki sağlayıcıların kabulü sayılmaz.",
+    "okumalar": [],
+    "kaynaklar": [
+      "urun/veritabani/120_okuma_kapisi.sql",
+      "disaridan_moduller/Modules/m1.1a/m11a/saglayicilar.py",
+      "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "tasarim/27_ortak_modul_baglantisi.md",
+      "codex/sonuclar/modul_ortak_baglanti.json",
+      "tasarim/28_moduller_gercek_mvp.md",
+      "codex/sonuclar/moduller_mvp.json"
+    ]
+  },
+  {
+    "kod": "C23",
+    "ad": "Genel Modül Kurulum Ve Kabul Yolu",
+    "durum": "DOGRULANACAK",
+    "kapsam": "Üç modül aynı künye/ileri göç/rol/ortak web yoluyla kuruldu; tekrar ve veri koruyan kapatma ayrı gerçek SQL firmasında geçti. Gelen eski senaryoların bütünü, bütün yükseltme/geri alma dalları ve Mustafa kullanıcı kabulü tamamlanmadı.",
+    "okumalar": [],
+    "kaynaklar": [
+      "modul_kiti/kunye_denetle.py",
+      "modul_kiti/paket/sozlesme/06_teslim.md",
+      "codex/sonuclar/moduller_on_inceleme.md",
+      "tasarim/27_ortak_modul_baglantisi.md",
+      "codex/sonuclar/modul_ortak_baglanti.json"
+    ]
+  },
+  {
+    "kod": "C24",
+    "ad": "Projesiz Teklif Dosyası Ve Bildirimi",
+    "durum": "DOGRULANDI",
+    "kapsam": "SQL 154 + SDK 1.2 özel modül dosya ve MODUL bildirim nesnesiyle projesiz teklif çalışıyor. Normal kullanıcı/nesne izni, gerçek bayt/SHA, 1 MB sınırı, bozuk içerik/yetki retleri ve onay bildirimi ayrı SQL firmasında geçti. Baytlar mevcut MVP sunucusunun özel dizininde; üretim dosya altyapısının tamamı değildir.",
+    "okumalar": [],
+    "kaynaklar": [
+      "modul_kiti/paket/sozlesme/02_kurallar.md",
+      "disaridan_moduller/Modules/m1.0/istekler/M10-01_projesiz_kayda_bildirim.md",
+      "disaridan_moduller/Modules/m1.0/istekler/M10-05_dosya_depolama.md",
+      "tasarim/28_moduller_gercek_mvp.md",
+      "codex/sonuclar/moduller_mvp.json"
+    ]
+  },
+  {
+    "kod": "C25",
+    "ad": "Devredilebilir Personel Ve Maaş Yönetiminin Tamamı",
+    "durum": "DOGRULANACAK",
+    "kapsam": "Temel kişi/birim/maaş olayları var. Rol, işe giriş/ayrılış, maaş ve ekip yönetiminin bütünüyle devredilebilir olması ile ayrı maaş görme izni karar 151'de MVP sonrası çekirdek güncellemesidir; modüle devredilmez.",
+    "okumalar": [],
+    "kaynaklar": [
+      "tasarim/00_kararlar.md",
+      "plan/mvp_sonrasi.md"
+    ]
+  },
+  {
+    "kod": "C26",
+    "ad": "Genel Modül Kapatma Ve Geri Alma",
+    "durum": "DOGRULANACAK",
+    "kapsam": "Gerçek SQL pilotunda kendi bildirimleri temizlendi, menü/API kapandı, çalışma rolü NOLOGIN oldu ve mevcut bağlantıları kesildi. Çekirdek/modül iş verisi korundu. Bütün sürüm düşürme, yarım kurulumdan geri dönüş ve genel eski ekran senaryoları ayrıca kabul gerektirir.",
+    "okumalar": [],
+    "kaynaklar": [
+      "tasarim/18_modul_sozlesmesi.md",
+      "urun/veritabani/082_modul_bildirimi.sql",
+      "tasarim/27_ortak_modul_baglantisi.md",
+      "codex/sonuclar/modul_ortak_baglanti.json"
+    ]
+  },
+  {
+    "kod": "C27",
+    "ad": "Modül İstek Sınırlarının Uygulanması",
+    "durum": "DOGRULANACAK",
+    "kapsam": "Künye sınırları ortak geçitte kullanıcı bazında ve SQL servis/bildirim kapılarında modül bazında sayılıyor; sorgu/bağlantı sınırları çalışma rolünde var. Bütün sınır aşımı ve yoğunluk senaryoları bu turda doğrulanmadı; tam yük kabulü verilmez.",
+    "okumalar": [],
+    "kaynaklar": [
+      "tasarim/18_modul_sozlesmesi.md",
+      "tasarim/27_ortak_modul_baglantisi.md",
+      "codex/sonuclar/modul_ortak_baglanti.json"
+    ]
+  }
+]

@@ -1,0 +1,3680 @@
+{
+  "kaynak": "plan/gosterim/hikaye.json",
+  "anlar": {
+    "gosterim": {
+      "K001": {
+        "kisi": "K001",
+        "birim": "YONETIM",
+        "okumalar": [
+          {
+            "veri": "KISILER",
+            "hedef": null,
+            "g": null,
+            "cevap": {
+              "deger": [
+                {
+                  "kod": "K001",
+                  "ad": "Yetkili",
+                  "birim": "YONETIM",
+                  "yaka": "BEYAZ",
+                  "roller": [
+                    "YETKILI",
+                    "YONETICI"
+                  ],
+                  "kimlik": "K001",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K004",
+                  "ad": "Planlama Yöneticisi",
+                  "birim": "PLANLAMA",
+                  "yaka": "BEYAZ",
+                  "roller": [
+                    "YONETICI"
+                  ],
+                  "kimlik": "K004",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K006",
+                  "ad": "Satın Alma Uzmanı",
+                  "birim": "PLANLAMA",
+                  "yaka": "BEYAZ",
+                  "roller": [
+                    "BEYAZ_YAKA"
+                  ],
+                  "kimlik": "K006",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K045",
+                  "ad": "Satın Alma Uzmanı 2",
+                  "birim": "PLANLAMA",
+                  "yaka": "BEYAZ",
+                  "roller": [
+                    "BEYAZ_YAKA"
+                  ],
+                  "kimlik": "K045",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K012",
+                  "ad": "Tasarım Yöneticisi",
+                  "birim": "MEK_TASARIM",
+                  "yaka": "BEYAZ",
+                  "roller": [
+                    "YONETICI"
+                  ],
+                  "kimlik": "K012",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K041",
+                  "ad": "Tasarımcı",
+                  "birim": "MEK_TASARIM",
+                  "yaka": "BEYAZ",
+                  "roller": [
+                    "BEYAZ_YAKA"
+                  ],
+                  "kimlik": "K041",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K060",
+                  "ad": "Tasarımcı 2",
+                  "birim": "MEK_TASARIM",
+                  "yaka": "BEYAZ",
+                  "roller": [
+                    "BEYAZ_YAKA"
+                  ],
+                  "kimlik": "K060",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K044",
+                  "ad": "Otomasyon Tasarımcısı 1",
+                  "birim": "OTO_TASARIM",
+                  "yaka": "BEYAZ",
+                  "roller": [
+                    "BEYAZ_YAKA"
+                  ],
+                  "kimlik": "K044",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K046",
+                  "ad": "Otomasyon Tasarımcısı 2",
+                  "birim": "OTO_TASARIM",
+                  "yaka": "BEYAZ",
+                  "roller": [
+                    "BEYAZ_YAKA"
+                  ],
+                  "kimlik": "K046",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K009",
+                  "ad": "İmalat Ekip Lideri",
+                  "birim": "IMALAT",
+                  "yaka": "MAVI",
+                  "roller": [
+                    "EKIP_LIDERI"
+                  ],
+                  "kimlik": "K009",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K017",
+                  "ad": "Atölye Çalışanı 1",
+                  "birim": "IMALAT",
+                  "yaka": "MAVI",
+                  "roller": [
+                    "CALISAN"
+                  ],
+                  "kimlik": "K017",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K023",
+                  "ad": "Atölye Çalışanı 2",
+                  "birim": "IMALAT",
+                  "yaka": "MAVI",
+                  "roller": [
+                    "CALISAN"
+                  ],
+                  "kimlik": "K023",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K024",
+                  "ad": "Atölye Çalışanı 3",
+                  "birim": "IMALAT",
+                  "yaka": "MAVI",
+                  "roller": [
+                    "CALISAN"
+                  ],
+                  "kimlik": "K024",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K025",
+                  "ad": "Atölye Çalışanı 4",
+                  "birim": "IMALAT",
+                  "yaka": "MAVI",
+                  "roller": [
+                    "CALISAN"
+                  ],
+                  "kimlik": "K025",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K030",
+                  "ad": "Montaj Ekip Lideri",
+                  "birim": "MONTAJ",
+                  "yaka": "MAVI",
+                  "roller": [
+                    "EKIP_LIDERI"
+                  ],
+                  "kimlik": "K030",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K031",
+                  "ad": "Montaj Çalışanı 1",
+                  "birim": "MONTAJ",
+                  "yaka": "MAVI",
+                  "roller": [
+                    "CALISAN"
+                  ],
+                  "kimlik": "K031",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K032",
+                  "ad": "Montaj Çalışanı 2",
+                  "birim": "MONTAJ",
+                  "yaka": "MAVI",
+                  "roller": [
+                    "CALISAN"
+                  ],
+                  "kimlik": "K032",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K033",
+                  "ad": "Montaj Çalışanı 3",
+                  "birim": "MONTAJ",
+                  "yaka": "MAVI",
+                  "roller": [
+                    "CALISAN"
+                  ],
+                  "kimlik": "K033",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K035",
+                  "ad": "Saha Ekip Lideri",
+                  "birim": "SAHA",
+                  "yaka": "MAVI",
+                  "roller": [
+                    "EKIP_LIDERI"
+                  ],
+                  "kimlik": "K035",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K007",
+                  "ad": "Muhasebe ve Finans Yöneticisi",
+                  "birim": "MUHASEBE",
+                  "yaka": "BEYAZ",
+                  "roller": [
+                    "YONETICI"
+                  ],
+                  "kimlik": "K007",
+                  "aktif": true,
+                  "yetkinlikler": []
+                },
+                {
+                  "kod": "K052",
+                  "ad": "Muhasebe Uzmanı",
+                  "birim": "MUHASEBE",
+                  "yaka": "BEYAZ",
+                  "roller": [
+                    "BEYAZ_YAKA"
+                  ],
+                  "kimlik": "K052",
+                  "aktif": true,
+                  "yetkinlikler": []
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "BIRIMLER",
+            "hedef": null,
+            "g": null,
+            "cevap": {
+              "deger": [
+                {
+                  "kod": "YONETIM",
+                  "ad": "Genel Yönetim",
+                  "basi": "K001",
+                  "ust": null,
+                  "kimlik": "YONETIM",
+                  "yoneticileri": [
+                    "K001"
+                  ]
+                },
+                {
+                  "kod": "PLANLAMA",
+                  "ad": "Planlama ve Satın Alma",
+                  "basi": "K004",
+                  "ust": "YONETIM",
+                  "kimlik": "PLANLAMA",
+                  "yoneticileri": [
+                    "K004"
+                  ]
+                },
+                {
+                  "kod": "MEK_TASARIM",
+                  "ad": "Mekanik Tasarım",
+                  "basi": "K012",
+                  "ust": "YONETIM",
+                  "kimlik": "MEK_TASARIM",
+                  "yoneticileri": [
+                    "K012"
+                  ]
+                },
+                {
+                  "kod": "OTO_TASARIM",
+                  "ad": "Otomasyon Tasarım",
+                  "basi": "K012",
+                  "ust": "YONETIM",
+                  "kimlik": "OTO_TASARIM",
+                  "yoneticileri": [
+                    "K012"
+                  ]
+                },
+                {
+                  "kod": "IMALAT",
+                  "ad": "İmalat",
+                  "basi": "K009",
+                  "ust": "PLANLAMA",
+                  "kimlik": "IMALAT",
+                  "yoneticileri": [
+                    "K009"
+                  ]
+                },
+                {
+                  "kod": "MONTAJ",
+                  "ad": "Mekatronik Montaj",
+                  "basi": "K030",
+                  "ust": "YONETIM",
+                  "kimlik": "MONTAJ",
+                  "yoneticileri": [
+                    "K030"
+                  ]
+                },
+                {
+                  "kod": "SAHA",
+                  "ad": "Kurulum ve Devreye Alma",
+                  "basi": "K035",
+                  "ust": "YONETIM",
+                  "kimlik": "SAHA",
+                  "yoneticileri": [
+                    "K035"
+                  ]
+                },
+                {
+                  "kod": "MUHASEBE",
+                  "ad": "Muhasebe ve Finans",
+                  "basi": "K007",
+                  "ust": "YONETIM",
+                  "kimlik": "MUHASEBE",
+                  "yoneticileri": [
+                    "K007"
+                  ]
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJELER",
+            "hedef": null,
+            "g": null,
+            "cevap": {
+              "deger": [
+                {
+                  "ad": "Rulman Çakma Presi",
+                  "durum": "SURUYOR",
+                  "baslangic": "2026-09-01",
+                  "bitis": "2026-12-31",
+                  "sorumlu": "K004",
+                  "kimlik": "2509084",
+                  "aktif": true
+                },
+                {
+                  "ad": "Numune Test Fikstürü",
+                  "durum": "KAPALI",
+                  "baslangic": "2026-06-15",
+                  "bitis": "2026-10-10",
+                  "sorumlu": "K004",
+                  "kimlik": "2509091",
+                  "aktif": false
+                },
+                {
+                  "ad": "Servo Pres Revizyonu",
+                  "durum": "SURUYOR",
+                  "baslangic": "2026-10-01",
+                  "bitis": "2027-01-29",
+                  "sorumlu": "K004",
+                  "kimlik": "2509102",
+                  "aktif": true
+                },
+                {
+                  "ad": "Otomatik Etiketleme Hattı",
+                  "durum": "SURUYOR",
+                  "baslangic": "2026-12-01",
+                  "bitis": "2027-04-30",
+                  "sorumlu": "K004",
+                  "kimlik": "2510112",
+                  "aktif": true
+                },
+                {
+                  "ad": "Servis ve Yedek Parça",
+                  "durum": "SURUYOR",
+                  "baslangic": "2026-01-01",
+                  "bitis": "2026-12-31",
+                  "sorumlu": "K001",
+                  "kimlik": "2509000",
+                  "aktif": true
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "TEZGAHLAR",
+            "hedef": null,
+            "g": null,
+            "cevap": {
+              "deger": [
+                {
+                  "kimlik": "CNC-02",
+                  "ad": "CNC-02"
+                },
+                {
+                  "kimlik": "CNC-17",
+                  "ad": "CNC-17"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_DURUM",
+            "hedef": "2509084",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "harcanan_emek": 2198,
+                "tamamlanan": 2151,
+                "hedef": 2480,
+                "yuzde": 86.7,
+                "maliyet": "1559820.00",
+                "butce": "1720000.00",
+                "butce_tuketimi": 90.7,
+                "hikaye": "Bitmeye yakın: tasarım ve imalat bitti, montaj sürüyor, kurulum başladı. Tasarımda bir revizyon (yeniden işleme) oldu; montajda eksik parça yüzünden 14 saat geride.",
+                "durum": "SURUYOR",
+                "bitis": "2026-12-31"
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509084-E01",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 60,
+                "planli_toplam": 60,
+                "harcanan_emek": 58,
+                "tamamlanan": 60,
+                "yuzde": 100.0,
+                "butce_tuketimi": 96.7,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 60,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509084-E02",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 420,
+                "planli_toplam": 420,
+                "harcanan_emek": 455,
+                "tamamlanan": 420,
+                "yuzde": 100.0,
+                "butce_tuketimi": 108.3,
+                "revizyon_maliyeti_saat": 30,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 420,
+                  "revizyonda": 30,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509084-E03",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 260,
+                "planli_toplam": 260,
+                "harcanan_emek": 248,
+                "tamamlanan": 260,
+                "yuzde": 100.0,
+                "butce_tuketimi": 95.4,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 260,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509084-E04",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 1100,
+                "planli_toplam": 1100,
+                "harcanan_emek": 1065,
+                "tamamlanan": 1067,
+                "yuzde": 97.0,
+                "butce_tuketimi": 96.8,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 1067,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509084-E05",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 480,
+                "planli_toplam": 480,
+                "harcanan_emek": 360,
+                "tamamlanan": 336,
+                "yuzde": 70.0,
+                "butce_tuketimi": 75.0,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 14,
+                  "tamamlandi": 336,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509084-E06",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 160,
+                "planli_toplam": 160,
+                "harcanan_emek": 12,
+                "tamamlanan": 8,
+                "yuzde": 5.0,
+                "butce_tuketimi": 7.5,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 8,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAPLAR",
+            "hedef": "2509084",
+            "g": null,
+            "cevap": {
+              "deger": [
+                {
+                  "ad": "Planlama",
+                  "birim": "PLANLAMA",
+                  "baslangic": "2026-09-01",
+                  "bitis": "2026-09-12",
+                  "hedef": 60,
+                  "aylik_saat": {
+                    "2026-09": 58
+                  },
+                  "tamamlanan": 60,
+                  "durum": "BITTI",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 58,
+                  "yuzde": 100.0,
+                  "butce_tuketimi": 96.7,
+                  "kimlik": "G-2509084-E01",
+                  "proje": "2509084"
+                },
+                {
+                  "ad": "Mekanik Tasarım",
+                  "birim": "MEK_TASARIM",
+                  "baslangic": "2026-09-03",
+                  "bitis": "2026-10-17",
+                  "hedef": 420,
+                  "aylik_saat": {
+                    "2026-09": 210,
+                    "2026-10": 245
+                  },
+                  "tamamlanan": 420,
+                  "durum": "BITTI",
+                  "geride": 0,
+                  "revizyon_saat": 30,
+                  "not": "Pres plakasında revizyon (R1)",
+                  "harcanan": 455,
+                  "yuzde": 100.0,
+                  "butce_tuketimi": 108.3,
+                  "kimlik": "G-2509084-E02",
+                  "proje": "2509084"
+                },
+                {
+                  "ad": "Otomasyon Tasarım",
+                  "birim": "OTO_TASARIM",
+                  "baslangic": "2026-09-10",
+                  "bitis": "2026-10-31",
+                  "hedef": 260,
+                  "aylik_saat": {
+                    "2026-09": 70,
+                    "2026-10": 178
+                  },
+                  "tamamlanan": 260,
+                  "durum": "BITTI",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 248,
+                  "yuzde": 100.0,
+                  "butce_tuketimi": 95.4,
+                  "kimlik": "G-2509084-E03",
+                  "proje": "2509084"
+                },
+                {
+                  "ad": "İmalat",
+                  "birim": "IMALAT",
+                  "baslangic": "2026-10-01",
+                  "bitis": "2026-11-28",
+                  "hedef": 1100,
+                  "aylik_saat": {
+                    "2026-10": 520,
+                    "2026-11": 480,
+                    "2026-12": 65
+                  },
+                  "tamamlanan": 1067,
+                  "durum": "SURUYOR",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 1065,
+                  "yuzde": 97.0,
+                  "butce_tuketimi": 96.8,
+                  "kimlik": "G-2509084-E04",
+                  "proje": "2509084"
+                },
+                {
+                  "ad": "Mekatronik Montaj",
+                  "birim": "MONTAJ",
+                  "baslangic": "2026-11-17",
+                  "bitis": "2026-12-22",
+                  "hedef": 480,
+                  "aylik_saat": {
+                    "2026-11": 150,
+                    "2026-12": 210
+                  },
+                  "tamamlanan": 336,
+                  "durum": "SURUYOR",
+                  "geride": 14,
+                  "revizyon_saat": 0,
+                  "not": "Servo motor tedarikte gecikti",
+                  "harcanan": 360,
+                  "yuzde": 70.0,
+                  "butce_tuketimi": 75.0,
+                  "kimlik": "G-2509084-E05",
+                  "proje": "2509084"
+                },
+                {
+                  "ad": "Kurulum ve Devreye Alma",
+                  "birim": "SAHA",
+                  "baslangic": "2026-12-15",
+                  "bitis": "2026-12-31",
+                  "hedef": 160,
+                  "aylik_saat": {
+                    "2026-12": 12
+                  },
+                  "tamamlanan": 8,
+                  "durum": "SURUYOR",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 12,
+                  "yuzde": 5.0,
+                  "butce_tuketimi": 7.5,
+                  "kimlik": "G-2509084-E06",
+                  "proje": "2509084"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509084",
+            "g": {
+              "ay": "2026-09-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 338,
+                    "tutar": "175760.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "175760.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509084",
+            "g": {
+              "bas": "2026-09-01",
+              "bit": "2026-09-30",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509084",
+            "g": {
+              "ay": "2026-10-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 520,
+                    "tutar": "182000.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 423,
+                    "tutar": "219960.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 280,
+                    "tutar": "238000.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "6300.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "646260.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509084",
+            "g": {
+              "bas": "2026-10-01",
+              "bit": "2026-10-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "IMALAT",
+                  "saat": 520,
+                  "tutar": "182000.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509084",
+            "g": {
+              "ay": "2026-11-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 630,
+                    "tutar": "220500.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 160,
+                    "tutar": "83200.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 300,
+                    "tutar": "255000.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "12950.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "571650.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509084",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "IMALAT",
+                  "saat": 480,
+                  "tutar": "168000.00"
+                },
+                {
+                  "birim": "MONTAJ",
+                  "saat": 150,
+                  "tutar": "52500.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509084",
+            "g": {
+              "ay": "2026-12-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 287,
+                    "tutar": "100450.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 70,
+                    "tutar": "36400.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 32,
+                    "tutar": "27200.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "2100.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "166150.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509084",
+            "g": {
+              "bas": "2026-12-01",
+              "bit": "2026-12-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "IMALAT",
+                  "saat": 65,
+                  "tutar": "22750.00"
+                },
+                {
+                  "birim": "MONTAJ",
+                  "saat": 210,
+                  "tutar": "73500.00"
+                },
+                {
+                  "birim": "SAHA",
+                  "saat": 12,
+                  "tutar": "4200.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509084",
+            "g": {
+              "bas": "2026-09-01",
+              "bit": "2026-12-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "IMALAT",
+                  "saat": 1065,
+                  "tutar": "372750.00",
+                  "yeniden": 22,
+                  "yeniden_tutar": "7700.00",
+                  "plansiz": 15,
+                  "plansiz_tutar": "5250.00",
+                  "bekleme": 0,
+                  "bekleme_tutar": "0.00"
+                },
+                {
+                  "birim": "MONTAJ",
+                  "saat": 360,
+                  "tutar": "126000.00",
+                  "yeniden": 0,
+                  "yeniden_tutar": "0.00",
+                  "plansiz": 20,
+                  "plansiz_tutar": "7000.00",
+                  "bekleme": 14,
+                  "bekleme_tutar": "4900.00"
+                },
+                {
+                  "birim": "SAHA",
+                  "saat": 12,
+                  "tutar": "4200.00",
+                  "yeniden": 0,
+                  "yeniden_tutar": "0.00",
+                  "plansiz": 0,
+                  "plansiz_tutar": "0.00",
+                  "bekleme": 0,
+                  "bekleme_tutar": "0.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "TAHMIN_GERCEK",
+            "hedef": "2509084",
+            "g": {
+              "bas": "2026-09-01",
+              "bit": "2026-12-31"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "islem": "010 Gövde kaynağı",
+                  "birim": "IMALAT",
+                  "tahmin": 7200,
+                  "gercek": 7680,
+                  "durum": "BITTI",
+                  "kisiler": [
+                    "K017",
+                    "K023"
+                  ],
+                  "tezgah": null,
+                  "fark": 6.7,
+                  "kimlik": "G-2509084-I01",
+                  "suruyor": false
+                },
+                {
+                  "islem": "020 Gerilim giderme (fason)",
+                  "birim": "IMALAT",
+                  "tahmin": 1440,
+                  "gercek": 1440,
+                  "durum": "BITTI",
+                  "kisiler": [
+                    "K024"
+                  ],
+                  "tezgah": null,
+                  "fark": 0.0,
+                  "kimlik": "G-2509084-I02",
+                  "suruyor": false
+                },
+                {
+                  "islem": "030 Tabla frezeleme",
+                  "birim": "IMALAT",
+                  "tahmin": 5400,
+                  "gercek": 5040,
+                  "durum": "BITTI",
+                  "kisiler": [
+                    "K025"
+                  ],
+                  "tezgah": "CNC-17",
+                  "fark": -6.7,
+                  "kimlik": "G-2509084-I03",
+                  "suruyor": false
+                },
+                {
+                  "islem": "040 Mil tornalama",
+                  "birim": "IMALAT",
+                  "tahmin": 3600,
+                  "gercek": 3960,
+                  "durum": "BITTI",
+                  "kisiler": [
+                    "K024"
+                  ],
+                  "tezgah": "CNC-02",
+                  "fark": 10.0,
+                  "kimlik": "G-2509084-I04",
+                  "suruyor": false
+                },
+                {
+                  "islem": "050 Pres plakası işleme (R1)",
+                  "birim": "IMALAT",
+                  "tahmin": 6600,
+                  "gercek": 7920,
+                  "durum": "BITTI",
+                  "kisiler": [
+                    "K025"
+                  ],
+                  "tezgah": "CNC-17",
+                  "fark": 20.0,
+                  "kimlik": "G-2509084-I05",
+                  "suruyor": false
+                },
+                {
+                  "islem": "060 Kılavuz kolon taşlama",
+                  "birim": "IMALAT",
+                  "tahmin": 2400,
+                  "gercek": 2220,
+                  "durum": "BITTI",
+                  "kisiler": [
+                    "K023"
+                  ],
+                  "tezgah": null,
+                  "fark": -7.5,
+                  "kimlik": "G-2509084-I06",
+                  "suruyor": false
+                },
+                {
+                  "islem": "070 Hidrolik blok montajı",
+                  "birim": "MONTAJ",
+                  "tahmin": 4800,
+                  "gercek": 4440,
+                  "durum": "BITTI",
+                  "kisiler": [
+                    "K031"
+                  ],
+                  "tezgah": null,
+                  "fark": -7.5,
+                  "kimlik": "G-2509084-I07",
+                  "suruyor": false
+                },
+                {
+                  "islem": "080 Pano montajı ve kablaj",
+                  "birim": "MONTAJ",
+                  "tahmin": 7200,
+                  "gercek": 7860,
+                  "durum": "BITTI",
+                  "kisiler": [
+                    "K032",
+                    "K033"
+                  ],
+                  "tezgah": null,
+                  "fark": 9.2,
+                  "kimlik": "G-2509084-I08",
+                  "suruyor": false
+                },
+                {
+                  "islem": "090 Robot hücresi montajı",
+                  "birim": "MONTAJ",
+                  "tahmin": 8400,
+                  "gercek": 5760,
+                  "durum": "SURUYOR",
+                  "kisiler": [
+                    "K031",
+                    "K032"
+                  ],
+                  "tezgah": null,
+                  "fark": -31.4,
+                  "kimlik": "G-2509084-I09",
+                  "suruyor": true
+                },
+                {
+                  "islem": "100 Emniyet çiti montajı",
+                  "birim": "MONTAJ",
+                  "tahmin": 2400,
+                  "gercek": 1080,
+                  "durum": "SURUYOR",
+                  "kisiler": [
+                    "K033"
+                  ],
+                  "tezgah": null,
+                  "fark": -55.0,
+                  "kimlik": "G-2509084-I10",
+                  "suruyor": true
+                },
+                {
+                  "islem": "110 Yazılım yükleme ve I/O testi",
+                  "birim": "SAHA",
+                  "tahmin": 3600,
+                  "gercek": 720,
+                  "durum": "SURUYOR",
+                  "kisiler": [
+                    "K035"
+                  ],
+                  "tezgah": null,
+                  "fark": -80.0,
+                  "kimlik": "G-2509084-I11",
+                  "suruyor": true
+                },
+                {
+                  "islem": "120 Ön kabul (FAT)",
+                  "birim": "SAHA",
+                  "tahmin": 1800,
+                  "gercek": 0,
+                  "durum": "BEKLIYOR",
+                  "kisiler": [
+                    "K035"
+                  ],
+                  "tezgah": null,
+                  "fark": null,
+                  "kimlik": "G-2509084-I12",
+                  "suruyor": false
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_DURUM",
+            "hedef": "2509091",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "harcanan_emek": 699,
+                "tamamlanan": 710,
+                "hedef": 710,
+                "yuzde": 100.0,
+                "maliyet": "469560.00",
+                "butce": "475000.00",
+                "butce_tuketimi": 98.9,
+                "hikaye": "Bitti: 5 gün gecikmeyle teslim edildi (otomasyon tasarımında değişiklik); toplam emek tahminin %1,5 altında, maliyet bütçenin içinde.",
+                "durum": "KAPALI",
+                "bitis": "2026-10-10"
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509091-E01",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 120,
+                "planli_toplam": 120,
+                "harcanan_emek": 112,
+                "tamamlanan": 120,
+                "yuzde": 100.0,
+                "butce_tuketimi": 93.3,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 120,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509091-E02",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 60,
+                "planli_toplam": 60,
+                "harcanan_emek": 71,
+                "tamamlanan": 60,
+                "yuzde": 100.0,
+                "butce_tuketimi": 118.3,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 60,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509091-E03",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 340,
+                "planli_toplam": 340,
+                "harcanan_emek": 322,
+                "tamamlanan": 340,
+                "yuzde": 100.0,
+                "butce_tuketimi": 94.7,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 340,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509091-E04",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 150,
+                "planli_toplam": 150,
+                "harcanan_emek": 158,
+                "tamamlanan": 150,
+                "yuzde": 100.0,
+                "butce_tuketimi": 105.3,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 150,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509091-E05",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 40,
+                "planli_toplam": 40,
+                "harcanan_emek": 36,
+                "tamamlanan": 40,
+                "yuzde": 100.0,
+                "butce_tuketimi": 90.0,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 40,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAPLAR",
+            "hedef": "2509091",
+            "g": null,
+            "cevap": {
+              "deger": [
+                {
+                  "ad": "Mekanik Tasarım",
+                  "birim": "MEK_TASARIM",
+                  "baslangic": "2026-06-15",
+                  "bitis": "2026-07-24",
+                  "hedef": 120,
+                  "aylik_saat": {
+                    "2026-06": 50,
+                    "2026-07": 62
+                  },
+                  "tamamlanan": 120,
+                  "durum": "BITTI",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 112,
+                  "yuzde": 100.0,
+                  "butce_tuketimi": 93.3,
+                  "kimlik": "G-2509091-E01",
+                  "proje": "2509091"
+                },
+                {
+                  "ad": "Otomasyon Tasarım",
+                  "birim": "OTO_TASARIM",
+                  "baslangic": "2026-07-01",
+                  "bitis": "2026-08-14",
+                  "hedef": 60,
+                  "aylik_saat": {
+                    "2026-07": 34,
+                    "2026-08": 37
+                  },
+                  "tamamlanan": 60,
+                  "durum": "BITTI",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": "Müşteri değişikliği: sensör sayısı arttı",
+                  "harcanan": 71,
+                  "yuzde": 100.0,
+                  "butce_tuketimi": 118.3,
+                  "kimlik": "G-2509091-E02",
+                  "proje": "2509091"
+                },
+                {
+                  "ad": "İmalat",
+                  "birim": "IMALAT",
+                  "baslangic": "2026-07-20",
+                  "bitis": "2026-09-11",
+                  "hedef": 340,
+                  "aylik_saat": {
+                    "2026-07": 60,
+                    "2026-08": 190,
+                    "2026-09": 72
+                  },
+                  "tamamlanan": 340,
+                  "durum": "BITTI",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 322,
+                  "yuzde": 100.0,
+                  "butce_tuketimi": 94.7,
+                  "kimlik": "G-2509091-E03",
+                  "proje": "2509091"
+                },
+                {
+                  "ad": "Mekatronik Montaj",
+                  "birim": "MONTAJ",
+                  "baslangic": "2026-09-01",
+                  "bitis": "2026-10-02",
+                  "hedef": 150,
+                  "aylik_saat": {
+                    "2026-09": 118,
+                    "2026-10": 40
+                  },
+                  "tamamlanan": 150,
+                  "durum": "BITTI",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 158,
+                  "yuzde": 100.0,
+                  "butce_tuketimi": 105.3,
+                  "kimlik": "G-2509091-E04",
+                  "proje": "2509091"
+                },
+                {
+                  "ad": "Kurulum ve Devreye Alma",
+                  "birim": "SAHA",
+                  "baslangic": "2026-10-01",
+                  "bitis": "2026-10-10",
+                  "hedef": 40,
+                  "aylik_saat": {
+                    "2026-10": 36
+                  },
+                  "tamamlanan": 40,
+                  "durum": "BITTI",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 36,
+                  "yuzde": 100.0,
+                  "butce_tuketimi": 90.0,
+                  "kimlik": "G-2509091-E05",
+                  "proje": "2509091"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509091",
+            "g": {
+              "ay": "2026-06-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 50,
+                    "tutar": "26000.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "26000.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509091",
+            "g": {
+              "bas": "2026-06-01",
+              "bit": "2026-06-30",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509091",
+            "g": {
+              "ay": "2026-07-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 60,
+                    "tutar": "21000.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 96,
+                    "tutar": "49920.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 40,
+                    "tutar": "34000.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "104920.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509091",
+            "g": {
+              "bas": "2026-07-01",
+              "bit": "2026-07-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "IMALAT",
+                  "saat": 60,
+                  "tutar": "21000.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509091",
+            "g": {
+              "ay": "2026-08-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 190,
+                    "tutar": "66500.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 37,
+                    "tutar": "19240.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 120,
+                    "tutar": "102000.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "187740.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509091",
+            "g": {
+              "bas": "2026-08-01",
+              "bit": "2026-08-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "IMALAT",
+                  "saat": 190,
+                  "tutar": "66500.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509091",
+            "g": {
+              "ay": "2026-09-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 190,
+                    "tutar": "66500.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 12,
+                    "tutar": "6240.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 50,
+                    "tutar": "42500.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "2900.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "118140.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509091",
+            "g": {
+              "bas": "2026-09-01",
+              "bit": "2026-09-30",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "IMALAT",
+                  "saat": 72,
+                  "tutar": "25200.00"
+                },
+                {
+                  "birim": "MONTAJ",
+                  "saat": 118,
+                  "tutar": "41300.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509091",
+            "g": {
+              "ay": "2026-10-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 76,
+                    "tutar": "26600.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 8,
+                    "tutar": "4160.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "2000.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "32760.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509091",
+            "g": {
+              "bas": "2026-10-01",
+              "bit": "2026-10-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "MONTAJ",
+                  "saat": 40,
+                  "tutar": "14000.00"
+                },
+                {
+                  "birim": "SAHA",
+                  "saat": 36,
+                  "tutar": "12600.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509091",
+            "g": {
+              "bas": "2026-06-01",
+              "bit": "2026-10-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "IMALAT",
+                  "saat": 322,
+                  "tutar": "112700.00",
+                  "yeniden": 0,
+                  "yeniden_tutar": "0.00",
+                  "plansiz": 0,
+                  "plansiz_tutar": "0.00",
+                  "bekleme": 0,
+                  "bekleme_tutar": "0.00"
+                },
+                {
+                  "birim": "MONTAJ",
+                  "saat": 158,
+                  "tutar": "55300.00",
+                  "yeniden": 0,
+                  "yeniden_tutar": "0.00",
+                  "plansiz": 8,
+                  "plansiz_tutar": "2800.00",
+                  "bekleme": 0,
+                  "bekleme_tutar": "0.00"
+                },
+                {
+                  "birim": "SAHA",
+                  "saat": 36,
+                  "tutar": "12600.00",
+                  "yeniden": 0,
+                  "yeniden_tutar": "0.00",
+                  "plansiz": 0,
+                  "plansiz_tutar": "0.00",
+                  "bekleme": 4,
+                  "bekleme_tutar": "1400.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "TAHMIN_GERCEK",
+            "hedef": "2509091",
+            "g": {
+              "bas": "2026-06-01",
+              "bit": "2026-10-31"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "islem": "Mekanik Tasarım (etap toplamı)",
+                  "birim": "MEK_TASARIM",
+                  "tahmin": 7200,
+                  "gercek": 6720,
+                  "durum": "BITTI",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": -6.7,
+                  "kimlik": "G-2509091-I01",
+                  "suruyor": false
+                },
+                {
+                  "islem": "Otomasyon Tasarım (etap toplamı)",
+                  "birim": "OTO_TASARIM",
+                  "tahmin": 3600,
+                  "gercek": 4260,
+                  "durum": "BITTI",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": 18.3,
+                  "kimlik": "G-2509091-I02",
+                  "suruyor": false
+                },
+                {
+                  "islem": "İmalat (etap toplamı)",
+                  "birim": "IMALAT",
+                  "tahmin": 20400,
+                  "gercek": 19320,
+                  "durum": "BITTI",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": -5.3,
+                  "kimlik": "G-2509091-I03",
+                  "suruyor": false
+                },
+                {
+                  "islem": "Mekatronik Montaj (etap toplamı)",
+                  "birim": "MONTAJ",
+                  "tahmin": 9000,
+                  "gercek": 9480,
+                  "durum": "BITTI",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": 5.3,
+                  "kimlik": "G-2509091-I04",
+                  "suruyor": false
+                },
+                {
+                  "islem": "Kurulum ve Devreye Alma (etap toplamı)",
+                  "birim": "SAHA",
+                  "tahmin": 2400,
+                  "gercek": 2160,
+                  "durum": "BITTI",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": -10.0,
+                  "kimlik": "G-2509091-I05",
+                  "suruyor": false
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_DURUM",
+            "hedef": "2509102",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "harcanan_emek": 850,
+                "tamamlanan": 870,
+                "hedef": 1750,
+                "yuzde": 49.7,
+                "maliyet": "629500.00",
+                "butce": "980000.00",
+                "butce_tuketimi": 64.2,
+                "hikaye": "Ortada.",
+                "durum": "SURUYOR",
+                "bitis": "2027-01-29"
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509102-E01",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 300,
+                "planli_toplam": 300,
+                "harcanan_emek": 280,
+                "tamamlanan": 300,
+                "yuzde": 100.0,
+                "butce_tuketimi": 93.3,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 300,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509102-E02",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 200,
+                "planli_toplam": 200,
+                "harcanan_emek": 150,
+                "tamamlanan": 150,
+                "yuzde": 75.0,
+                "butce_tuketimi": 75.0,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 150,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509102-E03",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 900,
+                "planli_toplam": 900,
+                "harcanan_emek": 420,
+                "tamamlanan": 420,
+                "yuzde": 46.7,
+                "butce_tuketimi": 46.7,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 420,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509102-E04",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 350,
+                "planli_toplam": 350,
+                "harcanan_emek": 0,
+                "tamamlanan": 0,
+                "yuzde": 0.0,
+                "butce_tuketimi": 0.0,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 0,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAPLAR",
+            "hedef": "2509102",
+            "g": null,
+            "cevap": {
+              "deger": [
+                {
+                  "ad": "Mekanik Tasarım",
+                  "birim": "MEK_TASARIM",
+                  "baslangic": "2026-10-01",
+                  "bitis": "2026-11-20",
+                  "hedef": 300,
+                  "aylik_saat": {
+                    "2026-10": 200,
+                    "2026-11": 80
+                  },
+                  "tamamlanan": 300,
+                  "durum": "BITTI",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 280,
+                  "yuzde": 100.0,
+                  "butce_tuketimi": 93.3,
+                  "kimlik": "G-2509102-E01",
+                  "proje": "2509102"
+                },
+                {
+                  "ad": "Otomasyon Tasarım",
+                  "birim": "OTO_TASARIM",
+                  "baslangic": "2026-10-15",
+                  "bitis": "2026-12-18",
+                  "hedef": 200,
+                  "aylik_saat": {
+                    "2026-11": 90,
+                    "2026-12": 60
+                  },
+                  "tamamlanan": 150,
+                  "durum": "SURUYOR",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 150,
+                  "yuzde": 75.0,
+                  "butce_tuketimi": 75.0,
+                  "kimlik": "G-2509102-E02",
+                  "proje": "2509102"
+                },
+                {
+                  "ad": "İmalat",
+                  "birim": "IMALAT",
+                  "baslangic": "2026-11-02",
+                  "bitis": "2027-01-08",
+                  "hedef": 900,
+                  "aylik_saat": {
+                    "2026-11": 290,
+                    "2026-12": 130
+                  },
+                  "tamamlanan": 420,
+                  "durum": "SURUYOR",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 420,
+                  "yuzde": 46.7,
+                  "butce_tuketimi": 46.7,
+                  "kimlik": "G-2509102-E03",
+                  "proje": "2509102"
+                },
+                {
+                  "ad": "Mekatronik Montaj",
+                  "birim": "MONTAJ",
+                  "baslangic": "2027-01-04",
+                  "bitis": "2027-01-29",
+                  "hedef": 350,
+                  "aylik_saat": {},
+                  "tamamlanan": 0,
+                  "durum": "BEKLIYOR",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 0,
+                  "yuzde": 0.0,
+                  "butce_tuketimi": 0.0,
+                  "kimlik": "G-2509102-E04",
+                  "proje": "2509102"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509102",
+            "g": {
+              "ay": "2026-10-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 220,
+                    "tutar": "114400.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "114400.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509102",
+            "g": {
+              "bas": "2026-10-01",
+              "bit": "2026-10-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509102",
+            "g": {
+              "ay": "2026-11-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 290,
+                    "tutar": "101500.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 230,
+                    "tutar": "119600.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 160,
+                    "tutar": "136000.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "3600.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "360700.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509102",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "IMALAT",
+                  "saat": 290,
+                  "tutar": "101500.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509102",
+            "g": {
+              "ay": "2026-12-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 130,
+                    "tutar": "45500.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 95,
+                    "tutar": "49400.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 70,
+                    "tutar": "59500.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "154400.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509102",
+            "g": {
+              "bas": "2026-12-01",
+              "bit": "2026-12-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "IMALAT",
+                  "saat": 130,
+                  "tutar": "45500.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509102",
+            "g": {
+              "bas": "2026-10-01",
+              "bit": "2026-12-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "IMALAT",
+                  "saat": 420,
+                  "tutar": "147000.00",
+                  "yeniden": 0,
+                  "yeniden_tutar": "0.00",
+                  "plansiz": 12,
+                  "plansiz_tutar": "4200.00",
+                  "bekleme": 0,
+                  "bekleme_tutar": "0.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "TAHMIN_GERCEK",
+            "hedef": "2509102",
+            "g": {
+              "bas": "2026-10-01",
+              "bit": "2026-12-31"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "islem": "Mekanik Tasarım (etap toplamı)",
+                  "birim": "MEK_TASARIM",
+                  "tahmin": 18000,
+                  "gercek": 16800,
+                  "durum": "BITTI",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": -6.7,
+                  "kimlik": "G-2509102-I01",
+                  "suruyor": false
+                },
+                {
+                  "islem": "Otomasyon Tasarım (etap toplamı)",
+                  "birim": "OTO_TASARIM",
+                  "tahmin": 12000,
+                  "gercek": 9000,
+                  "durum": "SURUYOR",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": -25.0,
+                  "kimlik": "G-2509102-I02",
+                  "suruyor": true
+                },
+                {
+                  "islem": "İmalat (etap toplamı)",
+                  "birim": "IMALAT",
+                  "tahmin": 54000,
+                  "gercek": 25200,
+                  "durum": "SURUYOR",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": -53.3,
+                  "kimlik": "G-2509102-I03",
+                  "suruyor": true
+                },
+                {
+                  "islem": "Mekatronik Montaj (etap toplamı)",
+                  "birim": "MONTAJ",
+                  "tahmin": 21000,
+                  "gercek": 0,
+                  "durum": "BEKLIYOR",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": null,
+                  "kimlik": "G-2509102-I04",
+                  "suruyor": false
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_DURUM",
+            "hedef": "2510112",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "harcanan_emek": 58,
+                "tamamlanan": 56,
+                "hedef": 420,
+                "yuzde": 13.3,
+                "maliyet": "30160.00",
+                "butce": "1350000.00",
+                "butce_tuketimi": 2.2,
+                "hikaye": "Yeni başladı.",
+                "durum": "SURUYOR",
+                "bitis": "2027-04-30"
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2510112-E01",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 40,
+                "planli_toplam": 40,
+                "harcanan_emek": 22,
+                "tamamlanan": 22,
+                "yuzde": 55.0,
+                "butce_tuketimi": 55.0,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 22,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2510112-E02",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 380,
+                "planli_toplam": 380,
+                "harcanan_emek": 36,
+                "tamamlanan": 34,
+                "yuzde": 8.9,
+                "butce_tuketimi": 9.5,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 34,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAPLAR",
+            "hedef": "2510112",
+            "g": null,
+            "cevap": {
+              "deger": [
+                {
+                  "ad": "Planlama",
+                  "birim": "PLANLAMA",
+                  "baslangic": "2026-12-01",
+                  "bitis": "2026-12-19",
+                  "hedef": 40,
+                  "aylik_saat": {
+                    "2026-12": 22
+                  },
+                  "tamamlanan": 22,
+                  "durum": "SURUYOR",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 22,
+                  "yuzde": 55.0,
+                  "butce_tuketimi": 55.0,
+                  "kimlik": "G-2510112-E01",
+                  "proje": "2510112"
+                },
+                {
+                  "ad": "Mekanik Tasarım",
+                  "birim": "MEK_TASARIM",
+                  "baslangic": "2026-12-07",
+                  "bitis": "2027-02-12",
+                  "hedef": 380,
+                  "aylik_saat": {
+                    "2026-12": 36
+                  },
+                  "tamamlanan": 34,
+                  "durum": "SURUYOR",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 36,
+                  "yuzde": 8.9,
+                  "butce_tuketimi": 9.5,
+                  "kimlik": "G-2510112-E02",
+                  "proje": "2510112"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2510112",
+            "g": {
+              "ay": "2026-12-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 58,
+                    "tutar": "30160.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "30160.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2510112",
+            "g": {
+              "bas": "2026-12-01",
+              "bit": "2026-12-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "TAHMIN_GERCEK",
+            "hedef": "2510112",
+            "g": {
+              "bas": "2026-12-01",
+              "bit": "2026-12-31"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "islem": "Planlama (etap toplamı)",
+                  "birim": "PLANLAMA",
+                  "tahmin": 2400,
+                  "gercek": 1320,
+                  "durum": "SURUYOR",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": -45.0,
+                  "kimlik": "G-2510112-I01",
+                  "suruyor": true
+                },
+                {
+                  "islem": "Mekanik Tasarım (etap toplamı)",
+                  "birim": "MEK_TASARIM",
+                  "tahmin": 22800,
+                  "gercek": 2160,
+                  "durum": "SURUYOR",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": -90.5,
+                  "kimlik": "G-2510112-I02",
+                  "suruyor": true
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_DURUM",
+            "hedef": "2509000",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "harcanan_emek": 660,
+                "tamamlanan": 0,
+                "hedef": 4000,
+                "yuzde": null,
+                "maliyet": "231000.00",
+                "butce": null,
+                "butce_tuketimi": null,
+                "hikaye": "Sürekli servis projesi.",
+                "durum": "SURUYOR",
+                "bitis": "2026-12-31"
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509000-E01",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 1600,
+                "planli_toplam": 1600,
+                "harcanan_emek": 210,
+                "tamamlanan": null,
+                "yuzde": null,
+                "butce_tuketimi": 13.1,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 0,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAP_DURUM",
+            "hedef": "G-2509000-E02",
+            "g": null,
+            "cevap": {
+              "deger": {
+                "hedef": 2400,
+                "planli_toplam": 2400,
+                "harcanan_emek": 450,
+                "tamamlanan": null,
+                "yuzde": null,
+                "butce_tuketimi": 18.8,
+                "revizyon_maliyeti_saat": 0,
+                "dort_kategori": {
+                  "geride": 0,
+                  "tamamlandi": 0,
+                  "revizyonda": 0,
+                  "onay_bekliyor": 0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "ETAPLAR",
+            "hedef": "2509000",
+            "g": null,
+            "cevap": {
+              "deger": [
+                {
+                  "ad": "Saha Servis",
+                  "birim": "SAHA",
+                  "baslangic": "2026-01-01",
+                  "bitis": "2026-12-31",
+                  "hedef": 1600,
+                  "aylik_saat": {
+                    "2026-11": 140,
+                    "2026-12": 70
+                  },
+                  "tamamlanan": null,
+                  "durum": "SURUYOR",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 210,
+                  "yuzde": null,
+                  "butce_tuketimi": 13.1,
+                  "kimlik": "G-2509000-E01",
+                  "proje": "2509000"
+                },
+                {
+                  "ad": "Yedek Parça ve Revizyon",
+                  "birim": "MONTAJ",
+                  "baslangic": "2026-01-01",
+                  "bitis": "2026-12-31",
+                  "hedef": 2400,
+                  "aylik_saat": {
+                    "2026-11": 300,
+                    "2026-12": 150
+                  },
+                  "tamamlanan": null,
+                  "durum": "SURUYOR",
+                  "geride": 0,
+                  "revizyon_saat": 0,
+                  "not": null,
+                  "harcanan": 450,
+                  "yuzde": null,
+                  "butce_tuketimi": 18.8,
+                  "kimlik": "G-2509000-E02",
+                  "proje": "2509000"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509000",
+            "g": {
+              "ay": "2026-11-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 440,
+                    "tutar": "154000.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "154000.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509000",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "MONTAJ",
+                  "saat": 300,
+                  "tutar": "105000.00"
+                },
+                {
+                  "birim": "SAHA",
+                  "saat": 140,
+                  "tutar": "49000.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_MALIYETI",
+            "hedef": "2509000",
+            "g": {
+              "ay": "2026-12-01"
+            },
+            "cevap": {
+              "deger": {
+                "satirlar": [
+                  {
+                    "ad": "Atölye (mavi yaka)",
+                    "saat": 220,
+                    "tutar": "77000.00"
+                  },
+                  {
+                    "ad": "Masa başı (beyaz yaka)",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Tezgâh",
+                    "saat": 0,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Fazla mesai primi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Önceki dönem düzeltmesi",
+                    "saat": null,
+                    "tutar": "0.00"
+                  },
+                  {
+                    "ad": "Toplam",
+                    "saat": null,
+                    "tutar": "77000.00"
+                  }
+                ],
+                "ek": [],
+                "eksik_veri": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509000",
+            "g": {
+              "bas": "2026-12-01",
+              "bit": "2026-12-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "MONTAJ",
+                  "saat": 150,
+                  "tutar": "52500.00"
+                },
+                {
+                  "birim": "SAHA",
+                  "saat": 70,
+                  "tutar": "24500.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PROJE_ISCILIGI",
+            "hedef": "2509000",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-12-31",
+              "kirilim": "BIRIM"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "birim": "MONTAJ",
+                  "saat": 450,
+                  "tutar": "157500.00",
+                  "yeniden": 0,
+                  "yeniden_tutar": "0.00",
+                  "plansiz": 0,
+                  "plansiz_tutar": "0.00",
+                  "bekleme": 0,
+                  "bekleme_tutar": "0.00"
+                },
+                {
+                  "birim": "SAHA",
+                  "saat": 210,
+                  "tutar": "73500.00",
+                  "yeniden": 0,
+                  "yeniden_tutar": "0.00",
+                  "plansiz": 0,
+                  "plansiz_tutar": "0.00",
+                  "bekleme": 0,
+                  "bekleme_tutar": "0.00"
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "TAHMIN_GERCEK",
+            "hedef": "2509000",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-12-31"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "islem": "Saha Servis (etap toplamı)",
+                  "birim": "SAHA",
+                  "tahmin": 96000,
+                  "gercek": 12600,
+                  "durum": "SURUYOR",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": -86.9,
+                  "kimlik": "G-2509000-I01",
+                  "suruyor": true
+                },
+                {
+                  "islem": "Yedek Parça ve Revizyon (etap toplamı)",
+                  "birim": "MONTAJ",
+                  "tahmin": 144000,
+                  "gercek": 27000,
+                  "durum": "SURUYOR",
+                  "kisiler": [],
+                  "tezgah": null,
+                  "fark": -81.2,
+                  "kimlik": "G-2509000-I02",
+                  "suruyor": true
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "KIM_NEREDE",
+            "hedef": null,
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "K001:YONETIM": {
+                  "TEKLIF_ARGE": 60.0,
+                  "PROJE_DISI": 80.0,
+                  "KAYDEDILMEYEN": 28.0
+                },
+                "K004:PLANLAMA": {
+                  "2509084": 33.33,
+                  "2509102": 20.0,
+                  "TEKLIF_ARGE": 40.0,
+                  "PROJE_DISI": 50.0,
+                  "IZIN": 8.0,
+                  "KAYDEDILMEYEN": 16.67
+                },
+                "K006:PLANLAMA": {
+                  "2509084": 33.33,
+                  "2509102": 20.0,
+                  "TEKLIF_ARGE": 40.0,
+                  "PROJE_DISI": 50.0,
+                  "IZIN": 8.0,
+                  "KAYDEDILMEYEN": 16.67
+                },
+                "K045:PLANLAMA": {
+                  "2509084": 33.34,
+                  "2509102": 20.0,
+                  "TEKLIF_ARGE": 40.0,
+                  "PROJE_DISI": 50.0,
+                  "IZIN": 8.0,
+                  "KAYDEDILMEYEN": 16.66
+                },
+                "K012:MEK_TASARIM": {
+                  "2509084": 13.33,
+                  "2509102": 26.67,
+                  "TEKLIF_ARGE": 66.67,
+                  "PROJE_DISI": 20.0,
+                  "IZIN": 13.33,
+                  "KAYDEDILMEYEN": 28.0
+                },
+                "K041:MEK_TASARIM": {
+                  "2509084": 13.33,
+                  "2509102": 26.67,
+                  "TEKLIF_ARGE": 66.67,
+                  "PROJE_DISI": 20.0,
+                  "IZIN": 13.33,
+                  "KAYDEDILMEYEN": 28.0
+                },
+                "K060:MEK_TASARIM": {
+                  "2509084": 13.34,
+                  "2509102": 26.66,
+                  "TEKLIF_ARGE": 66.66,
+                  "PROJE_DISI": 20.0,
+                  "IZIN": 13.34,
+                  "KAYDEDILMEYEN": 28.0
+                },
+                "K044:OTO_TASARIM": {
+                  "2509084": 10.0,
+                  "2509102": 45.0,
+                  "TEKLIF_ARGE": 60.0,
+                  "PROJE_DISI": 20.0,
+                  "KAYDEDILMEYEN": 33.0
+                },
+                "K046:OTO_TASARIM": {
+                  "2509084": 10.0,
+                  "2509102": 45.0,
+                  "TEKLIF_ARGE": 60.0,
+                  "PROJE_DISI": 20.0,
+                  "KAYDEDILMEYEN": 33.0
+                },
+                "K009:IMALAT": {
+                  "2509084": 96.0,
+                  "2509102": 58.0,
+                  "PROJE_DISI": 8.0,
+                  "KAYDEDILMEYEN": 6.0
+                },
+                "K017:IMALAT": {
+                  "2509084": 96.0,
+                  "2509102": 58.0,
+                  "PROJE_DISI": 8.0,
+                  "KAYDEDILMEYEN": 6.0
+                },
+                "K023:IMALAT": {
+                  "2509084": 96.0,
+                  "2509102": 58.0,
+                  "PROJE_DISI": 8.0,
+                  "KAYDEDILMEYEN": 6.0
+                },
+                "K024:IMALAT": {
+                  "2509084": 96.0,
+                  "2509102": 58.0,
+                  "PROJE_DISI": 8.0,
+                  "KAYDEDILMEYEN": 6.0
+                },
+                "K025:IMALAT": {
+                  "2509084": 96.0,
+                  "2509102": 58.0,
+                  "PROJE_DISI": 8.0,
+                  "KAYDEDILMEYEN": 6.0
+                },
+                "K030:MONTAJ": {
+                  "2509084": 37.5,
+                  "2509000": 75.0,
+                  "IZIN": 15.0,
+                  "KAYDEDILMEYEN": 40.5
+                },
+                "K031:MONTAJ": {
+                  "2509084": 37.5,
+                  "2509000": 75.0,
+                  "IZIN": 15.0,
+                  "KAYDEDILMEYEN": 40.5
+                },
+                "K032:MONTAJ": {
+                  "2509084": 37.5,
+                  "2509000": 75.0,
+                  "IZIN": 15.0,
+                  "KAYDEDILMEYEN": 40.5
+                },
+                "K033:MONTAJ": {
+                  "2509084": 37.5,
+                  "2509000": 75.0,
+                  "IZIN": 15.0,
+                  "KAYDEDILMEYEN": 40.5
+                },
+                "K035:SAHA": {
+                  "2509000": 140.0,
+                  "KAYDEDILMEYEN": 28.0
+                },
+                "K007:MUHASEBE": {
+                  "PROJE_DISI": 150.0,
+                  "KAYDEDILMEYEN": 18.0
+                },
+                "K052:MUHASEBE": {
+                  "PROJE_DISI": 150.0,
+                  "KAYDEDILMEYEN": 18.0
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "BIRIM_DOLULUGU",
+            "hedef": null,
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "YONETIM": {
+                  "kapasite": 168,
+                  "planli": 140,
+                  "bos": 28
+                },
+                "PLANLAMA": {
+                  "kapasite": 504,
+                  "planli": 454,
+                  "bos": 50
+                },
+                "MEK_TASARIM": {
+                  "kapasite": 504,
+                  "planli": 420,
+                  "bos": 84
+                },
+                "OTO_TASARIM": {
+                  "kapasite": 336,
+                  "planli": 270,
+                  "bos": 66
+                },
+                "IMALAT": {
+                  "kapasite": 840,
+                  "planli": 810,
+                  "bos": 30
+                },
+                "MONTAJ": {
+                  "kapasite": 672,
+                  "planli": 510,
+                  "bos": 162
+                },
+                "SAHA": {
+                  "kapasite": 168,
+                  "planli": 140,
+                  "bos": 28
+                },
+                "MUHASEBE": {
+                  "kapasite": 336,
+                  "planli": 300,
+                  "bos": 36
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "SAAT_NEREYE_GITTI",
+            "hedef": null,
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "YONETIM": {
+                  "TEKLIF_ARGE": 60,
+                  "PROJE_DISI": 80,
+                  "KAYDEDILMEYEN": 28
+                },
+                "PLANLAMA": {
+                  "2509084": 100,
+                  "2509102": 60,
+                  "TEKLIF_ARGE": 120,
+                  "PROJE_DISI": 150,
+                  "IZIN": 24,
+                  "KAYDEDILMEYEN": 50
+                },
+                "MEK_TASARIM": {
+                  "2509084": 40,
+                  "2509102": 80,
+                  "TEKLIF_ARGE": 200,
+                  "PROJE_DISI": 60,
+                  "IZIN": 40,
+                  "KAYDEDILMEYEN": 84
+                },
+                "OTO_TASARIM": {
+                  "2509084": 20,
+                  "2509102": 90,
+                  "TEKLIF_ARGE": 120,
+                  "PROJE_DISI": 40,
+                  "KAYDEDILMEYEN": 66
+                },
+                "IMALAT": {
+                  "2509084": 480,
+                  "2509102": 290,
+                  "PROJE_DISI": 40,
+                  "KAYDEDILMEYEN": 30
+                },
+                "MONTAJ": {
+                  "2509084": 150,
+                  "2509000": 300,
+                  "IZIN": 60,
+                  "KAYDEDILMEYEN": 162
+                },
+                "SAHA": {
+                  "2509000": 140,
+                  "KAYDEDILMEYEN": 28
+                },
+                "MUHASEBE": {
+                  "PROJE_DISI": 300,
+                  "KAYDEDILMEYEN": 36
+                }
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PERSONEL_DAGILIMI",
+            "hedef": null,
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": [
+                {
+                  "kalem": "2509084",
+                  "ad": "Rulman Çakma Presi",
+                  "saat": 790,
+                  "yuzde": 22.4
+                },
+                {
+                  "kalem": "PROJE_DISI",
+                  "ad": "Proje dışı işler",
+                  "saat": 670,
+                  "yuzde": 19.0
+                },
+                {
+                  "kalem": "2509102",
+                  "ad": "Servo Pres Revizyonu",
+                  "saat": 520,
+                  "yuzde": 14.7
+                },
+                {
+                  "kalem": "TEKLIF_ARGE",
+                  "ad": "Teklif ve Ar-Ge",
+                  "saat": 500,
+                  "yuzde": 14.2
+                },
+                {
+                  "kalem": "KAYDEDILMEYEN",
+                  "ad": "Kaydedilmeyen",
+                  "saat": 484,
+                  "yuzde": 13.7
+                },
+                {
+                  "kalem": "2509000",
+                  "ad": "Servis ve Yedek Parça",
+                  "saat": 440,
+                  "yuzde": 12.5
+                },
+                {
+                  "kalem": "IZIN",
+                  "ad": "İzin",
+                  "saat": 124,
+                  "yuzde": 3.5
+                }
+              ],
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PERFORMANS",
+            "hedef": "K017",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "teslim": 14,
+                "zamaninda": 13,
+                "zaman_orani": 1.04,
+                "kalite_ret": 0.0,
+                "katki_saat": 6,
+                "cozum_saat": 1.5,
+                "sebep_olunan_gecikme": 0,
+                "bekletme": 0,
+                "cozum_saatleri": [
+                  1.5
+                ],
+                "kesinlesmedi": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PERFORMANS",
+            "hedef": "K023",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "teslim": 12,
+                "zamaninda": 11,
+                "zaman_orani": 0.97,
+                "kalite_ret": 4.0,
+                "katki_saat": 0,
+                "cozum_saat": 2.0,
+                "sebep_olunan_gecikme": 3,
+                "bekletme": 0,
+                "cozum_saatleri": [
+                  2.0
+                ],
+                "kesinlesmedi": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PERFORMANS",
+            "hedef": "K024",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "teslim": 10,
+                "zamaninda": 10,
+                "zaman_orani": 0.92,
+                "kalite_ret": 0.0,
+                "katki_saat": 4,
+                "cozum_saat": 1.0,
+                "sebep_olunan_gecikme": 0,
+                "bekletme": 0,
+                "cozum_saatleri": [
+                  1.0
+                ],
+                "kesinlesmedi": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PERFORMANS",
+            "hedef": "K025",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "teslim": 9,
+                "zamaninda": 7,
+                "zaman_orani": 1.12,
+                "kalite_ret": 8.0,
+                "katki_saat": 0,
+                "cozum_saat": 3.0,
+                "sebep_olunan_gecikme": 6,
+                "bekletme": 2,
+                "cozum_saatleri": [
+                  3.0
+                ],
+                "kesinlesmedi": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PERFORMANS",
+            "hedef": "K031",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "teslim": 7,
+                "zamaninda": 6,
+                "zaman_orani": 1.06,
+                "kalite_ret": 0.0,
+                "katki_saat": 8,
+                "cozum_saat": 2.5,
+                "sebep_olunan_gecikme": 0,
+                "bekletme": 0,
+                "cozum_saatleri": [
+                  2.5
+                ],
+                "kesinlesmedi": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PERFORMANS",
+            "hedef": "K032",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "teslim": 6,
+                "zamaninda": 6,
+                "zaman_orani": 0.95,
+                "kalite_ret": 0.0,
+                "katki_saat": 0,
+                "cozum_saat": 1.5,
+                "sebep_olunan_gecikme": 0,
+                "bekletme": 0,
+                "cozum_saatleri": [
+                  1.5
+                ],
+                "kesinlesmedi": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PERFORMANS",
+            "hedef": "K041",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "teslim": 11,
+                "zamaninda": 10,
+                "zaman_orani": 0.98,
+                "kalite_ret": 0.0,
+                "katki_saat": 12,
+                "cozum_saat": 4.0,
+                "sebep_olunan_gecikme": 0,
+                "bekletme": 0,
+                "cozum_saatleri": [
+                  4.0
+                ],
+                "kesinlesmedi": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PERFORMANS",
+            "hedef": "K044",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "teslim": 8,
+                "zamaninda": 7,
+                "zaman_orani": 1.1,
+                "kalite_ret": 0.0,
+                "katki_saat": 3,
+                "cozum_saat": 6.0,
+                "sebep_olunan_gecikme": 4,
+                "bekletme": 1,
+                "cozum_saatleri": [
+                  6.0
+                ],
+                "kesinlesmedi": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PERFORMANS",
+            "hedef": "K006",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "teslim": 16,
+                "zamaninda": 15,
+                "zaman_orani": 0.94,
+                "kalite_ret": 0.0,
+                "katki_saat": 10,
+                "cozum_saat": 3.0,
+                "sebep_olunan_gecikme": 0,
+                "bekletme": 0,
+                "cozum_saatleri": [
+                  3.0
+                ],
+                "kesinlesmedi": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          },
+          {
+            "veri": "PERFORMANS",
+            "hedef": "K045",
+            "g": {
+              "bas": "2026-11-01",
+              "bit": "2026-11-30"
+            },
+            "cevap": {
+              "deger": {
+                "teslim": 21,
+                "zamaninda": 19,
+                "zaman_orani": 1.01,
+                "kalite_ret": 0.0,
+                "katki_saat": 5,
+                "cozum_saat": 2.0,
+                "sebep_olunan_gecikme": 2,
+                "bekletme": 0,
+                "cozum_saatleri": [
+                  2.0
+                ],
+                "kesinlesmedi": false
+              },
+              "hesap": "GUNCEL",
+              "hesap_ani": "2026-12-15T10:00:00+03:00"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "gosterim": {
+    "an": "2026-12-15T10:00:00+03:00",
+    "aylar": {
+      "2509084": [
+        "2026-09",
+        "2026-10",
+        "2026-11",
+        "2026-12"
+      ],
+      "2509091": [
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ],
+      "2509102": [
+        "2026-10",
+        "2026-11",
+        "2026-12"
+      ],
+      "2510112": [
+        "2026-12"
+      ],
+      "2509000": [
+        "2026-11",
+        "2026-12"
+      ]
+    },
+    "proje_donemleri": {
+      "2509084": {
+        "bas": "2026-09-01",
+        "bit": "2026-12-31"
+      },
+      "2509091": {
+        "bas": "2026-06-01",
+        "bit": "2026-10-31"
+      },
+      "2509102": {
+        "bas": "2026-10-01",
+        "bit": "2026-12-31"
+      },
+      "2510112": {
+        "bas": "2026-12-01",
+        "bit": "2026-12-31"
+      },
+      "2509000": {
+        "bas": "2026-11-01",
+        "bit": "2026-12-31"
+      }
+    },
+    "personel_donemi": {
+      "bas": "2026-11-01",
+      "bit": "2026-11-30"
+    },
+    "performans_kisileri": [
+      "K017",
+      "K023",
+      "K024",
+      "K025",
+      "K031",
+      "K032",
+      "K041",
+      "K044",
+      "K006",
+      "K045"
+    ],
+    "kalem_adlari": {
+      "2509084": "Rulman Çakma Presi",
+      "PROJE_DISI": "Proje dışı işler",
+      "2509102": "Servo Pres Revizyonu",
+      "TEKLIF_ARGE": "Teklif ve Ar-Ge",
+      "KAYDEDILMEYEN": "Kaydedilmeyen",
+      "2509000": "Servis ve Yedek Parça",
+      "IZIN": "İzin"
+    }
+  }
+}

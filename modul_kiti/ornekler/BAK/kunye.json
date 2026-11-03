@@ -1,0 +1,92 @@
+{
+ "kunye_surumu": 1,
+ "kod": "BAK",
+ "ad": "Bakım ve arıza",
+ "surum": "0.1.0",
+ "cekirdek": ">=10.2",
+ "sahip": "B ekibi",
+ "aciklama": "Tezgâhların planlı bakımı, arıza kaydı, yedek parça (modülün tablosunda). Duruşun kendisi çekirdekte (TEZGAH.*).",
+ "servis_kimligi": "SRV-BAK",
+ "arka_yuz": true,
+ "olay_yolu": "ISTEMCI",
+ "kapilar": {
+  "okumalar": [
+   "TEZGAHLAR",
+   "TEZGAH_GOSTERGESI",
+   "TEZGAH_UYGUNLUK",
+   "KISILER",
+   "BIRIMLER",
+   "KODLAR"
+  ],
+  "servis_okumalari": [
+   "TEZGAHLAR",
+   "TEZGAH_GOSTERGESI"
+  ],
+  "olaylar": [
+   "TEZGAH.BAKIM_PLANLADIM",
+   "TEZGAH.BAKIM_IPTAL_ETTIM",
+   "TEZGAH.DURUS_BILDIRDIM",
+   "TEZGAH.DURUS_BITTI",
+   "GOREV.ATADIM",
+   "NOT.YAZDIM"
+  ],
+  "abonelikler": [
+   "firma"
+  ]
+ },
+ "roller": [
+  {
+   "kod": "BAKIMCI",
+   "ad": "Bakım teknisyeni"
+  }
+ ],
+ "kod_listeleri": [
+  {
+   "liste": "YETKINLIK",
+   "kod": "HIDROLIK_BAKIM",
+   "ad": "Hidrolik bakım"
+  },
+  {
+   "liste": "YETKINLIK",
+   "kod": "ELEKTRIK_BAKIM",
+   "ad": "Elektrik bakımı"
+  }
+ ],
+ "yetki_onerileri": [
+  {
+   "eylem_kodu": "TEZGAH.BAKIM_PLANLADIM",
+   "kimler": [
+    "BAKIMCI",
+    "YONETICI"
+   ],
+   "kapsam": "FIRMA"
+  }
+ ],
+ "veritabani": {
+  "sema": "mod_bak",
+  "gocler": "veritabani/"
+ },
+ "on_yuz": {
+  "tur": "AYRI_UYGULAMA",
+  "derin_baglantilar": [
+   {
+    "ad": "Bakım geçmişi",
+    "baglam": "TEZGAH",
+    "yol": "/tezgah/{kimlik}"
+   }
+  ]
+ },
+ "kisisel_veri": [],
+ "para": false,
+ "sinirlar": {
+  "okuma_dakika": 300,
+  "servis_okuma_dakika": 60
+ },
+ "istekler": [
+  {
+   "kod": "İ-3",
+   "baslik": "Bildirim kaydı TEZGAH olabilsin (bakım zamanı geldi)",
+   "durum": "ACIK"
+  }
+ ]
+}

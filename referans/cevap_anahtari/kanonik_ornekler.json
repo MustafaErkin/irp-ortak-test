@@ -1,0 +1,50 @@
+[
+  {
+    "girdi": [],
+    "is_alanlari": [],
+    "kanonik_json": "[]",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "girdi": [
+      "A",
+      "B"
+    ],
+    "is_alanlari": [
+      "A",
+      "B"
+    ],
+    "kanonik_json": "[\"A\",\"B\"]",
+    "sha256": "b64e3448a83a5b86466465080361c1a7e1157a27ddccd4b68069cb18caffb74a"
+  },
+  {
+    "girdi": {
+      "ad": "İmalat",
+      "kural_versiyonu": 4,
+      "son_olay": "A",
+      "surum": "x"
+    },
+    "is_alanlari": {
+      "ad": "İmalat"
+    },
+    "kanonik_json": "{\"ad\":\"İmalat\"}",
+    "sha256": "6dc7ad3fc13f1dc00d89338937aa6d1cdcc671a393586a2fd0a338007b2c1423"
+  },
+  {
+    "girdi": {
+      "ad": "Görev",
+      "kabul_ani": "2026-10-26T09:30:00+03:00",
+      "onay_gerekli": false,
+      "son_hesap_ani": "y",
+      "zaman_degeri": 20
+    },
+    "is_alanlari": {
+      "ad": "Görev",
+      "kabul_ani": "2026-10-26T09:30:00+03:00",
+      "onay_gerekli": false,
+      "zaman_degeri": 20
+    },
+    "kanonik_json": "{\"ad\":\"Görev\",\"kabul_ani\":\"2026-10-26T09:30:00+03:00\",\"onay_gerekli\":false,\"zaman_degeri\":20}",
+    "sha256": "5bc540f5cf39f606293ed5454b134ba932dc6d2165f79bbcc16fd873f9a60c2d"
+  }
+]

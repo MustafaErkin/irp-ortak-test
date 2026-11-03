@@ -1,0 +1,176 @@
+{
+ "kunye_surumu": 1,
+ "kod": "M3",
+ "ad": "İmalat hazırlık, satın alma ve tedarik zinciri planlama",
+ "surum": "0.1.0",
+ "cekirdek": ">=10.2",
+ "sahip": "A ekibi",
+ "aciklama": "Parçanın yolunu seçer (satın alma, iç imalat, fason), siparişi ve fasonu izler, iç imalat planını hesaplar.",
+ "servis_kimligi": "SRV-M3",
+ "arka_yuz": true,
+ "olay_yolu": "ARKA_YUZ",
+ "cihaz_harfi": "P",
+ "kapilar": {
+  "okumalar": [
+   "PROJE",
+   "PROJELER",
+   "ETAPLAR",
+   "NESNE",
+   "NESNELER",
+   "TOP_KIMDE",
+   "GECERLI_SURUM",
+   "SURUMLER",
+   "KISILER",
+   "BIRIMLER",
+   "TEZGAHLAR",
+   "TAKVIM",
+   "UYGUNLUK",
+   "KAPASITE",
+   "KAYNAK_YUKU",
+   "TEZGAH_UYGUNLUK",
+   "TEZGAH_GOSTERGESI",
+   "TEZGAH_UCRETI",
+   "GANTT",
+   "PLAN_CAKISMALARI",
+   "PLAN",
+   "LISTE"
+  ],
+  "servis_okumalari": [
+   "PROJE",
+   "NESNELER",
+   "TOP_KIMDE"
+  ],
+  "olaylar": [
+   "NESNE.ACTIM",
+   "NESNE.ASAMA_GECIRDIM",
+   "NESNE.GUNCELLEDIM",
+   "NESNE.SURUM_EKLEDIM",
+   "NESNE.SURUM_ONAYLADIM",
+   "IS.TANIMLADIM",
+   "PLAN.TARIHLEDIM",
+   "GOREV.ATADIM",
+   "NOT.YAZDIM"
+  ],
+  "plan": true,
+  "belge_surumu": true,
+  "bildirimler": [
+   {
+    "kural": "SIPARIS_GECIKTI",
+    "ad": "Siparişin termini geçti",
+    "onem": "UYARI",
+    "kayit_turleri": [
+     "NESNE"
+    ],
+    "alici_turleri": [
+     "NESNE_SORUMLUSU",
+     "BIRIM_YONETICILERI"
+    ]
+   },
+   {
+    "kural": "FASON_GECIKTI",
+    "ad": "Fasondaki operasyon gecikti",
+    "onem": "UYARI",
+    "kayit_turleri": [
+     "NESNE"
+    ],
+    "alici_turleri": [
+     "NESNE_SORUMLUSU"
+    ]
+   },
+   {
+    "kural": "TESLIM_YAKLASIYOR",
+    "ad": "Teslim günü yaklaşıyor",
+    "onem": "BILGI",
+    "kayit_turleri": [
+     "NESNE",
+     "PROJE"
+    ],
+    "alici_turleri": [
+     "PROJEDE_YETKILILER",
+     "NESNE_SORUMLUSU"
+    ]
+   }
+  ],
+  "abonelikler": [
+   "proje:*"
+  ]
+ },
+ "tur_uzantilari": [
+  {
+   "tur": "PARCA",
+   "tablo": "mod_m3.satin_alma"
+  },
+  {
+   "tur": "PARCA",
+   "tablo": "mod_m3.fason"
+  }
+ ],
+ "veritabani": {
+  "sema": "mod_m3",
+  "gocler": "veritabani/"
+ },
+ "on_yuz": {
+  "tur": "AYRI_UYGULAMA",
+  "derin_baglantilar": [
+   {
+    "ad": "Satın alma ayrıntısı",
+    "baglam": "NESNE",
+    "nesne_turleri": [
+     "PARCA"
+    ],
+    "yol": "/parca/{kimlik}"
+   },
+   {
+    "ad": "Tedarik planı",
+    "baglam": "PROJE",
+    "yol": "/proje/{kimlik}/tedarik"
+   }
+  ]
+ },
+ "saglananlar": [
+  {
+   "ad": "M3.SIPARIS_DURUMU",
+   "parametreler": [
+    "nesne"
+   ],
+   "gorme": "KAYDI_GOREN",
+   "kisisel": false,
+   "para": false,
+   "aciklama": "Parçanın sipariş edilen, teslim alınan ve bekleyen miktarı (N:P1398); fiyat yok"
+  }
+ ],
+ "kisisel_veri": [
+  {
+   "alan": "operatörün uygunluğu ve kapasitesi (önbellek)",
+   "neden": "iç imalat planı (N:P2975)"
+  }
+ ],
+ "para": true,
+ "sinirlar": {
+  "bildirim_dakika": 60,
+  "okuma_dakika": 600,
+  "servis_okuma_dakika": 120
+ },
+ "istekler": [
+  {
+   "kod": "M3-08",
+   "baslik": "Süzülen alıcının nedeni",
+   "durum": "KARSILANDI"
+  },
+  {
+   "kod": "M3-12",
+   "baslik": "Tanımsız okuma BICIM döner",
+   "durum": "KARSILANDI"
+  },
+  {
+   "kod": "M3-16",
+   "baslik": "Modülün cihaz harfi",
+   "durum": "KARSILANDI"
+  },
+  {
+   "kod": "M3-17",
+   "baslik": "Yetkinlik çekirdekte (KISI.YETKINLIK_TANIMLADIM)",
+   "durum": "KARSILANDI"
+  }
+ ]
+}

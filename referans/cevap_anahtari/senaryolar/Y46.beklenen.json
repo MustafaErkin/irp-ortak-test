@@ -1,0 +1,935 @@
+{
+  "cihaz_denemeleri": [
+    {
+      "cevap": {
+        "deger": "K017-2608220001-T"
+      },
+      "harf": "T",
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {
+          "260822": 1
+        }
+      }
+    },
+    {
+      "cevap": {
+        "deger": "K017-2608220002-T"
+      },
+      "harf": "T",
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {
+          "260822": 2
+        }
+      }
+    },
+    {
+      "cevap": {
+        "deger": "K017-2608220003-T"
+      },
+      "harf": "T",
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {
+          "260822": 3
+        }
+      }
+    },
+    {
+      "cevap": {
+        "deger": null
+      },
+      "harf": "T",
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {
+          "260822": 3,
+          "261022": 0
+        }
+      }
+    },
+    {
+      "cevap": {
+        "deger": "K017-2608220004-T"
+      },
+      "harf": "T",
+      "veri": {
+        "fark_saniye": -5270400,
+        "gunluk": {},
+        "sayaclar": {
+          "260822": 4,
+          "261022": 0
+        }
+      }
+    }
+  ],
+  "depolar": [
+    {
+      "ara_haller": [],
+      "cevaplar": [],
+      "son_hal": {
+        "araliklar": [],
+        "ay_kapanislari": {},
+        "bakimlar": {},
+        "bekletmeler": {},
+        "bildirim_gorulmeleri": {},
+        "bildirimler": {},
+        "birimler": {},
+        "cihaz_esitlemeleri": {},
+        "dosyalar": {},
+        "duruslar": {},
+        "ek_mesai_planlari": {},
+        "etaplar": {},
+        "gecikme_degerlendirmeleri": {},
+        "gorevler": {},
+        "gun_onay_ayarlari": {},
+        "gun_sonu_raporlari": {},
+        "gun_tanimlari": {},
+        "isleme_hatalari": [],
+        "isler": {},
+        "itirazlar": {},
+        "izinler": {},
+        "kisi_durumu": {},
+        "kisi_gecmisi": [],
+        "kisiler": {},
+        "kod_listesi": {
+          "ARIZA:ARIZA.DIGER": {
+            "ad": "ARIZA.DIGER",
+            "aktif": true,
+            "kod": "ARIZA.DIGER",
+            "liste": "ARIZA",
+            "ust": null
+          },
+          "ARIZA:ARIZA.MAKINE": {
+            "ad": "ARIZA.MAKINE",
+            "aktif": true,
+            "kod": "ARIZA.MAKINE",
+            "liste": "ARIZA",
+            "ust": null
+          },
+          "DURUS:ARIZA": {
+            "ad": "ARIZA",
+            "aktif": true,
+            "kod": "ARIZA",
+            "liste": "DURUS",
+            "ust": null
+          },
+          "DURUS:BAKIM": {
+            "ad": "BAKIM",
+            "aktif": true,
+            "kod": "BAKIM",
+            "liste": "DURUS",
+            "ust": null
+          },
+          "DURUS:ELEKTRIK": {
+            "ad": "ELEKTRIK",
+            "aktif": true,
+            "kod": "ELEKTRIK",
+            "liste": "DURUS",
+            "ust": null
+          },
+          "IZIN:MAZERET": {
+            "ad": "MAZERET",
+            "aktif": true,
+            "kod": "MAZERET",
+            "liste": "IZIN",
+            "ust": null
+          },
+          "IZIN:SAATLIK": {
+            "ad": "SAATLIK",
+            "aktif": true,
+            "kod": "SAATLIK",
+            "liste": "IZIN",
+            "ust": null
+          },
+          "IZIN:SAGLIK": {
+            "ad": "SAGLIK",
+            "aktif": true,
+            "kod": "SAGLIK",
+            "liste": "IZIN",
+            "ust": null
+          },
+          "IZIN:SERBEST_ZAMAN": {
+            "ad": "SERBEST_ZAMAN",
+            "aktif": true,
+            "kod": "SERBEST_ZAMAN",
+            "liste": "IZIN",
+            "ust": null
+          },
+          "IZIN:UCRETLI": {
+            "ad": "UCRETLI",
+            "aktif": true,
+            "kod": "UCRETLI",
+            "liste": "IZIN",
+            "ust": null
+          },
+          "IZIN:UCRETSIZ": {
+            "ad": "UCRETSIZ",
+            "aktif": true,
+            "kod": "UCRETSIZ",
+            "liste": "IZIN",
+            "ust": null
+          },
+          "IZIN:YILLIK": {
+            "ad": "YILLIK",
+            "aktif": true,
+            "kod": "YILLIK",
+            "liste": "IZIN",
+            "ust": null
+          },
+          "MOLA:KISISEL": {
+            "ad": "KISISEL",
+            "aktif": true,
+            "kod": "KISISEL",
+            "liste": "MOLA",
+            "ust": null
+          },
+          "PD:PD.BAKIM_ONARIM": {
+            "ad": "PD.BAKIM_ONARIM",
+            "aktif": true,
+            "kod": "PD.BAKIM_ONARIM",
+            "liste": "PD",
+            "ust": null
+          },
+          "PD:PD.DIGER": {
+            "ad": "PD.DIGER",
+            "aktif": true,
+            "kod": "PD.DIGER",
+            "liste": "PD",
+            "ust": null
+          },
+          "PD:PD.EGITIM_GELISIM": {
+            "ad": "PD.EGITIM_GELISIM",
+            "aktif": true,
+            "kod": "PD.EGITIM_GELISIM",
+            "liste": "PD",
+            "ust": null
+          },
+          "PD:PD.IDARI_MALI": {
+            "ad": "PD.IDARI_MALI",
+            "aktif": true,
+            "kod": "PD.IDARI_MALI",
+            "liste": "PD",
+            "ust": null
+          },
+          "PD:PD.SOSYAL": {
+            "ad": "PD.SOSYAL",
+            "aktif": true,
+            "kod": "PD.SOSYAL",
+            "liste": "PD",
+            "ust": null
+          },
+          "PD:PD.TERTIP_DUZEN": {
+            "ad": "PD.TERTIP_DUZEN",
+            "aktif": true,
+            "kod": "PD.TERTIP_DUZEN",
+            "liste": "PD",
+            "ust": null
+          },
+          "ROL:BEYAZ_YAKA": {
+            "ad": "BEYAZ_YAKA",
+            "aktif": true,
+            "kod": "BEYAZ_YAKA",
+            "liste": "ROL",
+            "ust": null
+          },
+          "ROL:CALISAN": {
+            "ad": "CALISAN",
+            "aktif": true,
+            "kod": "CALISAN",
+            "liste": "ROL",
+            "ust": null
+          },
+          "ROL:EKIP_LIDERI": {
+            "ad": "EKIP_LIDERI",
+            "aktif": true,
+            "kod": "EKIP_LIDERI",
+            "liste": "ROL",
+            "ust": null
+          },
+          "ROL:IK": {
+            "ad": "IK",
+            "aktif": true,
+            "kod": "IK",
+            "liste": "ROL",
+            "ust": null
+          },
+          "ROL:YETKILI": {
+            "ad": "YETKILI",
+            "aktif": true,
+            "kod": "YETKILI",
+            "liste": "ROL",
+            "ust": null
+          },
+          "ROL:YONETICI": {
+            "ad": "YONETICI",
+            "aktif": true,
+            "kod": "YONETICI",
+            "liste": "ROL",
+            "ust": null
+          }
+        },
+        "listeler": {},
+        "mesai_sonrasi_isaretleri": {},
+        "modul_bildirimleri": {},
+        "moduller": {},
+        "nesne_surumleri": {},
+        "nesne_turleri": {},
+        "nesneler": {},
+        "notlar": {},
+        "olay_kimlikleri": [],
+        "plan_surumleri": {},
+        "proje_erisimleri": {},
+        "projeler": {},
+        "sonuclar": {},
+        "sorumluluklar": {},
+        "supheliler": {},
+        "tezgah_duruslari": {},
+        "tezgah_takvimleri": {},
+        "tezgahlar": {},
+        "yetki_kurallari": [
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "AYAR.DEGISTIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "AYAR.MAAS_PAYDASI",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "AYAR.ONAY_ORANI",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "AYAR.PARCA_KODU_DESENI",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "AYAR.SAAT_KAYDIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "AYAR.YONLENDIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_BASI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "BIRIM.TANIMLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "DURUS.BASLADI",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "DURUS.BITTI",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "ETAP.DEGISTIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YONETICI",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "ETAP.TANIMLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YONETICI",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "GOREV.ATADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YONETICI",
+              "EKIP_LIDERI",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "GOREV.DEGISTIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "GOREV.IPTAL_ETTIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "GUN.KALDIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "GUN.TANIMLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "GUN_ONAYI.AYARLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.ARIZA_BILDIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.ATADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.BAGLANTI_DUZELTTIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "YONETICI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.BASLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.DEGISTIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.DEVAM_ETTIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.DEVAM_ONAYLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.DEVRETTIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.IPTAL_ETTIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.MOLA_VERDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.ONAYLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.PLANSIZ_TANIMLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.REDDETTIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.SIRALADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.SURE_EKLEDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.TAMAMLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IS.TANIMLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_BASI",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IZIN.IK_ONAYLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "IK",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "IZIN.REDDETTIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "IK",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "KAYIT.GECERSIZ_SAYDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "KISI.AYRILDI",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "KISI.DEGISTIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "KISI.EKLEDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "KOD.TANIMLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "MAAS.GUNCELLEDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "MESAI.CIKTIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "MESAI.GIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "NESNE_TURU.TANIMLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "PLAN.ONAYLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YONETICI",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "PROJE.ACTIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "PROJE.DEGISTIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "PROJE.ERISIM_KALDIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YONETICI",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "PROJE.ERISIM_VERDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YONETICI",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "PROJE.HEPSINI_GORUR",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YONETICI",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "PROJE.KAPATTIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "PROJE.KOD_DEGISTIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "TAKVIM.TANIMLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "TATIL.EKLEDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "TATIL.KALDIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "TEZGAH.BAKIM_IPTAL_ETTIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "TEZGAH.BAKIM_PLANLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "TEZGAH.DURUS_BILDIRDIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_UYESI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "TEZGAH.DURUS_BITTI",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_UYESI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "TEZGAH.TAKVIM_TANIMLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "BIRIM",
+            "kimler": [
+              "BIRIM_YONETICISI",
+              "YETKILI"
+            ]
+          },
+          {
+            "doguran_olay": null,
+            "eylem_kodu": "TEZGAH.TANIMLADIM",
+            "gecerli_baslangic": null,
+            "gecerli_bitis": null,
+            "kapsam": "FIRMA",
+            "kimler": [
+              "YETKILI"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "saf_sorgular": []
+}

@@ -1,0 +1,2668 @@
+{
+  "bicim_surumu": 1,
+  "uretildi": "2026-10-31T05:49:06",
+  "urun_commit": "7d9a9462b6533edfa3009e4c8bd1a13ccf490b69",
+  "kaynak_sirasi": [
+    "Mustafa ve müşteri kararları / şartname: gereken davranış",
+    "Ortak iskeletin üç sunumu: işleyiş niyeti; sonraki kararlarla birlikte",
+    "Mevcut sözleşme: sınırlar ve sahiplik",
+    "Ürün SQL ve istemci kodu: uygulanmış yol",
+    "Gerçek SQL / canlı test kanıtı: doğrulanmış kapsam",
+    "Eski katalog ve modül istekleri: karşılaştırılacak beyan"
+  ],
+  "uyari": "Bu envanter ürünün tamamının veya gelen modüllerin kabul belgesi değildir. SQL kapısı ve işlev kabulü ayrıdır.",
+  "sql_kaniti_kaynakla_eslesiyor": true,
+  "modul_pilotu_sql_kaynagiyla_eslesiyor": true,
+  "modul_pilotu_kaniti": "codex/sonuclar/modul_ortak_baglanti.json",
+  "sql_kaniti_ozeti": {
+    "web_okuma_turu": 54,
+    "basarili_olay_turu": 8,
+    "odak_kontrolu": 12,
+    "gantt": {
+      "ad": "GANTT",
+      "beklenen": "OK",
+      "sonuc": "OK",
+      "eslesti": true,
+      "bicim": "list",
+      "eleman": 17,
+      "planli_satir": 6,
+      "gerceklesen_satir": 14,
+      "not": "Okuma ve veri alanları doğrulandı; rol bağımsız etap toplamı ve M11B kabulü bu kanıtın dışında."
+    },
+    "plan": {
+      "ad": "PLAN",
+      "beklenen": "OK",
+      "sonuc": "OK",
+      "eslesti": true,
+      "bicim": "dict",
+      "eleman": 6,
+      "alanlar": [
+        "B0",
+        "gerceklesen",
+        "guncel",
+        "onaysiz_degisti",
+        "sapma",
+        "son_onayli"
+      ],
+      "baslangic_plani_dolu": false
+    }
+  },
+  "kaynak_ozetleri": {
+    "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json": "57314cd1009e9a0201f4ccac53b591717f77697e662677d4cdc71adc45aedd38",
+    "codex/sonuclar/istemci6_SONUC.md": "95e4859b6d043e4892a90e125284f5f4c7888065a5dbab5d8d7b24040cf3b143",
+    "codex/sonuclar/modul_ortak_baglanti.json": "0f0c282eb2eec5b65820efe3adec3151375902c7136be8fe053c3159c6465663",
+    "codex/sonuclar/moduller_mvp.json": "8a9b6d28990db0b3188b7ecacdc4cd55b922f3913794ebc8e724e4265963f8e8",
+    "codex/sonuclar/moduller_on_inceleme.md": "4be08870c0d5676ac6b320a2d3403953d6b2c07225c7f42892236ff29d64e9e5",
+    "codex/sonuclar/senaryo1_SONUC.md": "974aa5fa9260592d933a5087cd9491c41951b63f14ad2ad0e3fcd850abdf5410",
+    "codex/sonuclar/tur21_SONUC.md": "bdedf52d0e92170f686666b417df632d7730a59867a9212b0f8edd39e294a746",
+    "codex/sonuclar/tur22_birlesim_SONUC.md": "20e068886f9fc25766e0641da534d6644be8a09e4001a133ac27f5b4d6066e78",
+    "codex/sonuclar/tur23_SONUC.md": "94d8ae605ff5b4cee278a490d7ad3f432ffe2434908782aa5f61f89fa095351e",
+    "codex/sonuclar/web1_SONUC.md": "4c016a609772a7b8fdc2ef56d1732159eca6575b47b94b0f9082bfab713e20e1",
+    "codex/sonuclar/web_son_duzeltmeler_SONUC.md": "6e4a68310cae18d4649874cf2c1d361f6153776cbabac26bdb69fb561cde408f",
+    "disaridan_moduller/Modules/m1.0/istekler/M10-01_projesiz_kayda_bildirim.md": "3532f49024064c98b9430907afb40f16481a406dd77f80ea69fec3df8d23b336",
+    "disaridan_moduller/Modules/m1.0/istekler/M10-05_dosya_depolama.md": "a14ac3d750a7b1208332cf80450b04fc5aa7a31743b25fe2a7894a1579a48f01",
+    "disaridan_moduller/Modules/m1.1a/m11a/saglayicilar.py": "bdfb375f5cfb2e2e40de8d44624c6147b3301ed57387f33b9e19dac66ca631d7",
+    "disaridan_moduller/Modules/m1.1b/istekler/M11B-01_gantt_gerceklesen_okuyana_gore.md": "685e301e19c14c5ecf52fd8ad6672800aca94435ac5795fe41392814b7a8ab56",
+    "disaridan_moduller/Modules/m1.1b/istekler/M11B-06_not_alicilari.md": "b034a1b653dc5791eb8b61254e0c57004696a51b48e99501b6efde4e0792e9f5",
+    "istemci/web/erp.js": "fa22d774e8c7f30ae18a7e04fedb33cf2f051ce41d05b2b490996e2ccd0c724f",
+    "istemci/web/test/tarayici.py": "a486895b0b1da9531a4b4bc0d9eebadb7c8ff2c8973e8b4dabefc44751020342",
+    "istemci/web/test/yerel_api.py": "7c79bcebc9f69f8eae6df22f4042dad50e188acfb937c41a70d10c6d806fabde",
+    "modul_kiti/cekirdek_katalogu.json": "2fa88058ea64d3f390aea5304cd8c758e121317ee366caf154d5ba5d53bbd3cd",
+    "modul_kiti/kunye_denetle.py": "20220f4bbffdf1149625186fb9e32a83cd33ba8600e9efb7284007197ceb6bc7",
+    "modul_kiti/paket/baglanti/surucu_http.py": "e084b8ee78b434b65ad1aab4083eb26f2b09c574826802dcbd4f6e5cb798f88d",
+    "modul_kiti/paket/sozlesme/01_baglanti.md": "c3e98a879886a6653e93de051d082a64dcfb831ed7d6c919d011cfbcfe3b4a9f",
+    "modul_kiti/paket/sozlesme/02_kurallar.md": "cb3baa3bfc9a4f807379c772e1a9c53df85e85987eab3121faaa4717ae1e95c5",
+    "modul_kiti/paket/sozlesme/06_teslim.md": "cee7713fdcd8f1a016b9a922ae112706d19133929210cc14e02d46e0cd23b6ad",
+    "modul_kiti/paket/sozlesme/07_on_yuz.md": "e68d66f0b25424b6955b2547533072d7a88a1d9b7919369101c458fa6dc57470",
+    "modul_kiti/yetenek_denetle.py": "79fac21bbc626e2721b836150bb736db487fb0d147a3c9df1a99ed0993fecae0",
+    "modul_kiti/yetenek_tanimlari.json": "d10872c2119eb06f5873b3417faab622beb9e7f716006c0cf2b1d1b92a69187b",
+    "plan/mvp_sonrasi.md": "356722345f7118774e8be1f2641245053c1528418fc52b156dd2bca77215dbc4",
+    "referans/eylem_semalari.json": "18fe4b242860b53ca26695be26d9f2fa8650637159f634df05737f3c590bf739",
+    "tasarim/00_kararlar.md": "92d1ddc4b436e0bb64cc6ac779e8c373051fb97eb67ab45d5d96b5929ee37a21",
+    "tasarim/16_okumalar.md": "cb84b4df24c5ffba291d8af0bbaab6d09e0392846b11b0e737979b6b922faa2c",
+    "tasarim/18_modul_sozlesmesi.md": "8b0d9dc50bdf8bcaea71564313ab653573fc0909450a5f654987b6a232b31313",
+    "tasarim/27_ortak_modul_baglantisi.md": "68c74a23a8730badb991133a69ca9c1092cf94d5a904028094f3a736e46513cc",
+    "tasarim/28_moduller_gercek_mvp.md": "f54bc7bb04999d9ac3b92c9e13859654bdcd7f20477e4d75046ecf565d5fc12e",
+    "urun/veritabani/001_iskelet.sql": "04d57e617b81fe9df32b66e9f65635412968738f37d5114dbf3a840169fdcd98",
+    "urun/veritabani/010_saat_ve_hal.sql": "eed46cddb12c3cd2f6483026d1cec78a1d2c9638c9b0067df8c80bd104b78045",
+    "urun/veritabani/020_sabitler.sql": "b2d984bf1c9aa2467672794ade0f18d96d084a590a9ccc8d75824b0b1facdfad",
+    "urun/veritabani/025_son_hal_tablolari.sql": "5530d7b63ddc46f5f2058f15529adbc280519a5a5ea86e1662215728490fc48a",
+    "urun/veritabani/030_motor_yardimcilari.sql": "4700cdf6f08b2026332a7ac371b8abdd2a8bfd0b6f2ae897da8fd7b6f5ba10f4",
+    "urun/veritabani/040_kisi_gunu.sql": "620b8bc64ae5a02417106e84d4a0f4fda04af877939411ebee11f42b685cfb85",
+    "urun/veritabani/050_gorev.sql": "e049f6715516a5996dba67f85462c6dd2020d284d93a2824907d87780f8de7c9",
+    "urun/veritabani/055_takvim_ve_yayin_kurallari.sql": "f425a589ff0877875c9f8857187fd2ec9f583707f8249558d0b0e55078b82c57",
+    "urun/veritabani/056_is_yasami.sql": "6635b49821c1ee5c082fb508f998fb1d79b5b2539b3f2ff436fa216ac122044f",
+    "urun/veritabani/057_tarihli_takvim.sql": "0b31c72b8c7bd69e32d868924ba9be2eaf6c0cefdcebe7650b70fd9524ac402c",
+    "urun/veritabani/058_nesne_ve_proje.sql": "7f679e6014ea14907d62c43c6fc0294d11cd3c8eaf31fcc697732893ec5bbc35",
+    "urun/veritabani/059_plan_ve_nesne_surumu.sql": "ee0749e193f069ab9a2490a74a3a06b3a19a943b0f814bb51d1e04f31efe8074",
+    "urun/veritabani/060_kabul.sql": "ff481aae93ba3bb42f7fc648f59f2653259ec83dcd422d9da7318e370cec2f27",
+    "urun/veritabani/061_bicim_ekleri.sql": "5aec6491d1756745347f136449152c0ccf0f02aa99225e1242ca349c17e27f59",
+    "urun/veritabani/062_normal_yol_kapilari.sql": "20173feab95cfefa27bef376e3dfc79a7442d393bb1e0a5b436100cd48c8577e",
+    "urun/veritabani/063_takvim_kapilari.sql": "87380763df48dadccc038a095db3134dfd8baab0783ab0dffbdb03207ac2bc3a",
+    "urun/veritabani/064_gun_sonu.sql": "e1b663dd99845e3ee91f03d6facbf30a6e5ef7eb3eead5bcb4d24f71c14b0ba3",
+    "urun/veritabani/065_kapanis_hesaplari.sql": "5fd76a60c9bb23ca5ae93fd32b9d38098004e8d971c164e917fed47598c23af8",
+    "urun/veritabani/066_kapanis_izleri.sql": "a42dad2ac1abab53e3ebf2e144bb75e81e2bdff7224d6d106f385678da02cda8",
+    "urun/veritabani/067_plan_onayi.sql": "d0ed6b85801fe71ce3aa00c85af89bc12ec1b5b6795e0b8c6030dcdd6d88c677",
+    "urun/veritabani/068_sorumluluk.sql": "22bd9fee1d5e770307b09551cd1e834eec882d4242e05540be25df4bed835613",
+    "urun/veritabani/069_yetkinlik.sql": "fa6324475ec7bde198b959fa69a5d180f1a288aaf67a53ce0abca140ec815fbd",
+    "urun/veritabani/070_zamanli_motor.sql": "d97c8c6eb7004c60f960689d48f18160b47f2418e2d57bde3df9e55c10725740",
+    "urun/veritabani/071_durus_nedeni.sql": "457c14204d9650985ef4fc92613215f68d84175a97ec669fb6a1f340224bc7f6",
+    "urun/veritabani/072_degisiklik.sql": "55ed617ac721160ef543bba5f761a5be6718084d216be355acc705d68d4fb178",
+    "urun/veritabani/073_takvim_noktalari.sql": "8c256ae30773366e947d3adada693b6b631e7e402b6d3529038d717a4d664e6d",
+    "urun/veritabani/074_fotograf.sql": "de042056c47c0cb892532f86db688e3a8013cc4803b330fcef9282384d51af7a",
+    "urun/veritabani/080_gercek_kapilar.sql": "1080f6861b00462465207703c763b2b728ecedfb22a104a29be6c4675520a912",
+    "urun/veritabani/081_karar_sirasi.sql": "7ca1ed55d9ecf4b9ebf7c29bb046545b118c0a910b0e20767da198a13f48ce96",
+    "urun/veritabani/082_modul_bildirimi.sql": "16d21efafc29561ae442f469d689d80c35e7cabf794b853cd9bcb83e7f9681df",
+    "urun/veritabani/085_kapanis.sql": "4883d6dd48aff175d49f74dfe16f32d1ca4f8177ac1f2879c23bbc19d40c591f",
+    "urun/veritabani/086_isletim.sql": "406f986b2c205125c83d42b4a1d04f7cb9935ae4afc6997005bbe7529478678e",
+    "urun/veritabani/087_atomik_kurulum.sql": "34047003c32373e312b5868bdee4839a7b7bb9896b2b1d6a62b3784310b84ecb",
+    "urun/veritabani/090_test.sql": "5e95353a70faf801c9f75f9454e8ea20c5fb4dbc2291524747f662604f5cd5aa",
+    "urun/veritabani/095_saat_birak_test.sql": "e3c9656d09e441910f8a13c92a5cbf61b84c7a0247a08413fc6d63ee6a49bb3c",
+    "urun/veritabani/100_okuma_temeli.sql": "e42750a0b6758d4e4e4cb1dfce5e0c319d2b2ab3cd225ce8e27fe58a55bcefca",
+    "urun/veritabani/101_gecmis_okuma.sql": "79297cdcecee1440d18c6cb7d65773f68e3dad9e5d5135bb00d4a2f698511ec1",
+    "urun/veritabani/102_kalici_yayin.sql": "ad1d8d7cbbe99d58e3e72ab0ebb496c8f338512b472faa55ae36336a001203cc",
+    "urun/veritabani/105_yayin_kaynagi.sql": "b70fee12df77a32af5e63b3dbc569266fb13fd1c21a27897d824336a76f872db",
+    "urun/veritabani/110_emek_ve_paylar.sql": "ce2b85016844c686cff73e977581af8a787a3e34222e0f1dde8351a326efb840",
+    "urun/veritabani/111_maliyet_okumalari.sql": "3cec34bc990c5c28c46dfe21bf287ba3ba45ad63357250482f4e7a1901166486",
+    "urun/veritabani/112_gostergeler.sql": "0176affceabaf2ffa9c8466c0a812a7e9a443c7f539dbe34cfa90ca12d6b814f",
+    "urun/veritabani/113_gun_ve_performans.sql": "c55d2a2ff945af55c5100fda9fb51075c0a8f57e6250a913184fd873aa80ea1f",
+    "urun/veritabani/114_kaynak_takvimleri.sql": "d2683e453e6ae2c5e69edc078f6c61e27a0f0255911e5de09dac8110f5cce170",
+    "urun/veritabani/115_plan_ve_belge.sql": "7188b274f3f0ff58fbc84d1cd094738a99d57a93fb2128dc6f68f688248dda17",
+    "urun/veritabani/116_maliyet_izleri.sql": "09550596289b52862d4d0491b9181a819049ab94550c1b386b4fe8d1b92c44ed",
+    "urun/veritabani/117_gecikme_ve_gecmis.sql": "f5a01fe0768d6cf757d4acb17a19229246d5709d83133f0bdc9839a0dbfde757",
+    "urun/veritabani/118_donem_duzeltmeleri.sql": "5037747dc2c40e4dc3f8f93480d8ab2839fb6e8bfe30101668cee3da0ea7805d",
+    "urun/veritabani/120_okuma_kapisi.sql": "fa9388012b6e9feb4850e0f42b9fdea71092a0309129ed57b1d7d2903c6956ed",
+    "urun/veritabani/121_ekran_okumalari.sql": "a183107b2cb1db0d02fcbaec89fe937eb4424a061cf81e5b6caecbde27d29d52",
+    "urun/veritabani/130_sonuc_tablolari.sql": "016ab1e21cfe1c9f9d182dc047926ca24534e3b973fdcf8c838a5bd220c25be2",
+    "urun/veritabani/135_kapanis_okumalari.sql": "144f04d146d8cdb89574f5f14973a21a40f4f3f14b3ddbac53dcd286f9169855",
+    "urun/veritabani/140_degisim_sinyalleri.sql": "94b9a0ded22f6756907d7195e2533a29385487c8b46076cadc1cc8c552397387",
+    "urun/veritabani/145_gosteri_kapisi.sql": "0de8b3693ac4c4636ba8614f1ce818d7fb8a7857dc9a04080ef4d0db9d55f062",
+    "urun/veritabani/146_olay_akisi.sql": "8574ceff7e6478be6d2a1b74c4cecff4a4c456dd98634a4ae8c144f1e556213b",
+    "urun/veritabani/147_olay_akisi_etiketler.sql": "86bc2fd9ba90a3e76c6a12726fc791aed76fe6b7acc896dad0dab446439494f4",
+    "urun/veritabani/149_okuma_test.sql": "6d84652fa9faa5ec71ee5697fb503ddce45b02f7b7d2d3311e90984c276925a3",
+    "urun/veritabani/150_web_is_okumalari.sql": "570b001a8fb6a832042a59fef6f2ed1e05aeffa07dfa128b9d44b4c63424505a",
+    "urun/veritabani/151_web_calisan_ucreti.sql": "157f3b5c35e6b18f016f6e64ae51408ff5736b579c4709cefac1c6ebec32c188",
+    "urun/veritabani/152_modul_platformu.sql": "d6e82e98f10be390d5ecf95450f4782d8f7c50fc6f7c29489f84e5085061645e",
+    "urun/veritabani/153_modul_plan_okumalari.sql": "b849ca30652584c8e939fe13a6172cd318847359f1584b337b04b400fdfaa2ed",
+    "urun/veritabani/154_modul_dosya_ve_not.sql": "fdcb6ac51746393d5714a75e8c83de7491d73d4e3990505592edf691dab73b2e",
+    "urun/veritabani/supabase/950_kanitlar.sql": "9a99dc9b0ca987cff9e986008f1ff3cd14f52e3f5b984efd55f14ce6ae6bed7b",
+    "urun/veritabani/supabase_once/000_auth_erisimi.sql": "8726a3d97592ff5dbcfecdae921b0187fd5ca087a983d1ecfc875aa85b280018",
+    "urun/veritabani/supabase_test/960_test_ortami.sql": "d47838d06867378d42fa4f0762201a81e1c85a73885300b2d76f7f270646c81b",
+    "urun/veritabani/supabase_test/970_olay_akisi_acik.sql": "74f09f9281b7896fc7f39380829ba86980f0203ad314205f01c296c1b22e385d",
+    "urun/veritabani/yerel/000_supabase_taklidi.sql": "aef19973718c2452d0abd00e016d91a20ac6d2dc1c9fc7de2fbd9be90b3edb83",
+    "urun/veritabani/zamanlayici/900_pg_cron.sql": "38c0db8657e79f82f283288cb12e7158f36f7b7d9db8e82ff64014bf60759db3"
+  },
+  "yetenekler": [
+    {
+      "kod": "C01",
+      "ad": "Giriş Ve Kullanıcı Oturumu",
+      "durum": "DOGRULANDI",
+      "kapsam": "Önceki canlı sınamada dört gösteri rolünün Supabase girişi ve okumaları geçti. Bu turdaki yerel Auth taklidi yeni bir gerçek giriş kanıtı değildir; modüllerde ortak oturum ayrı başlıktadır.",
+      "okumalar": [
+        "KISILER"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/web_son_duzeltmeler_SONUC.md",
+        "codex/sonuclar/tur23_SONUC.md"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "KISILER"
+      ]
+    },
+    {
+      "kod": "C02",
+      "ad": "Kişi, Birim Ve Rol Okumaları",
+      "durum": "DOGRULANDI",
+      "kapsam": "Kişi/birim/kod listelerinin gerçek SQL okuması geçti. Personel yönetiminin bütünü ve yetki devri bu dar okuma kanıtına dahil değildir.",
+      "okumalar": [
+        "KISILER",
+        "BIRIMLER",
+        "KODLAR"
+      ],
+      "kaynaklar": [
+        "urun/veritabani/120_okuma_kapisi.sql",
+        "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "BIRIMLER",
+        "KISILER",
+        "KODLAR"
+      ]
+    },
+    {
+      "kod": "C03",
+      "ad": "Olay Kabulü Ve Görev Yaşam Döngüsü",
+      "durum": "DOGRULANDI",
+      "kapsam": "Atama, kabul, teslim ve onay gerçek SQL üzerinde geçti; önceki Senaryo 1 dosyasız teslimi de doğruluyor. Tanımlı 91 eylemin bütün dalları bu turda yeniden denenmedi.",
+      "okumalar": [
+        "GOREV",
+        "ONAY_LISTESI"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+        "codex/sonuclar/web_son_duzeltmeler_SONUC.md"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "GOREV",
+        "ONAY_LISTESI"
+      ]
+    },
+    {
+      "kod": "C04",
+      "ad": "Proje Ve Etap Yönetimi",
+      "durum": "DOGRULANDI",
+      "kapsam": "Proje/etap açma ve etap planını yetkiyle değiştirme önceki gerçek SQL Senaryo 1 akışında geçti; mevcut gösteri rollerinin sınırları geçerlidir. Yeni modül rolleri ayrıca eşlenecek.",
+      "okumalar": [
+        "PROJE",
+        "PROJELER",
+        "ETAPLAR",
+        "ETAP"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/senaryo1_SONUC.md",
+        "tasarim/00_kararlar.md"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "ETAPLAR",
+        "PROJE",
+        "PROJELER"
+      ]
+    },
+    {
+      "kod": "C05",
+      "ad": "Atölye Havuzu Ve Sıralı İşler",
+      "durum": "DOGRULANDI",
+      "kapsam": "Havuzdan kişiye atama bu turda, sürükle bırak ve telefonun Dart çekirdeğiyle atölye/saha teslimleri önceki gerçek SQL Senaryo 1 sınamasında geçti. Bu, yeni bir fiziksel telefon provası değildir.",
+      "okumalar": [
+        "HAVUZ",
+        "LISTE",
+        "EKIP",
+        "IS"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+        "codex/sonuclar/web_son_duzeltmeler_SONUC.md"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "EKIP",
+        "HAVUZ",
+        "IS",
+        "LISTE"
+      ]
+    },
+    {
+      "kod": "C06",
+      "ad": "Çalışma Süresi Ve Gün Özeti",
+      "durum": "DOGRULANDI",
+      "kapsam": "Başlama/mola/devam/teslim ve gün özeti önceki motor/istemci sınamalarında geçti; bu tur gün ve iş okumaları da döndü. Tüm bordro ve uzun dönem hesabı bu başlığın kabul kapsamı değildir.",
+      "okumalar": [
+        "TELEFON",
+        "KISININ_GUNU",
+        "GUN",
+        "GUN_ISLERI"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/tur21_SONUC.md",
+        "codex/sonuclar/web_son_duzeltmeler_SONUC.md"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "GUN",
+        "GUN_ISLERI",
+        "KISININ_GUNU",
+        "TELEFON"
+      ]
+    },
+    {
+      "kod": "C07",
+      "ad": "Not Ve Birime İstek",
+      "durum": "DOGRULANDI",
+      "kapsam": "Not yazma bu tur gerçek SQL üzerinde, @ ile birime istek önceki Senaryo 1 akışında geçti. Bütün alıcıların görüldü dökümü ayrı açık başlıktır.",
+      "okumalar": [
+        "NOT",
+        "WEB_NOTLAR"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+        "codex/sonuclar/web_son_duzeltmeler_SONUC.md"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "WEB_NOTLAR"
+      ]
+    },
+    {
+      "kod": "C08",
+      "ad": "Bildirim Kutusu Ve Görüldü",
+      "durum": "DOGRULANDI",
+      "kapsam": "Kişinin kendi kutusu okunuyor; doğru dış bildirim kimliğiyle Görüldü işlemi önceki gerçek SQL sınamasında kabul edildi ve görülme zamanı doğrulandı.",
+      "okumalar": [
+        "BILDIRIMLER"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/web_son_duzeltmeler_SONUC.md",
+        "urun/veritabani/115_plan_ve_belge.sql"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "BILDIRIMLER"
+      ]
+    },
+    {
+      "kod": "C09",
+      "ad": "Modül Bildirimi Bırakma Ve Kaldırma",
+      "durum": "DOGRULANDI",
+      "kapsam": "M11B plan onayının bildirimi dar modül kimliğiyle ortak kutuya geldi. Pasifleştirmede kendi açık bildirimleri kapatıldı; çekirdek iş verisi korundu. Bu, projesiz teklif bildirimi çözümü değildir.",
+      "okumalar": [
+        "BILDIRIMLER"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/tur21_SONUC.md",
+        "codex/sonuclar/tur23_SONUC.md",
+        "urun/veritabani/082_modul_bildirimi.sql",
+        "tasarim/27_ortak_modul_baglantisi.md",
+        "codex/sonuclar/modul_ortak_baglanti.json"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "BILDIRIMLER"
+      ]
+    },
+    {
+      "kod": "C10",
+      "ad": "Nesne Ve Belge Sürümleri",
+      "durum": "DOGRULANDI",
+      "kapsam": "Belge sürümü ekleme, ikinci yetkiliyle onay ve geçerli sürümü okuma gerçek SQL web akışında geçti. Gelen modüllerin tüm belge akışları kabul edilmiş değildir.",
+      "okumalar": [
+        "NESNE",
+        "NESNELER",
+        "SURUMLER",
+        "GECERLI_SURUM"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/web1_SONUC.md",
+        "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "GECERLI_SURUM",
+        "NESNE",
+        "NESNELER",
+        "SURUMLER"
+      ]
+    },
+    {
+      "kod": "C11",
+      "ad": "Olay Kanıtı Dosya Yolu",
+      "durum": "DOGRULANACAK",
+      "kapsam": "Olay kanıtı yükleme/okuma kodu ve yerel dosyalı teslim testi var. Buluttaki özel kova/izinleri kurulmuş; incelenen sonuçlarda gerçek Storage yüklemesini kanıtlayan açık sonuç yok. Yerel taklit bu açığı kapatmaz; modülün projesiz dosyası da ayrı ihtiyaçtır.",
+      "okumalar": [
+        "DOSYA",
+        "WEB_DOSYALAR"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/web1_SONUC.md",
+        "codex/sonuclar/istemci6_SONUC.md",
+        "urun/veritabani/supabase/950_kanitlar.sql"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "WEB_DOSYALAR"
+      ]
+    },
+    {
+      "kod": "C12",
+      "ad": "Kişisel Ve Parasal Veri Görünürlüğü",
+      "durum": "DOGRULANDI",
+      "kapsam": "Mevcut yetkili maaşı okur; yetkisiz kişi reddedilir veya hassas alanı alamaz. Yeni odak kontrolünde çalışanın maaş okuması reddedildi. Muhasebeye ayrıca maaş görme yetkisi verme, karar 151 ile sonraya bırakıldı.",
+      "okumalar": [
+        "MAAS",
+        "WEB_KISI",
+        "MAAS_DAGILIMI"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/web_son_duzeltmeler_SONUC.md",
+        "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+        "tasarim/00_kararlar.md"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "MAAS",
+        "MAAS_DAGILIMI",
+        "WEB_KISI"
+      ]
+    },
+    {
+      "kod": "C13",
+      "ad": "Kapasite, Uygunluk Ve Yük Okumaları",
+      "durum": "DOGRULANACAK",
+      "kapsam": "Ürün okumaları ve önceki karşılaştırmalar var; bu tur kapasite/yük cevapları alındı. Yeni modülün tarih aralığı, veri anlamı ve rol ihtiyacıyla uçtan uca kabulü ayrıca gerekir.",
+      "okumalar": [
+        "KAPASITE",
+        "UYGUNLUK",
+        "YUK",
+        "TEZGAH_UYGUNLUK",
+        "TEZGAH_GOSTERGESI"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/tur22_birlesim_SONUC.md",
+        "urun/veritabani/114_kaynak_takvimleri.sql"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "KAPASITE",
+        "YUK"
+      ]
+    },
+    {
+      "kod": "C14",
+      "ad": "Onaylı Plan Verisi",
+      "durum": "DOGRULANDI",
+      "kapsam": "Ayrı gerçek SQL firmasında M11B ile dolu B0 ve B1, çekirdek dış ekranından B2, yönetici web ekranından B3 onayı geçti. İlk plan korundu; numara/onaylayan/an/gerekçe ortak çekirdek listesinden okundu. Kanıt: modul_ortak_baglanti.json. Fiziksel plan kanıtı yüklemesi bu kapsamda değildir.",
+      "okumalar": [
+        "PLAN",
+        "PLAN_CAKISMALARI"
+      ],
+      "kaynaklar": [
+        "urun/veritabani/067_plan_onayi.sql",
+        "urun/veritabani/115_plan_ve_belge.sql",
+        "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+        "tasarim/27_ortak_modul_baglantisi.md",
+        "codex/sonuclar/modul_ortak_baglanti.json"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "PLAN",
+        "PLAN_CAKISMALARI"
+      ]
+    },
+    {
+      "kod": "C15",
+      "ad": "Gantt Plan Ve Gerçekleşme Verisi",
+      "durum": "DOGRULANDI",
+      "kapsam": "SQL 153 ile etap gerçekleşeni tüm ilgili işlerden, alt görev ayrıntısı izinli işlerden gelir. CEO ve kısıtlı çalışan aynı etap özeti alırken gizli görev görünmedi. Görev kabul/teslim/onayının Gantt sonucu ve native web çizimi geçti. M11B işlevlerinin tamamı kabul edilmiş sayılmaz.",
+      "okumalar": [
+        "GANTT"
+      ],
+      "kaynaklar": [
+        "urun/veritabani/115_plan_ve_belge.sql",
+        "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+        "disaridan_moduller/Modules/m1.1b/istekler/M11B-01_gantt_gerceklesen_okuyana_gore.md",
+        "tasarim/27_ortak_modul_baglantisi.md",
+        "codex/sonuclar/modul_ortak_baglanti.json"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "GANTT"
+      ]
+    },
+    {
+      "kod": "C16",
+      "ad": "İşçilik, Maliyet Ve Ay Kapanışı",
+      "durum": "DOGRULANACAK",
+      "kapsam": "Hesap ve kapanış kodu mevcut; geçmiş/kapanış düzeltmesi sonrası seçili karşılaştırmalar geçti, bu tur işçilik/maliyet okumaları döndü. Bütün uzun dönem kuralları ve modül bütçesi kabul edilmiş sayılmaz. Tur 22 ilk ara hataları sonraki birleşim sonucuyla okunur.",
+      "okumalar": [
+        "PROJE_ISCILIGI",
+        "PROJE_MALIYETI",
+        "TAHMIN_GERCEK",
+        "MAAS_DAGILIMI"
+      ],
+      "kaynaklar": [
+        "codex/sonuclar/tur22_birlesim_SONUC.md",
+        "codex/sonuclar/tur21_SONUC.md",
+        "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "MAAS_DAGILIMI",
+        "PROJE_ISCILIGI",
+        "PROJE_MALIYETI",
+        "TAHMIN_GERCEK"
+      ]
+    },
+    {
+      "kod": "C17",
+      "ad": "Proje Erişimi Ve Modül Rolleri",
+      "durum": "DOGRULANACAK",
+      "kapsam": "M11B mevcut CEO/Yönetici rolleri ve proje bağlamıyla bağlandı; yönetici yalnız mevcut etapları planladı. Başka rol ve satış/muhasebe projelerinin eşlenmesi ile tüm etap sorumlusu senaryoları ayrıca kabul edilecek; otomatik tüm proje erişimi verilmedi.",
+      "okumalar": [
+        "PROJE",
+        "PROJELER",
+        "ETAP"
+      ],
+      "kaynaklar": [
+        "urun/veritabani/060_kabul.sql",
+        "tasarim/00_kararlar.md",
+        "codex/sonuclar/moduller_on_inceleme.md",
+        "tasarim/27_ortak_modul_baglantisi.md",
+        "codex/sonuclar/modul_ortak_baglanti.json"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "PROJE",
+        "PROJELER"
+      ]
+    },
+    {
+      "kod": "C18",
+      "ad": "Not Alıcıları Ve Görüldü Dökümü",
+      "durum": "DOGRULANACAK",
+      "kapsam": "Notun göreve dönüşmesi/kabulü mevcut. Yazana bütün alıcıları ve görülme durumlarını tek yetkili okumayla veren yol doğrulanmadı; M11B-06 açık. Modülün tahmini görev kimlikleriyle taraması kabul edilmiş ortak çözüm değildir.",
+      "okumalar": [
+        "NOT",
+        "GOREV"
+      ],
+      "kaynaklar": [
+        "disaridan_moduller/Modules/m1.1b/istekler/M11B-06_not_alicilari.md",
+        "urun/veritabani/120_okuma_kapisi.sql"
+      ],
+      "temel_sql_okumasi_kaniti": [
+        "GOREV"
+      ]
+    },
+    {
+      "kod": "C19",
+      "ad": "Modüllerde Ortak Giriş, Menü Ve Bağlam",
+      "durum": "DOGRULANDI",
+      "kapsam": "M10/M11A/M11B aynı beyaz HTML/CSS/JS web, giriş, menü ve proje bağlamında çalışıyor. Ortak oturum/kişi değişimi/yazma kilidi testleri ve gerçek SQL tarayıcı akışı geçti. Kullanıcı kabulü ayrı aşamadır.",
+      "okumalar": [],
+      "kaynaklar": [
+        "istemci/web/erp.js",
+        "modul_kiti/paket/sozlesme/07_on_yuz.md",
+        "codex/sonuclar/moduller_on_inceleme.md",
+        "tasarim/27_ortak_modul_baglantisi.md",
+        "codex/sonuclar/modul_ortak_baglanti.json",
+        "tasarim/28_moduller_gercek_mvp.md",
+        "codex/sonuclar/moduller_mvp.json"
+      ],
+      "temel_sql_okumasi_kaniti": []
+    },
+    {
+      "kod": "C20",
+      "ad": "Gerçek Üründe Servis Okuması",
+      "durum": "DOGRULANDI",
+      "kapsam": "SQL 152 public.servis_oku kapısını gerçek giriş rolüyle doğrular; yalnız künye izinli kişisel olmayan alanlar döner. M11B PROJE okuması yerel gerçek SQL ve mevcut Supabase rolüyle geçti; ham çekirdek tablo okuması engellendi. Bütün 14 servis okumasının bütün parametreleri kabul edilmiş sayılmaz.",
+      "okumalar": [],
+      "kaynaklar": [
+        "modul_kiti/paket/baglanti/surucu_http.py",
+        "modul_kiti/paket/sozlesme/01_baglanti.md",
+        "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+        "tasarim/27_ortak_modul_baglantisi.md",
+        "codex/sonuclar/modul_ortak_baglanti.json"
+      ],
+      "temel_sql_okumasi_kaniti": []
+    },
+    {
+      "kod": "C21",
+      "ad": "Modüle Özel Üretim Servis Yetkisi",
+      "durum": "DOGRULANDI",
+      "kapsam": "Kurulum ayrı NOLOGIN şema sahibi ve LOGIN çalışma rolü oluşturur; çalışma rolü yalnız kendi verisine erişir, DDL yapamaz. Genel DSN/service_role anahtarı alt sürece verilmez; modüle özel geçit kimliği bellektedir. İlk gerçek Supabase modül rolü ve servis sınırları doğrulandı; bu işletim sistemi kum havuzu değildir.",
+      "okumalar": [],
+      "kaynaklar": [
+        "tasarim/18_modul_sozlesmesi.md",
+        "urun/veritabani/082_modul_bildirimi.sql",
+        "tasarim/27_ortak_modul_baglantisi.md",
+        "codex/sonuclar/modul_ortak_baglanti.json"
+      ],
+      "temel_sql_okumasi_kaniti": []
+    },
+    {
+      "kod": "C22",
+      "ad": "Modüller Arası Genel Okuma Yönlendirmesi",
+      "durum": "DOGRULANDI",
+      "kapsam": "Ortak SDK/geçit künye bağımlılığı ve normal kişiyle M10 kazanımını M11A proje/bütçesine, M11A başlangıç planı/teknik girdilerini M11B devir/planına taşıdı. Tekrar devir, gerçek fiziksel dosya ve yanıt kaybında tek açılış sınandı; bütün gelecekteki sağlayıcıların kabulü sayılmaz.",
+      "okumalar": [],
+      "kaynaklar": [
+        "urun/veritabani/120_okuma_kapisi.sql",
+        "disaridan_moduller/Modules/m1.1a/m11a/saglayicilar.py",
+        "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+        "tasarim/27_ortak_modul_baglantisi.md",
+        "codex/sonuclar/modul_ortak_baglanti.json",
+        "tasarim/28_moduller_gercek_mvp.md",
+        "codex/sonuclar/moduller_mvp.json"
+      ],
+      "temel_sql_okumasi_kaniti": []
+    },
+    {
+      "kod": "C23",
+      "ad": "Genel Modül Kurulum Ve Kabul Yolu",
+      "durum": "DOGRULANACAK",
+      "kapsam": "Üç modül aynı künye/ileri göç/rol/ortak web yoluyla kuruldu; tekrar ve veri koruyan kapatma ayrı gerçek SQL firmasında geçti. Gelen eski senaryoların bütünü, bütün yükseltme/geri alma dalları ve Mustafa kullanıcı kabulü tamamlanmadı.",
+      "okumalar": [],
+      "kaynaklar": [
+        "modul_kiti/kunye_denetle.py",
+        "modul_kiti/paket/sozlesme/06_teslim.md",
+        "codex/sonuclar/moduller_on_inceleme.md",
+        "tasarim/27_ortak_modul_baglantisi.md",
+        "codex/sonuclar/modul_ortak_baglanti.json"
+      ],
+      "temel_sql_okumasi_kaniti": []
+    },
+    {
+      "kod": "C24",
+      "ad": "Projesiz Teklif Dosyası Ve Bildirimi",
+      "durum": "DOGRULANDI",
+      "kapsam": "SQL 154 + SDK 1.2 özel modül dosya ve MODUL bildirim nesnesiyle projesiz teklif çalışıyor. Normal kullanıcı/nesne izni, gerçek bayt/SHA, 1 MB sınırı, bozuk içerik/yetki retleri ve onay bildirimi ayrı SQL firmasında geçti. Baytlar mevcut MVP sunucusunun özel dizininde; üretim dosya altyapısının tamamı değildir.",
+      "okumalar": [],
+      "kaynaklar": [
+        "modul_kiti/paket/sozlesme/02_kurallar.md",
+        "disaridan_moduller/Modules/m1.0/istekler/M10-01_projesiz_kayda_bildirim.md",
+        "disaridan_moduller/Modules/m1.0/istekler/M10-05_dosya_depolama.md",
+        "tasarim/28_moduller_gercek_mvp.md",
+        "codex/sonuclar/moduller_mvp.json"
+      ],
+      "temel_sql_okumasi_kaniti": []
+    },
+    {
+      "kod": "C25",
+      "ad": "Devredilebilir Personel Ve Maaş Yönetiminin Tamamı",
+      "durum": "DOGRULANACAK",
+      "kapsam": "Temel kişi/birim/maaş olayları var. Rol, işe giriş/ayrılış, maaş ve ekip yönetiminin bütünüyle devredilebilir olması ile ayrı maaş görme izni karar 151'de MVP sonrası çekirdek güncellemesidir; modüle devredilmez.",
+      "okumalar": [],
+      "kaynaklar": [
+        "tasarim/00_kararlar.md",
+        "plan/mvp_sonrasi.md"
+      ],
+      "temel_sql_okumasi_kaniti": []
+    },
+    {
+      "kod": "C26",
+      "ad": "Genel Modül Kapatma Ve Geri Alma",
+      "durum": "DOGRULANACAK",
+      "kapsam": "Gerçek SQL pilotunda kendi bildirimleri temizlendi, menü/API kapandı, çalışma rolü NOLOGIN oldu ve mevcut bağlantıları kesildi. Çekirdek/modül iş verisi korundu. Bütün sürüm düşürme, yarım kurulumdan geri dönüş ve genel eski ekran senaryoları ayrıca kabul gerektirir.",
+      "okumalar": [],
+      "kaynaklar": [
+        "tasarim/18_modul_sozlesmesi.md",
+        "urun/veritabani/082_modul_bildirimi.sql",
+        "tasarim/27_ortak_modul_baglantisi.md",
+        "codex/sonuclar/modul_ortak_baglanti.json"
+      ],
+      "temel_sql_okumasi_kaniti": []
+    },
+    {
+      "kod": "C27",
+      "ad": "Modül İstek Sınırlarının Uygulanması",
+      "durum": "DOGRULANACAK",
+      "kapsam": "Künye sınırları ortak geçitte kullanıcı bazında ve SQL servis/bildirim kapılarında modül bazında sayılıyor; sorgu/bağlantı sınırları çalışma rolünde var. Bütün sınır aşımı ve yoğunluk senaryoları bu turda doğrulanmadı; tam yük kabulü verilmez.",
+      "okumalar": [],
+      "kaynaklar": [
+        "tasarim/18_modul_sozlesmesi.md",
+        "tasarim/27_ortak_modul_baglantisi.md",
+        "codex/sonuclar/modul_ortak_baglanti.json"
+      ],
+      "temel_sql_okumasi_kaniti": []
+    }
+  ],
+  "okumalar": [
+    {
+      "ad": "ATAMA_UYARILARI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "BILDIRIMLER",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "BIRIMLER",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "BIRIM_DOLULUGU",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "BIRIM_PERFORMANS",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "BUGUNKU_KIMLIKLER",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "DOSYA",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "EKIP",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "ELLE_SURELER",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "ETAP",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "ETAPLAR",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "ETAP_DURUM",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "FAZLA_MESAI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "GANTT",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "S",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "GECERLI_SURUM",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "GECIKME_RAPORU",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "GOREV",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "GUN",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "GUN_ISLERI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "HAM_OLAY",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "HAVUZ",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "IS",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "ISCILIK_MALIYETI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "IZIN",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "S",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "IZIN_DETAY",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "S",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "KAPASITE",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "KAYNAK_YUKU",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "KIM_NEREDE",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "KISILER",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "KISININ_GUNU",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "KODLAR",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "LISTE",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "MAAS",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "MAAS_DAGILIMI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "NESNE",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "NESNELER",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "NOT",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "NOT_ALICILARI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/154_modul_dosya_ve_not.sql",
+        "satir": 62,
+        "islev": "public.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "ONAY_LISTESI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "PERFORMANS",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "PERSONEL_DAGILIMI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "PLAN",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "S",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "PLAN_CAKISMALARI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "S",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "PROJE",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "PROJELER",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "PROJE_DURUM",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "PROJE_ISCILIGI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "PROJE_MALIYETI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "SAAT_MALIYETI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "SAAT_NEREYE_GITTI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "SUPHELILER",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "SURUMLER",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "TAHMIN_GERCEK",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "TAKVIM",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "TELEFON",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "TEZGAHLAR",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "TEZGAH_GOSTERGESI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "S",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "TEZGAH_UCRETI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "S",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "TEZGAH_UYGUNLUK",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "S",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "TOP_KIMDE",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "UYGUNLUK",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+        "satir": 58,
+        "islev": "okuma.oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "WEB_BAGLAM",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/150_web_is_okumalari.sql",
+        "satir": 3,
+        "islev": "okuma.web_oku"
+      },
+      "erisim": "cekirdek_web",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": null,
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "WEB_DOSYALAR",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/150_web_is_okumalari.sql",
+        "satir": 3,
+        "islev": "okuma.web_oku"
+      },
+      "erisim": "cekirdek_web",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": null,
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "WEB_FIRMA",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/150_web_is_okumalari.sql",
+        "satir": 3,
+        "islev": "okuma.web_oku"
+      },
+      "erisim": "cekirdek_web",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": null,
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "WEB_GOREVLER",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/150_web_is_okumalari.sql",
+        "satir": 3,
+        "islev": "okuma.web_oku"
+      },
+      "erisim": "cekirdek_web",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": null,
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "WEB_HESAPLAR",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/150_web_is_okumalari.sql",
+        "satir": 3,
+        "islev": "okuma.web_oku"
+      },
+      "erisim": "cekirdek_web",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": null,
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "WEB_ISLER",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/150_web_is_okumalari.sql",
+        "satir": 3,
+        "islev": "okuma.web_oku"
+      },
+      "erisim": "cekirdek_web",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": null,
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "WEB_KAYNAKLAR",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/150_web_is_okumalari.sql",
+        "satir": 3,
+        "islev": "okuma.web_oku"
+      },
+      "erisim": "cekirdek_web",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": null,
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "WEB_KISI",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/150_web_is_okumalari.sql",
+        "satir": 3,
+        "islev": "okuma.web_oku"
+      },
+      "erisim": "cekirdek_web",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": null,
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "WEB_NOTLAR",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/150_web_is_okumalari.sql",
+        "satir": 3,
+        "islev": "okuma.web_oku"
+      },
+      "erisim": "cekirdek_web",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": null,
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "WEB_SORUMLULUK",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/150_web_is_okumalari.sql",
+        "satir": 3,
+        "islev": "okuma.web_oku"
+      },
+      "erisim": "cekirdek_web",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": null,
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "YONLENDIRME",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": false,
+      "kanit": null,
+      "eski_paket_katmani": "B",
+      "modul_islevi_kabul_edildi": false
+    },
+    {
+      "ad": "YUK",
+      "kodda_mevcut": true,
+      "kaynak": {
+        "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+        "satir": 14,
+        "islev": "okuma.ek_oku"
+      },
+      "erisim": "kullanici_okumasi",
+      "sql_kapi_cevabi_dogrulandi": true,
+      "kanit": "codex/sonuclar/cekirdek_yetenekleri/sql_kaniti.json",
+      "eski_paket_katmani": "A",
+      "modul_islevi_kabul_edildi": false
+    }
+  ],
+  "eylemler": [
+    {
+      "ad": "AYAR.DEGISTIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "AYAR.MAAS_PAYDASI",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "AYAR.ONAY_ORANI",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "AYAR.PARCA_KODU_DESENI",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "AYAR.SAAT_KAYDIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "AYAR.YONLENDIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "BILDIRIM.GORDUM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "BIRIM.TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "DURUS.BASLADI",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "DURUS.BITTI",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "EK_MESAI.IPTAL_ETTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "EK_MESAI.ONAYLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "EK_MESAI.PLANLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "ETAP.DEGISTIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "ETAP.TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GECIKME.DEGERLENDIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GOREV.ATADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 1,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GOREV.DEGISTIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GOREV.IPTAL_ETTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GOREV.KABUL_ETTIM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 1,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GOREV.ONAYLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 1,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GOREV.REDDETTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GOREV.TAMAMLADIM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 1,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GUN.KALDIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GUN.TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GUN_ONAYI.AYARLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "GUN_SONU.GONDERDIM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GUN_SONU.IADE_ETTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "GUN_SONU.ONAYLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IS.ARIZA_BILDIRDIM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "IS.ATADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 1,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IS.BAGLANTI_DUZELTTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IS.BASLADIM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "IS.DEGISTIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IS.DEVAM_ETTIM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "IS.DEVAM_ONAYLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IS.DEVRETTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IS.IPTAL_ETTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IS.MOLA_VERDIM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "IS.ONAYLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IS.PLANSIZ_TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IS.REDDETTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IS.SIRALADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IS.SURE_EKLEDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IS.TAMAMLADIM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "IS.TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IZIN.IK_ONAYLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IZIN.IPTAL_ETTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IZIN.ONAYLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IZIN.REDDETTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "IZIN.TALEP_ETTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "KAYIT.GECERSIZ_SAYDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "KISI.AYRILDI",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "KISI.DEGISTIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "KISI.EKLEDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "KISI.YETKINLIK_TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "KOD.TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "KURULUM.TAMAMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "MAAS.GUNCELLEDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "MESAI.CIKTIM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "MESAI.GIRDIM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "MODUL.TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "NESNE.ACTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "NESNE.ASAMA_GECIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "NESNE.GUNCELLEDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "NESNE.SURUM_EKLEDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 1,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "NESNE.SURUM_GERI_CEKTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "NESNE.SURUM_ONAYLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 1,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "NESNE_TURU.TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "NOT.YAZDIM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 1,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "PLAN.ONAYLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "PLAN.TARIHLEDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "PROJE.ACTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "PROJE.DEGISTIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "PROJE.ERISIM_KALDIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "PROJE.ERISIM_VERDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    },
+    {
+      "ad": "PROJE.KAPATTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "PROJE.KOD_DEGISTIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "SORUMLULUK.DOGRULADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "SORUMLULUK.ITIRAZI_DEGERLENDIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "SORUMLULUK.ITIRAZ_ETTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "TAKVIM.TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "TATIL.EKLEDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "TATIL.KALDIRDIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "TEZGAH.BAKIM_IPTAL_ETTIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "TEZGAH.BAKIM_PLANLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "TEZGAH.DURUS_BILDIRDIM",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "TEZGAH.DURUS_BITTI",
+      "sinif": "TANIKLIK",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "TEZGAH.TAKVIM_TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "TEZGAH.TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": false
+    },
+    {
+      "ad": "YETKI.TANIMLADIM",
+      "sinif": "YONETIM",
+      "surum": 1,
+      "semada_tanimli": true,
+      "sql_sozlugunde_dogrulandi": true,
+      "bu_kosuda_basarili_is_olayi": 0,
+      "paket_modulden_yazmayi_yasakliyor": true
+    }
+  ],
+  "public_kod_kapilari": {
+    "public.olay_ekle": {
+      "dosya": "urun/veritabani/080_gercek_kapilar.sql",
+      "satir": 79
+    },
+    "public.cihaz_esitle": {
+      "dosya": "urun/veritabani/080_gercek_kapilar.sql",
+      "satir": 86
+    },
+    "public.cihaz_kaydol": {
+      "dosya": "urun/veritabani/080_gercek_kapilar.sql",
+      "satir": 92
+    },
+    "public.modul_bildirimi_birak": {
+      "dosya": "urun/veritabani/152_modul_platformu.sql",
+      "satir": 116
+    },
+    "public.modul_bildirimi_kaldir": {
+      "dosya": "urun/veritabani/152_modul_platformu.sql",
+      "satir": 133
+    },
+    "public.simdi": {
+      "dosya": "urun/veritabani/100_okuma_temeli.sql",
+      "satir": 89
+    },
+    "public.oku": {
+      "dosya": "urun/veritabani/154_modul_dosya_ve_not.sql",
+      "satir": 62
+    },
+    "public.sinyal_gorebilir": {
+      "dosya": "urun/veritabani/140_degisim_sinyalleri.sql",
+      "satir": 11
+    },
+    "public.gosteri_sifirla": {
+      "dosya": "urun/veritabani/145_gosteri_kapisi.sql",
+      "satir": 5
+    },
+    "public.olay_akisi": {
+      "dosya": "urun/veritabani/147_olay_akisi_etiketler.sql",
+      "satir": 16
+    },
+    "public.modul_oturum": {
+      "dosya": "urun/veritabani/152_modul_platformu.sql",
+      "satir": 45
+    },
+    "public.servis_oku": {
+      "dosya": "urun/veritabani/152_modul_platformu.sql",
+      "satir": 65
+    }
+  },
+  "test_public_kapilari": [
+    {
+      "ad": "cihaz_esitle",
+      "imza": "cihaz text",
+      "service_role": true,
+      "authenticated": true
+    },
+    {
+      "ad": "cihaz_kaydol",
+      "imza": "cihaz text",
+      "service_role": true,
+      "authenticated": true
+    },
+    {
+      "ad": "gosteri_sifirla",
+      "imza": "",
+      "service_role": false,
+      "authenticated": true
+    },
+    {
+      "ad": "modul_bildirimi_birak",
+      "imza": "g jsonb",
+      "service_role": true,
+      "authenticated": true
+    },
+    {
+      "ad": "modul_bildirimi_kaldir",
+      "imza": "g jsonb",
+      "service_role": true,
+      "authenticated": true
+    },
+    {
+      "ad": "modul_oturum",
+      "imza": "modul text",
+      "service_role": false,
+      "authenticated": true
+    },
+    {
+      "ad": "oku",
+      "imza": "veri text, hedef text, g jsonb",
+      "service_role": true,
+      "authenticated": true
+    },
+    {
+      "ad": "olay_akisi",
+      "imza": "sonra bigint, adet integer",
+      "service_role": false,
+      "authenticated": true
+    },
+    {
+      "ad": "olay_ekle",
+      "imza": "olay jsonb, hassas_ek jsonb",
+      "service_role": true,
+      "authenticated": true
+    },
+    {
+      "ad": "servis_oku",
+      "imza": "veri text, hedef text, g jsonb",
+      "service_role": false,
+      "authenticated": false
+    },
+    {
+      "ad": "simdi",
+      "imza": "",
+      "service_role": true,
+      "authenticated": true
+    },
+    {
+      "ad": "sinyal_gorebilir",
+      "imza": "kanal text",
+      "service_role": false,
+      "authenticated": true
+    }
+  ],
+  "eski_katalog_farki": {
+    "urun_yonlendirmesinde_olup_katalogda_olmayan": [
+      "WEB_BAGLAM",
+      "WEB_DOSYALAR",
+      "WEB_FIRMA",
+      "WEB_GOREVLER",
+      "WEB_HESAPLAR",
+      "WEB_ISLER",
+      "WEB_KAYNAKLAR",
+      "WEB_KISI",
+      "WEB_NOTLAR",
+      "WEB_SORUMLULUK"
+    ],
+    "katalogda_olup_urun_yonlendirmesinde_olmayan": []
+  },
+  "gelen_moduller": {
+    "m1.0": {
+      "kunye_sha256": "3c85b4175af168fa6bdc18e847bcceb63725788a0894f95b8a6ca9683698174c",
+      "cekirdek_okumalari": [
+        "KISILER",
+        "BIRIMLER",
+        "PROJE"
+      ],
+      "moduller_arasi_okumalari": []
+    },
+    "m1.1a": {
+      "kunye_sha256": "e31c67e333476f2f2d8eaf4242a343a496b1d417e500d5eaa6578f300962387f",
+      "cekirdek_okumalari": [
+        "PROJE",
+        "KISILER",
+        "BIRIMLER",
+        "ETAPLAR",
+        "PROJE_DURUM",
+        "NESNELER"
+      ],
+      "moduller_arasi_okumalari": [
+        "M10.KAZANAN_SURUM"
+      ]
+    },
+    "m1.1b": {
+      "kunye_sha256": "e78aaf88606bfa5498303cb614e4a15788f8c83adb28b85f8849cb588213b937",
+      "cekirdek_okumalari": [
+        "PROJE",
+        "ETAPLAR",
+        "ETAP",
+        "PLAN",
+        "GANTT",
+        "GOREV",
+        "NOT",
+        "KISILER",
+        "BIRIMLER"
+      ],
+      "moduller_arasi_okumalari": []
+    }
+  }
+}

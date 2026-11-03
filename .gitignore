@@ -1,0 +1,41 @@
+# Sistem ve Python
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Arşivler ve eski tur klasörleri (depo dışında kalır)
+codex_test_*/
+*.zip
+*.rar
+
+# Codex'in geçici çalışma çıktıları
+referans/yalitim*/
+referans/gerileme_v*/
+referans/*.log
+referans/test_sonuclari.json
+codex/calisma/*/gecici/
+
+# Test programının raporları (örnek rapor codex/sonuclar altında)
+test/raporlar/
+
+# Canlı verisi tarihe göre üretilir (urun/veri/canli_veri.py --bugun ...); depoya girmez
+urun/veri/canli.*.json
+
+# Yerel web iş uygulamasının derlemesi
+istemci/web/build/
+
+# Modül çalıştırma bağımlılıkları ve ön yüz derlemeleri (sırlar depoya girmez)
+.runtime/
+
+# Arkadaşla paylaşılacak klasör kaynaklardan yeniden üretilir.
+onboarding/modul_gelistirici_paketi/
+onboarding/modul_gelistirici_paketi_v2/
+
+# Kişisel erişim ve yerel ayarlar
+**/gosteri_kisileri.json
+**/.env
+**/.env.*
+**/local.properties
+**/ayar.json
+!docs/ayar.json

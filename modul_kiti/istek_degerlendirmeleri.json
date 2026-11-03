@@ -1,0 +1,668 @@
+{
+  "bicim_surumu": 1,
+  "tarih": "2026-10-31T02:31:48+03:00",
+  "urun_taban": "SQL 154; SDK 1.2; T28",
+  "kapsam": "Modül standardı 2. adım: sahiplik ve öncelik değerlendirmesi. Uygulama veya kabul belgesi değildir.",
+  "kaynak_sirasi": [
+    "Mustafa/müşteri kararları ve Navigation N:P/T",
+    "Mevcut modül sözleşmesi/T18 ve üç ortak iskelet sunumu",
+    "Ürün kodu/T25 ve kapsamı belirtilen gerçek test sonuçları",
+    "Gelen istekler/SPEC: yazar beyanı; otomatik karar değildir"
+  ],
+  "oncelikler": {
+    "P0": "Gerçek pilot ve ortak bağlantı temelinden önce ele alınacak",
+    "P1": "İlgili akış üç modülün kabul kapsamına girmeden tamamlanacak",
+    "P2": "MVP akışını engellemeyen; sonraya ayrılan, ayrıca tasarlanacak"
+  },
+  "kapsam_karari": "Mevcut veri sahipliği ve yetki kuralları korunur. Yeni otomatik erişim, oran veya sözleşmesiz alan onaylanmış sayılmaz.",
+  "is_paketleri": [
+    {
+      "kod": "I01",
+      "ad": "Paket Ve Simülatörün Ürünle Uyumu",
+      "sahip": "Çekirdek ekibi · geliştirme paketi",
+      "oncelik": "P0",
+      "gerekce": "Üründe bulunan kapıyla eski katalog/simülatör eksikliği aynı şey değildir. Kaynaklardan sürümlü paket üretilecek; dağıtılmış salt okunur kopyalar değiştirilmeyecek.",
+      "kabul_olcutleri": [
+        "PLAN/GANTT/PROJELER ve sonuç okumalarının ürün durumu ile simülatör kapsamı ayrı, doğru belirtilir.",
+        "Birden çok künye aynı test ortamında kimlikleri karıştırmadan çalışır; yetkili test yolu yalnız TEST ortamındadır.",
+        "Ürün cevabı ve simülatör cevabı aynı sözleşme girdileriyle karşılaştırılır; eski katman uyarısı özellik yok sayılmaz."
+      ],
+      "dayanak": [
+        "K:129,131,155",
+        "T18:3,8,9",
+        "T25",
+        "urun/veritabani/120_okuma_kapisi.sql",
+        "urun/veritabani/121_ekran_okumalari.sql"
+      ],
+      "durum": "KISMEN_UYGULANDI",
+      "uygulama_notu": "Paket 1.1: katalog gerçek SQL/model kapsamını ayırıyor; PROJELER, PLAN/GANTT uyarlaması, çoklu künye ve yerel yetkili test ucu var. On paket testi geçti. Sonuç/maliyet okumaları ve bütün ortak girdilerin ürün-model karşılaştırması açık."
+    },
+    {
+      "kod": "I02",
+      "ad": "Ortak Kurulum, Oturum Ve Servis Kimliği",
+      "sahip": "Çekirdek ekibi · ortak bağlantı ve kurulum",
+      "oncelik": "P0",
+      "gerekce": "Her modül aynı giriş, kişi, menü ve bağlam yolunu kullanır. Künye/göç denetimi tek başına çalışan kurulum değildir. Servis gözü T18 İ-1 kapsamında ilk canlı modülle tamamlanır.",
+      "kabul_olcutleri": [
+        "Künye, şema/göç, rol/harf, dar servis kimliği, menü/adres ve sürüm tek kurulum akışıyla devreye alınır.",
+        "Modülün kendi şifresi olmaz; kişi/oturum değişimi ve yenileme bütün modüllere uygulanır.",
+        "Modül ekranları aynı beyaz ERP düzenini kullanır; sistemin koyu temasını izlemez, görünür iç kimlik/kişi kodu/ham olay adı içermez.",
+        "Genel service_role anahtarı modüle verilmez; servis okuması kişisel veri/para döndürmez.",
+        "Pasifleştirme olay yazmayı ve yeni bildirimi durdurur; açık bildirimlerin temizliği ve eski verinin korunması doğrulanır."
+      ],
+      "dayanak": [
+        "K:125,129,131,140,142,153",
+        "T18:4,6,7,9",
+        "T25:C19,C20,C21,C23,C26"
+      ],
+      "durum": "UC_MODULDE_TEKNIK_DOGRULANDI",
+      "uygulama_notu": "M10/M11A/M11B aynı web ve SDK ile ayrı gerçek SQL firmasında kuruldu; tekrar, normal kişi/rol, dar SQL rolü ve veri koruyan kapatma geçti. Canlı kurulum ayrıca doğrulanır; kullanıcı kabulü ayrıca yapılacak."
+    },
+    {
+      "kod": "I03",
+      "ad": "Mevcut Yetki Ve Proje Bağlamının Eşlenmesi",
+      "sahip": "Çekirdek ekibi · kurulum; modül ekibi · akış uyarlaması",
+      "oncelik": "P0",
+      "gerekce": "İşlem yetkisi ile projeyi görmek ayrı denetimlerdir. Mevcut projeye özel erişim, etap sorumluluğu ve devretme kuralları kullanılacak; yeni genel görme politikası eklenmeyecek.",
+      "kabul_olcutleri": [
+        "Satış/muhasebe yalnız erişim verilen projeleri görür; para/maaş izinleri kendiliğinden genişlemez.",
+        "Proje sorumlusu sözde rolü, geçerli FIRMA/BIRIM kapsamıyla künye denetleyicisinde ifade edilir; PROJE diye yeni kapsam uydurulmaz.",
+        "Senaryo 1 için etap açma CEO’da, yöneticinin plan düzenlemesi mevcut yetkiyle kalır; modül var olan etapları kullanabilir.",
+        "Etap sorumlusunun mevcut proje görünürlüğü belgelenir; nesne sorumluluğuyla karıştırılmaz."
+      ],
+      "dayanak": [
+        "K:57,91,103,144,151",
+        "D:N:P0036,P0038,P0040,P0041,P0044,P0897,P0900,P0933",
+        "T9:6",
+        "urun/veritabani/058_nesne_ve_proje.sql",
+        "modul_kiti/kunye_denetle.py"
+      ],
+      "durum": "KISMEN_UYGULANDI",
+      "uygulama_notu": "Mevcut rol/proje kapıları korunur; ticari menü satış/muhasebe/yetkili, planlama menüsü yetkili/yönetici içindir. Çalışanın ticari dosya/API erişimi reddedildi. Yeni tüm proje/maaş izni açılmadı; bütün satış/muhasebe birleşimleri kabul edilmiş sayılmaz."
+    },
+    {
+      "kod": "I04",
+      "ad": "Gantt Etap Özeti Ve Onaylı Plan Sürümleri",
+      "sahip": "Çekirdek ekibi · motor/okuma; modül ekibi · ekran tüketimi",
+      "oncelik": "P0",
+      "gerekce": "Gerçekleşme ve onaylı planın kaynağı çekirdektir. Gantt özetini görünür görevlerden üretmek aynı etap için çelişen sonuç doğurabilir. Plan sürümleri motorda saklanıyor fakat okuma bütün listeyi vermiyor.",
+      "kabul_olcutleri": [
+        "Projeyi görebilen iki rol aynı doğru etap özetini alır; ayrıntı yalnız izinli görevleri içerir.",
+        "B0 ve en az iki onaylı revizyonun numara, onaylayan, an ve gerekçesi çekirdekten okunur; ilk plan korunur.",
+        "Modül dışından onaylanan sürüm de aynı listede görünür; modül kendi sürüm sayacını doğru kaynak saymaz.",
+        "Bu değişiklikler yeni ileri SQL göçü ve sürümlü sözleşme/paketle yapılır; donmuş referans izinsiz değiştirilmez."
+      ],
+      "dayanak": [
+        "K:65,95,111",
+        "D:N:P0269,P0281,P0282,P1026,P1028,P1031",
+        "urun/veritabani/067_plan_onayi.sql",
+        "urun/veritabani/115_plan_ve_belge.sql"
+      ],
+      "durum": "ILK_MODULDE_DOGRULANDI",
+      "uygulama_notu": "SQL 153, aynı etap özeti/izinli ayrıntı ve çekirdek B0–B3 sürümleriyle gerçek SQL/Chrome akışında geçti. Modül dışından B2 onayı ve ilk planın korunması doğrulandı."
+    },
+    {
+      "kod": "I05",
+      "ad": "Modüller Arası Ortak Okuma Ve Devir",
+      "sahip": "Çekirdek ekibi · bağlantı katmanı; sağlayıcı/tüketici modüller · iş verisi",
+      "oncelik": "P0",
+      "gerekce": "Sağlayıcı, kendi ticari verisinin sahibi kalır. Ortak bağlantı yayımlanan okumayı künye ve kullanıcının oturumuyla yönlendirir. Çekirdek motoru başka modülün şemasını okumaz.",
+      "kabul_olcutleri": [
+        "İzinli okuma, yetkisiz okuma, kapalı sağlayıcı ve eksik veri tek hata/sürüm sözleşmesiyle davranır.",
+        "Yönlendirme aynı bağlantı katmanındadır; her modülün ayrı özel sağlayıcı bağlantısı kalıcı standart sayılmaz.",
+        "M10 kazanan teklifinden M11A’ya, M11A teklif planı/tasarım girdilerinden M11B’ye gerçek devir yapılır.",
+        "Sağlayıcı yokken tüketen çalışır ve eksik bilgiyi açık gösterir; tutar sıfır veya boş plan tamamlanmış kabul edilmez."
+      ],
+      "dayanak": [
+        "K:87,95,129,131",
+        "T18:8",
+        "D:N:P0751,P0776,P0897,P0899,P1055,P1089",
+        "disaridan_moduller/Modules/m1.1a/m11a/saglayicilar.py"
+      ],
+      "durum": "GERCEK_AKISTA_TEKNIK_DOGRULANDI",
+      "uygulama_notu": "M10 kazanan sürümü SDK ile M11A gerçek proje/bütçesine; M11A başlangıç planı ve teknik fiziksel dosyaları M11B devir/B0 planına geçti. Kaynak dondurulur, tekrar devir çoğaltmaz. Yanıt kaybı + M11A süreç yeniden başlatmada aynı kalıcı olay zarfıyla tek proje açıldı."
+    },
+    {
+      "kod": "I06",
+      "ad": "Ortak Dosya Ve Projesiz Bildirim Yolu",
+      "sahip": "Çekirdek ekibi · ortak altyapı; modül ekibi · özel veri/izin ve alıcı seçimi",
+      "oncelik": "P1",
+      "gerekce": "Dosyanın baytları, kimliği ve erişimi ortak yolla yönetilir. Teklifin özel içeriği modülde kalır; sahte proje veya herkese açık projesiz nesne açılmaz. Projesiz modül hedefi yeni sözleşme kapsamı gerektirir.",
+      "kabul_olcutleri": [
+        "Dosya gerçekten yüklenir, parmak izi doğrulanır, izinli kişi açar ve yetkisiz kişi baytlara erişemez; gerçek Storage sınanır.",
+        "Proje/olay kanıtı ile projesiz özel teklif dosyası farklı erişim bağlamlarıyla aynı altyapıyı kullanır.",
+        "Onay/hatırlatma bildirimi tek kutuya ve doğru derin bağlantıya gelir; teklif görünürlüğü yayılmaz.",
+        "Modül özel izin/alıcı kararını verir; çekirdeğin taşıma ve kimlik denetimi ikinci bir ticari veri deposuna dönüşmez.",
+        "Yeni hedef/izin biçimi sürümlenmeden kullanılmış sayılmaz; demoda dosyasız teslim tercihi korunur."
+      ],
+      "dayanak": [
+        "K:129,131,146",
+        "T18:3 K-7,K-30;6",
+        "D:N:P0040,P0041,P0775,P0779,P0796,P1071",
+        "urun/veritabani/supabase/950_kanitlar.sql"
+      ],
+      "durum": "MVP_SINIRINDA_DOGRULANDI",
+      "uygulama_notu": "SQL 154 + SDK 1.2 özel fiziksel dosya kapısı. Mevcut MVP sunucusunun özel dizini, 1 MB; normal kullanıcı/sahip nesne izni, modül bağımlılığı, SHA ve tekrar kontrolü. Yükleme/indirme/teknik devir, bozuk içerik ve yetkisiz erişim retleri gerçek SQL ile geçti. Üretim dosya hizmetinin tamamı değildir."
+    },
+    {
+      "kod": "I07",
+      "ad": "Notun Alıcıları, Kabulü Ve Erişimi",
+      "sahip": "Çekirdek ekibi · okuma/yetki; modül ekibi · gösterim",
+      "oncelik": "P1",
+      "gerekce": "Notun ürettiği görevleri ve kabul bilgisini çekirdek bilir. Görev kimliği tahminiyle alıcı taraması güvenilir değildir. Not almak tek başına bütün proje için yeni genel izin anlamına gelmez.",
+      "kabul_olcutleri": [
+        "Yetkili okuma notun gerçek alıcı/görev ve kabul anlarını verir; olmayan ve görünmeyen görevler tahminle sayılmaz.",
+        "Görüldü diye sunulan değer mevcut kabul teyidinin anlamını taşır; yeni okundu olayı uydurulmaz.",
+        "Gönderilecek birimde alıcı yoksa yazana anlaşılır sonuç verilir.",
+        "Mevcut projeye özel erişimle not ve eki okunur. Otomatik tüm proje üyeliği yerine yalnız atanmış nota/ekine dar erişim önerisi ayrı tasarım kararı olarak açık kalır."
+      ],
+      "dayanak": [
+        "K:91,108,129",
+        "D:N:P0040,P0041,P0266,P1089,P1090,P1102",
+        "urun/veritabani/030_motor_yardimcilari.sql",
+        "urun/veritabani/100_okuma_temeli.sql",
+        "urun/veritabani/120_okuma_kapisi.sql"
+      ],
+      "durum": "MVP_SINIRINDA_DOGRULANDI",
+      "uygulama_notu": "NOT_ALICILARI normal okuması gerçek alıcı/görev/kabulü ve liste_tam bilgisini verir. On kişi tahmini kaldırıldı; 13 alıcı ve çekirdek görev kabulü geçti. Alıcısız birim için açık sonuç var. Atanmış nota otomatik dar ek erişimiyle genel proje görünürlüğü değiştirilmedi."
+    },
+    {
+      "kod": "I08",
+      "ad": "İşçilik Okumalarının Kapsamı Ve Paket Erişimi",
+      "sahip": "Çekirdek ekibi · sonuç okumaları/paket; modül ekibi · doğru kullanım",
+      "oncelik": "P1",
+      "gerekce": "PROJE_ISCILIGI/BIRIM, PROJE_MALIYETI ve TAHMIN_GERCEK üründe mevcut. Ama ölçülen atölye saati, beyaz yakanın zaman değeri ve maaş payı tek tür saat değildir; mevcut okumaya bakmadan kapsam tamam denemez.",
+      "kabul_olcutleri": [
+        "Ölçülen iş saati birim kırılımıyla ürün ve simülatörden aynı cevapla okunur; tarih penceresi ve kapalı ay kuralı belirtilir.",
+        "Beyaz yaka zaman değeri/maaş payı gerekiyorsa sözleşmede ayrı anlam ve alanla ifade edilir; atölye saati toplamına sessizce eklenmez.",
+        "Projeyi gören yetkisiz kullanıcı tutar/maaş alamaz; satışın standart saat oranı gerçek maaş gibi sunulmaz.",
+        "Modül etap toplamından departman saati veya ücreti bilinmeyen tutar tahmini üretmez; bilinmeyen değer eksik kalır."
+      ],
+      "dayanak": [
+        "K:70,104,110,151",
+        "D:N:P0017,P0019,P0912,P0913",
+        "T12",
+        "urun/veritabani/130_sonuc_tablolari.sql",
+        "urun/veritabani/121_ekran_okumalari.sql"
+      ],
+      "durum": "KISMEN_UYGULANDI",
+      "uygulama_notu": "M11A tahmini işçilik PROJE_DURUM emek payını/atölye saatini teklif saat ücretiyle değerlendirir; maaş değildir. Ücreti/kur karşılığı bilinmeyen emek sıfır gerçekleşen sayılmaz. Gerçek SDK/görev akışı ve saf hesap testleri geçti; tüm tarih/kapalı ay ve model karşılaştırması açıktır."
+    },
+    {
+      "kod": "I09",
+      "ad": "Proje Açılışında Anlaşılır Ret Nedenleri",
+      "sahip": "Çekirdek ekibi · hata sözleşmesi; modül ekibi · doğru mesaj",
+      "oncelik": "P1",
+      "gerekce": "Kuralın reddini çekirdek üretir. Aynı genel DURUM cevabından kod kullanılıyor diye kesin sonuç çıkarmak güvenilir değildir.",
+      "kabul_olcutleri": [
+        "Tekrarlı kod, geçersiz ana proje ve izin reddi sözleşmenin izin verdiği kapsamda ayırt edilir.",
+        "Karar kullanıcının gözüyle ve çekirdeğin sonucuyla verilir; ön okuma sonucu nihai ret sebebi yerine geçmez.",
+        "İzin dışı proje ayrıntısı hata metninden sızmaz; eski istemci genel hata kodunu işlemeye devam eder."
+      ],
+      "dayanak": [
+        "K:131",
+        "modul_kiti/paket/sozlesme/01_baglanti.md",
+        "urun/veritabani/060_kabul.sql"
+      ],
+      "durum": "KISMEN_UYGULANDI",
+      "uygulama_notu": "M11A belirsiz açılış sonucu için tam olay zarfını kalıcılaştırır; süreç yeniden başlatıldığında aynı olay tekrar eder. Var olan benzer müşterili proje başarı sayılmaz. YETKI/BAYAT ayrımı korunur; genel DURUM tek başına kod çakışması diye sunulmaz. Çekirdeğin bütün ayrıntılı ret nedenleri için ayrı sözleşme genişlemesi yapılmadı."
+    },
+    {
+      "kod": "I10",
+      "ad": "Ticari Katalog, Kapanış Bağı Ve Geri Besleme",
+      "sahip": "M10 · teklif/katalog; M11A · bütçe/dönüşüm; M3 · satın alma",
+      "oncelik": "P2",
+      "gerekce": "Birden çok modülün kullanması ticari veriyi kendiliğinden çekirdek yapmaz. Ticari katalog sürümü ve dönüşüm bağı sahibi modülden yayımlanır. M3 alımları M3 verisidir. Geri besleme döngüsü ortak veri kopyalayarak veya R08 gizlice delinerek çözülmez.",
+      "kabul_olcutleri": [
+        "Maliyet/etap kodu eşlemesi ve teklif şablonu sahibiyle sürümlenir; sonraki modül aldığı sürümü dondurur.",
+        "M11A teklif–proje bağını kendi verisinde korur; PROJE.ACTIM’a sözleşmesiz kaynak alanı eklemez.",
+        "M3 yokken malzeme/fason tutarı bilgi yoktur; işçilik kapsamı tam bütçe gibi sunulmaz.",
+        "İsteğe bağlı bağımlılık döngüsü için sürümlü çözüm ayrıca tasarlanır; ticari kapanış/temin geçmişi gerçek maaş ya da çekirdek olayına çevrilmez."
+      ],
+      "dayanak": [
+        "K:87,104,129,131,140",
+        "T18:3 K-33;8",
+        "D:N:P0773,P0786,P0800,P0918,P0920",
+        "modul_kiti/paket/sozlesme/02_kurallar.md"
+      ],
+      "durum": "PLANLANDI_UYGULANMADI"
+    },
+    {
+      "kod": "I11",
+      "ad": "Bütçe Şeridinde İlerlemenin Anlamı",
+      "sahip": "M11A · ekran ve tüketim; çekirdek · mevcut ortak ilerleme",
+      "oncelik": "P1",
+      "gerekce": "Hazır parça sayısı oranı mevcut proje ilerlemesinden farklı bir ölçüdür. Gelen SPEC’te Mustafa’ya atfedilmesi onay değildir. Proje ilerlemesi için mevcut çekirdek plan/görev tanımı esas alınır.",
+      "kabul_olcutleri": [
+        "Ana ilerleme alanı mevcut çekirdek göstergesini kullanır; harcanan emek ilerleme gibi gösterilmez.",
+        "Hazır parça oranı ayrıca istenirse adı ve hesabı ayrı bir öneri olarak kararlaştırılır; ana proje yüzdesini değiştirmez.",
+        "Bütçe dolumu ile karşılaştırılan ilerlemenin kapsamı ve eksik M3 verisi açıkça belirtilir."
+      ],
+      "dayanak": [
+        "K:110",
+        "D:N:P0019,P0285",
+        "urun/veritabani/112_gostergeler.sql",
+        "disaridan_moduller/Modules/m1.1a/istekler/M11A-03_parca_ilerlemesi.md"
+      ],
+      "durum": "GERCEK_AKISTA_TEKNIK_DOGRULANDI",
+      "uygulama_notu": "M11A ana ilerleme alanı PROJE_DURUM.yuzde olur. Görev kabul/teslim/onayından sonra bütçe ve çekirdek aynı ilerlemeyi verdi. Hazır parça oranı ana gösterge değildir; M3 olmayan malzeme/fason gerçekleşeni bilgi yoktur."
+    },
+    {
+      "kod": "I12",
+      "ad": "Kişinin Kendi Başlangıç Ve Bitiş Tahmini",
+      "sahip": "Çekirdek ekibi · ileride ortak görev davranışı",
+      "oncelik": "P2",
+      "gerekce": "Navigation’da kişinin kendi tahmini var; bugünkü görev durumuna veya yönetici planına modül içinde paralel durum eklenmez. MVP akışının tamamlanmasını engellemez.",
+      "kabul_olcutleri": [
+        "Kişinin tahmini, yöneticinin teslim tarihi ve onaylı B0/revizyonundan ayrı tutulur.",
+        "Yetki, olay/okuma sözleşmesi ve Gantt gösterimi çekirdek güncellemesi olarak birlikte tasarlanır.",
+        "Gelen P0103 eski doküman atfı yerine güncel karşılık N:T0296 kullanılır; yeni eylem adı bu incelemede kesinleşmez."
+      ],
+      "dayanak": [
+        "D:N:T0296",
+        "K:95,155",
+        "T25:C14,C15"
+      ],
+      "durum": "PLANLANDI_UYGULANMADI"
+    }
+  ],
+  "istekler": [
+    {
+      "kod": "M10-01",
+      "baslik": "M10-01 · Projesiz modül kaydına bildirim yok",
+      "dosya": "disaridan_moduller/Modules/m1.0/istekler/M10-01_projesiz_kayda_bildirim.md",
+      "sha256": "3532f49024064c98b9430907afb40f16481a406dd77f80ea69fec3df8d23b336",
+      "sahip": "Ortak bağlantı ve bildirim",
+      "isler": [
+        "I06"
+      ],
+      "degerlendirme": "GERCEK_ORTAK_YOL_EKSIGI",
+      "sonuc": "Teklif onayı M10 kuralıdır; ortak kutu/özel modül hedefi bağlantı sözleşmesinin işidir. Teklif çekirdeğe herkese açık nesne olarak taşınmaz.",
+      "karar_siniri": "Yeni modül hedefinin teknik biçimi 3. adımda sürümlenecek; önerilen MODUL alanları henüz sözleşme değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M10-02",
+      "baslik": "M10-02 · Modüller arası okumaların yönlendirmesi yok",
+      "dosya": "disaridan_moduller/Modules/m1.0/istekler/M10-02_moduller_arasi_okuma.md",
+      "sha256": "87b88fde1d84c412cc44afc392072efb9f0c71d5ff1a53a5e7d6718e5b6a8c9d",
+      "sahip": "Ortak bağlantı katmanı",
+      "isler": [
+        "I05"
+      ],
+      "degerlendirme": "GERCEK_ORTAK_YOL_EKSIGI",
+      "sonuc": "Künyeyle kayıtlı sağlayıcıya aynı bağlantı katmanından kullanıcının oturumuyla yönlendirme gerekir; motor modül tablosu okumaz.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M10-03",
+      "baslik": "M10-03 · Ortak katalog çekirdekte değil; geri besleme döngüye takılıyor",
+      "dosya": "disaridan_moduller/Modules/m1.0/istekler/M10-03_ortak_katalog_ve_geri_besleme.md",
+      "sha256": "e48e9981d9cf88891daa674fbeb1aee82ecd61e5603d14f366b0de94132f8556",
+      "sahip": "M10/M11A/M3 ticari veri sahipleri",
+      "isler": [
+        "I10"
+      ],
+      "degerlendirme": "PARCALANMIS_MODUL_SORUMLULUGU",
+      "sonuc": "Katalog/kod eşlemesi ile kapanış ve temin geçmişi ayrı modül verileridir. Çekirdeğin genel kod listelerine otomatik taşınmaz; döngü ve geri besleme ayrıca ele alınır.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M10-04",
+      "baslik": "M10-04 · Kapanan projenin departman bazında gerçek saatleri okunamıyor",
+      "dosya": "disaridan_moduller/Modules/m1.0/istekler/M10-04_proje_isciligi_birim_kirilimi.md",
+      "sha256": "8aa27c9dcb3921a24dc1c0ef47aeaa986b4419c5aaee6d37d22d83e610bb4067",
+      "sahip": "Çekirdek sonuç okumaları ve paket",
+      "isler": [
+        "I01",
+        "I08"
+      ],
+      "degerlendirme": "KISMEN_MEVCUT_KAPSAM_DOGRULANACAK",
+      "sonuc": "PROJE_ISCILIGI BIRIM/YETKINLIK kırılımı üründe var; simülatör eksik. Atölye saati ile beyaz yaka zaman değeri/maaş payı ayrılır; bütün departman emeği kabul edilmiş sayılmaz.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M10-05",
+      "baslik": "M10-05 · Dosya depolama kapısı yok",
+      "dosya": "disaridan_moduller/Modules/m1.0/istekler/M10-05_dosya_depolama.md",
+      "sha256": "a14ac3d750a7b1208332cf80450b04fc5aa7a31743b25fe2a7894a1579a48f01",
+      "sahip": "Ortak dosya altyapısı ve M10 izinleri",
+      "isler": [
+        "I06"
+      ],
+      "degerlendirme": "GERCEK_ORTAK_YOL_EKSIGI",
+      "sonuc": "Özel teklif dosyası için ortak yükleme/açma bağlantısı gerekir; modül dosya kimliği tutar, özel erişim kuralı korunur.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M10-06",
+      "baslik": "M10-06 · Ek iş ve servis talebinde bağlı proje seçilemiyor",
+      "dosya": "disaridan_moduller/Modules/m1.0/istekler/M10-06_bagli_proje_secimi.md",
+      "sha256": "a6a655506656cf379fb38f180c9af06e588dd5178909aa1a20b54ef9a6c03b4a",
+      "sahip": "Paket/kurulum ve M10 proje seçimi",
+      "isler": [
+        "I01",
+        "I03"
+      ],
+      "degerlendirme": "URUN_MEVCUT_YETKI_ESLEMESI",
+      "sonuc": "PROJELER üründe var. M10 izinli listeyi kullanır; gerekli projelere yetkili erişim verir.",
+      "karar_siniri": "SATIS rolüne tüm projeleri kendiliğinden açma önerisi kabul edilmedi; N:P0036/P0044 ve mevcut özel erişim uygulanır.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11A-01",
+      "baslik": "M11A-01 · Muhasebe ve projeyi açan satış yöneticisi projeyi göremiyor",
+      "dosya": "disaridan_moduller/Modules/m1.1a/istekler/M11A-01_gorunurluk_muhasebe_ve_acan.md",
+      "sha256": "481af18457138fb76232d79e8b23fd03e0472d0c7ad6e39473a438126ee7edbc",
+      "sahip": "Çekirdek proje erişimi ve kurulum",
+      "isler": [
+        "I03"
+      ],
+      "degerlendirme": "MEVCUT_YETKI_AYARI",
+      "sonuc": "Muhasebenin ilgili projeye erişimi şartnamede var; mevcut PROJE.ERISIM_VERDIM ile kurulur. Açan/sorumlu/etap ilişkisi ayrı kurallardır.",
+      "karar_siniri": "MUHASEBE veya SATIS tüm projeleri otomatik görsün ya da açan otomatik üye olsun önerisi yeni genel politika olur; bu adımda eklenmez. Maaş görme ayrı 151 kapsamıdır.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11A-02",
+      "baslik": "M11A-02 · Modüller arası okumaların yönlendirmesi yok",
+      "dosya": "disaridan_moduller/Modules/m1.1a/istekler/M11A-02_moduller_arasi_okuma.md",
+      "sha256": "5e16f3f407c0edd4e576d30b3cdf396233714e5f3949271939ec8c4c09b1c692",
+      "sahip": "Ortak bağlantı katmanı",
+      "isler": [
+        "I05"
+      ],
+      "degerlendirme": "AYNI_ORTAK_ISE_BAGLANDI",
+      "sonuc": "M10-02 ile aynı yönlendirme işi. M11A’nın özel HTTP sağlayıcısı ortak sözleşmenin kabulü sayılmaz.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11A-03",
+      "baslik": "M11A-03 · Parça ilerlemesi çekirdekte hesaplansın",
+      "dosya": "disaridan_moduller/Modules/m1.1a/istekler/M11A-03_parca_ilerlemesi.md",
+      "sha256": "b9547861824803747592b9e25eea23fefa86dad76efc040af6976ae14c6944f3",
+      "sahip": "M11A gösterimi ve mevcut çekirdek göstergesi",
+      "isler": [
+        "I11"
+      ],
+      "degerlendirme": "ORTAK_ILERLEMEYE_OTOMATIK_ALINMAZ",
+      "sonuc": "Parça sayısı oranı N:P0019 ve mevcut çekirdek ilerlemesiyle aynı değildir. Ana yüzde için mevcut ortak gösterge kullanılacak.",
+      "karar_siniri": "Yeni parça hazır oranı ayrıca istenirse ayrı ölçü olarak kararlaştırılır; SPEC’teki atıf Mustafa’nın birinci ağız onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11A-04",
+      "baslik": "M11A-04 · Proje ve birim bazında saat okuması simülatörde yok",
+      "dosya": "disaridan_moduller/Modules/m1.1a/istekler/M11A-04_proje_birim_saati.md",
+      "sha256": "42b83d8ee021229acc6a755f00a815b769295db7f1be374aab171af08ece1dcd",
+      "sahip": "Çekirdek sonuç okumaları ve paket",
+      "isler": [
+        "I01",
+        "I08"
+      ],
+      "degerlendirme": "KISMEN_MEVCUT_KAPSAM_DOGRULANACAK",
+      "sonuc": "Üç okuma üründe var. Çağrının tarih penceresi/ay parametresi, saat anlamı ve para maskesi pakete yansıtılacak; etap emeğini departman saati yerine koymak kabul yolu değil.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11A-05",
+      "baslik": "M11A-05 · M3'e: proje bazında satın alma ve fason sipariş tutarları",
+      "dosya": "disaridan_moduller/Modules/m1.1a/istekler/M11A-05_m3_proje_alimlari.md",
+      "sha256": "9787b636efdad9030a44c0d6df155cfd2789a27d451f1538678675f202301691",
+      "sahip": "M3 sağlayıcısı; M11A tüketimi",
+      "isler": [
+        "I10",
+        "I05"
+      ],
+      "degerlendirme": "BASKA_MODULUN_VERISI",
+      "sonuc": "Satın alma/fason tutarı M3 verisidir; M3.PROJE_ALIMLARI bir sağlayıcı sözleşmesi önerisidir. M3 bu teslimde yok; bilinmeyen değer sıfır sayılmaz.",
+      "karar_siniri": "M3’ün yapmadığı hesap veya veri bu tur çekirdeğe taşınmaz; gerçek teslim gelmeden kabul verilemez.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11A-06",
+      "baslik": "M11A-06 · PROJE.ACTIM'da kaynak kayıt alanı yok",
+      "dosya": "disaridan_moduller/Modules/m1.1a/istekler/M11A-06_proje_acilis_kaynagi.md",
+      "sha256": "0636d7ac4d55ad390ed18fa80521813cde87f885f2a83edc3ed47d61151a3f27",
+      "sahip": "M11A dönüşüm bağı; M10 geri besleme tüketimi",
+      "isler": [
+        "I10"
+      ],
+      "degerlendirme": "MODUL_VERISI_KAYNAK_ALANI_ONAYSIZ",
+      "sonuc": "Teklif sürümü–proje eşlemesi M11A’nın verisidir. Şemada fazladan alanın kabul edilmesi kaynak alanını sözleşmeli yapmaz; R08 döngüsü ticari veriyi çekirdeğe taşıma gerekçesi değildir.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11A-07",
+      "baslik": "M11A-07 · Dosya depolama kapısı yok",
+      "dosya": "disaridan_moduller/Modules/m1.1a/istekler/M11A-07_dosya_depolama.md",
+      "sha256": "485c479fe0d10aa682942494ddc8b119fa9d10f42ebd1709027f0eeedab6c7bd",
+      "sahip": "Ortak dosya altyapısı ve M11A izinleri",
+      "isler": [
+        "I06"
+      ],
+      "degerlendirme": "AYNI_ORTAK_ISE_BAGLANDI",
+      "sonuc": "M10-05/M11B-05 ile aynı ortak yükleme işi; ticari belge erişimi ve tekliften donmuş PDF’in bütünlüğü korunur.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11A-08",
+      "baslik": "M11A-08 · Sahte bulut tek künye kuruyor",
+      "dosya": "disaridan_moduller/Modules/m1.1a/istekler/M11A-08_sahte_bulut_tek_kunye.md",
+      "sha256": "6443a3b728cd452fdfa6806f93468a452d12e134d55db4a512bb55ac1cf34643",
+      "sahip": "Geliştirme paketi ve test ortamı",
+      "isler": [
+        "I01"
+      ],
+      "degerlendirme": "PAKET_GELISTIRME_ARACI_EKSIGI",
+      "sonuc": "Çoklu künye/servis kimliği testi ortak pakette tamamlanır. Yetkili test ucu canlı API’ye açılmaz; tek künye varsayımı ürün sınırlaması diye taşınmaz.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11A-09",
+      "baslik": "M11A-09 · PROJE.ACTIM retlerinin nedeni ayırt edilemiyor",
+      "dosya": "disaridan_moduller/Modules/m1.1a/istekler/M11A-09_acilis_reddi_nedeni.md",
+      "sha256": "fe33543c119318a06d1ba141a7a0b8732bd5ad1b57e7b45991c112e82a16205d",
+      "sahip": "Çekirdek hata sözleşmesi; M11A mesajları",
+      "isler": [
+        "I09"
+      ],
+      "degerlendirme": "GERCEK_HATA_SOZLESMESI_EKSIGI",
+      "sonuc": "Genel DURUM cevabından kesin ret nedeni tahmin edilmez; ayırt edici ve izinleri koruyan hata nedenleri ortak sözleşmede ele alınır.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11B-01",
+      "baslik": "M11B-01 · GANTT'ta etabın gerçekleşeni okuyana göre değişiyor",
+      "dosya": "disaridan_moduller/Modules/m1.1b/istekler/M11B-01_gantt_gerceklesen_okuyana_gore.md",
+      "sha256": "685e301e19c14c5ecf52fd8ad6672800aca94435ac5795fe41392814b7a8ab56",
+      "sahip": "Çekirdek Gantt özeti",
+      "isler": [
+        "I04"
+      ],
+      "degerlendirme": "KODDA_GORULEN_SINIR_KABUL_GEREKLI",
+      "sonuc": "Etap özeti görünürlüğe göre daralan görevlerden türememeli. Ayrıntı izinli kalırken proje/etap özeti tutarlı olmalı; iki rol ile gerçek motor kabulü gerekir.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false,
+      "teknik_durum": "ILK_PILOTTA_DOGRULANDI",
+      "teknik_kanit": "codex/sonuclar/modul_ortak_baglanti.json"
+    },
+    {
+      "kod": "M11B-02",
+      "baslik": "M11B-02 · GANTT ve PLAN okumaları MVP'de yok",
+      "dosya": "disaridan_moduller/Modules/m1.1b/istekler/M11B-02_gantt_plan_mvpde_yok.md",
+      "sha256": "513ee779da8250f1737684b67b286da212b41a2c34a542521e965d0600f9c872",
+      "sahip": "Ürün kataloğu/simülatör/paket",
+      "isler": [
+        "I01"
+      ],
+      "degerlendirme": "ESKI_KATALOG_BEYANI",
+      "sonuc": "PLAN ve GANTT üründe var; yeni SQL gözlemi mevcut. Katman etiketini değiştirmek tek başına tam M11B kabulü değildir; yeniden motor yazılmaz.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11B-03",
+      "baslik": "M11B-03 · PLAN okuması plan sürümlerinin listesini vermiyor",
+      "dosya": "disaridan_moduller/Modules/m1.1b/istekler/M11B-03_plan_surum_listesi.md",
+      "sha256": "fa8959611ce550d07794e8b4a0e03c700b2ec724a3498a7183417f40e385a085",
+      "sahip": "Çekirdek plan okuması; M11B tüketimi",
+      "isler": [
+        "I04"
+      ],
+      "degerlendirme": "GERCEK_OKUMA_EKSIGI",
+      "sonuc": "Motor B0/B1… numara/onaylayan/an/gerekçe saklıyor. Okuma listeyi yayımlamalı; modülün kendi sürüm defteri nihai kaynak olamaz.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false,
+      "teknik_durum": "ILK_PILOTTA_DOGRULANDI",
+      "teknik_kanit": "codex/sonuclar/modul_ortak_baglanti.json"
+    },
+    {
+      "kod": "M11B-04",
+      "baslik": "M11B-04 · PROJELER okuması simülatörde yok; yeni açılan projeyi öğrenme yolu yok",
+      "dosya": "disaridan_moduller/Modules/m1.1b/istekler/M11B-04_projeler_okumasi.md",
+      "sha256": "d7cc7a8c24397d11801a40bfa17dab13b38fe8a314932478a3ef8a537be467f3",
+      "sahip": "Paket ve ortak proje bağlamı; M11B listeleme",
+      "isler": [
+        "I01",
+        "I02",
+        "I03"
+      ],
+      "degerlendirme": "URUN_MEVCUT_PAKET_VE_BAGLAM_EKSIGI",
+      "sonuc": "PROJELER üründe var. Kullanıcı listesi/derin bağlantıyla yeni proje bulunur; arka plan servis okuması ayrı I02 işidir.",
+      "karar_siniri": "Yeni projeyi görmek otomatik ticari devir/plan onayı değildir; M11B devir akışı ayrı kalır.",
+      "istek_karsilandi": false,
+      "teknik_durum": "ILK_PILOTTA_DOGRULANDI",
+      "teknik_kanit": "codex/sonuclar/modul_ortak_baglanti.json"
+    },
+    {
+      "kod": "M11B-05",
+      "baslik": "M11B-05 · Dosya depolama kapısı yok",
+      "dosya": "disaridan_moduller/Modules/m1.1b/istekler/M11B-05_dosya_depolama_kapisi.md",
+      "sha256": "5ce4072099108b8571545d3645df3cc8544746da5f1e0677512f800d762c876a",
+      "sahip": "Ortak dosya altyapısı ve M11B tüketimi",
+      "isler": [
+        "I06"
+      ],
+      "degerlendirme": "AYNI_ORTAK_ISE_BAGLANDI",
+      "sonuc": "Gerçek dosya/kanıt yüklemesi ortak sözleşmeye bağlanır. Konum/parmak izi saklamak dosya yüklemek değildir; mevcut olay kanıtı yolu değerlendirilir.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11B-06",
+      "baslik": "M11B-06 · NOT okuması alıcıları ve \"gördüm\" durumlarını vermiyor",
+      "dosya": "disaridan_moduller/Modules/m1.1b/istekler/M11B-06_not_alicilari.md",
+      "sha256": "b034a1b653dc5791eb8b61254e0c57004696a51b48e99501b6efde4e0792e9f5",
+      "sahip": "Çekirdek not/görev okuması; M11B gösterimi",
+      "isler": [
+        "I07"
+      ],
+      "degerlendirme": "GERCEK_OKUMA_EKSIGI",
+      "sonuc": "Gerçek alıcılar ve kabul teyidi tek izinli okumadan gelmeli; /1…/10 görev tahmini ve üç YETKI’de durma kabul edilmez.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11B-07",
+      "baslik": "M11B-07 · ETAP.TANIMLADIM ve ETAP.DEGISTIRDIM yetkisi proje sorumlusuna verilemiyor",
+      "dosya": "disaridan_moduller/Modules/m1.1b/istekler/M11B-07_etap_yetkisi_proje_sorumlusu.md",
+      "sha256": "3b01071da627ac3fd71f1143e99787f7de8eb2fa0195f09f40337618bd713973",
+      "sahip": "Künye denetimi ve yetki kurulumu; M11B akışı",
+      "isler": [
+        "I03"
+      ],
+      "degerlendirme": "KISMEN_MEVCUT_PAKET_DUZELTMESI",
+      "sonuc": "PROJE_SORUMLUSU ve yetki devri motorda mevcut; V17 sözde rolü tanımıyor. Geçerli kapsam FIRMA/BIRIM; proje ilişkisi denetimi ayrı. Senaryo 1’in CEO etap açma kararı korunur.",
+      "karar_siniri": "Bütün proje sorumlularına etap açmayı varsayılan olarak vermek otomatik kabul edilmedi; mevcut devredilebilir kurulum kuralı kullanılır.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11B-08",
+      "baslik": "M11B-08 · \"Planlandı\" görev durumu: kişinin kendi tahmini",
+      "dosya": "disaridan_moduller/Modules/m1.1b/istekler/M11B-08_planlandi_gorev_durumu.md",
+      "sha256": "28738b36a580a0b945d7ce985b05e83571eac5077cefcf539d6d4e71946d9fef",
+      "sahip": "Çekirdek ortak görev davranışı",
+      "isler": [
+        "I12"
+      ],
+      "degerlendirme": "MVP_SONRASI_CEKIRDEK",
+      "sonuc": "Kişinin kendi tarih tahmini güncel şartnamede N:T0296’da var. Modülde ikinci görev durumu tutulmaz; ileride çekirdek sözleşmesiyle yapılır.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11B-09",
+      "baslik": "M11B-09 · Not görevini alan kişi notun projesini ve NOT kaydını göremiyor",
+      "dosya": "disaridan_moduller/Modules/m1.1b/istekler/M11B-09_not_alicisi_projeyi_goremiyor.md",
+      "sha256": "9ae976001760db281512b4f908ff18956ce50270674dc8c674595df0ea537362",
+      "sahip": "Çekirdek not erişimi; mevcut özel proje izni",
+      "isler": [
+        "I07",
+        "I03"
+      ],
+      "degerlendirme": "MEVCUT_ERISIM_VE_DAR_OKUMA_TASARIMI",
+      "sonuc": "Not alanın not/ekini kullanabilmesi çekirdek erişim işidir. Bugün gerekli projeye açık izin verilebilir; otomatik tüm proje üyeliği çözüm diye eklenmez.",
+      "karar_siniri": "Sadece atanmış nota/ekine dar erişim önerisi ayrı tasarlanacak; tüm proje geçmişini açan yeni kural bu adımda onaylanmış sayılmaz.",
+      "istek_karsilandi": false
+    },
+    {
+      "kod": "M11B-10",
+      "baslik": "M11B-10 · Etap sorumlusu proje ekibine giriyor mu?",
+      "dosya": "disaridan_moduller/Modules/m1.1b/istekler/M11B-10_etap_sorumlusu_gorunurlugu.md",
+      "sha256": "1b236fc49cd5d901a667dd3c67cb2689990792dd19965874d03d95ab36b13eb9",
+      "sahip": "Çekirdek belge/paket açıklığı; M11B beklentisi",
+      "isler": [
+        "I03"
+      ],
+      "degerlendirme": "MEVCUT_KURAL_BELGEYLE_NETLESTIRILECEK",
+      "sonuc": "Etap sorumlusu k10.projede_yetkili ve k9.proje_gorebilir yoluyla projeyi görür. Karar 103 nesne sorumlusu içindir; etap sorumlusunu kapsamıyor. Gerçek SQL senaryosu kabulde doğrulanacak.",
+      "karar_siniri": "Mevcut karar/sözleşme sınırı; yeni iş kuralı onayı değildir.",
+      "istek_karsilandi": false
+    }
+  ],
+  "ek_bulgular": [
+    {
+      "kod": "E01",
+      "isler": [
+        "I02"
+      ],
+      "bulgu": "Ortak giriş/menü/kişi değişimi, kurulum, dar servis kimliği ve kapatma 25 istek dışında T25’in gösterdiği zorunlu ortak işlerdir."
+    },
+    {
+      "kod": "E02",
+      "isler": [
+        "I05"
+      ],
+      "bulgu": "M11B, M11A.BASLANGIC_PLANI ve TEKLIF_GIRDILERI tüketmiyor; proje tarihlerini/şablonunu doldurması teklif planını devraldığını kanıtlamaz."
+    },
+    {
+      "kod": "E03",
+      "isler": [
+        "I08"
+      ],
+      "bulgu": "PROJE_ISCILIGI mevcut kodda aralık/iş üzerinden atölye saatini gruplar; beyaz yaka zaman değeri/maaş payı dahil bütün departman emeği diye otomatik kabul edilmez."
+    }
+  ],
+  "uygulandi": false,
+  "gelen_istekler_degistirildi": false,
+  "paket_yayimlandi": true,
+  "modul_kabul_edildi": false,
+  "uygulama_durumu": "UC_MODUL_GERCEK_MVP_TEKNIK_SINAMA_GECTI",
+  "uygulama_kaniti": [
+    "codex/sonuclar/moduller_mvp.json",
+    "codex/sonuclar/modul_ortak_baglanti.json"
+  ],
+  "paket_surumu": "1.2",
+  "guncelleme_notu": "Karar 160: gerçek MVP entegrasyonu ve teknik test. Kullanıcı kabulü ve arkadaşla paylaşma hazırlığı ayrı aşama. Örnek Veri değişmedi."
+}

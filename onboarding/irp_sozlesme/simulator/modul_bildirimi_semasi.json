@@ -1,0 +1,204 @@
+{
+  "adim_turu": "modul_bildirimi",
+  "bicim_surumu": 4,
+  "birak": {
+    "properties": {
+      "alicilar": {
+        "items": {
+          "properties": {
+            "kimlik": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "tur": {
+              "enum": [
+                "KISI",
+                "BIRIM_YONETICILERI",
+                "ROL",
+                "PROJEDE_YETKILILER",
+                "NESNE_SORUMLUSU"
+              ]
+            }
+          },
+          "required": [
+            "tur",
+            "kimlik"
+          ],
+          "type": "object"
+        },
+        "minItems": 1,
+        "type": "array"
+      },
+      "an": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "kayit": {
+        "properties": {
+          "kimlik": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "modul_kaydi": {
+            "type": "string"
+          },
+          "tur": {
+            "enum": [
+              "PROJE",
+              "IS",
+              "GOREV",
+              "NESNE"
+            ]
+          }
+        },
+        "required": [
+          "tur",
+          "kimlik"
+        ],
+        "type": "object"
+      },
+      "kural": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "metin": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "modul": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "onem": {
+        "enum": [
+          "BILGI",
+          "UYARI"
+        ]
+      },
+      "servis_kimligi": {
+        "minLength": 1,
+        "type": "string"
+      }
+    },
+    "required": [
+      "servis_kimligi",
+      "modul",
+      "kural",
+      "kayit",
+      "an",
+      "alicilar",
+      "metin",
+      "onem"
+    ],
+    "type": "object"
+  },
+  "birak_cevabi": {
+    "properties": {
+      "alici_kalmadi": {
+        "type": "boolean"
+      },
+      "alicilar": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "guncellenen": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "sonuc": {
+        "const": "BASARILI"
+      },
+      "suzulenler": {
+        "items": {
+          "properties": {
+            "kisi": {
+              "type": "string"
+            },
+            "neden": {
+              "enum": [
+                "PROJEYI_GOREMEZ",
+                "AYRILDI",
+                "ISTIHDAM_DISI"
+              ]
+            }
+          },
+          "required": [
+            "kisi",
+            "neden"
+          ],
+          "type": "object"
+        },
+        "type": "array"
+      },
+      "yeni": {
+        "minimum": 0,
+        "type": "integer"
+      }
+    },
+    "required": [
+      "sonuc",
+      "alicilar",
+      "yeni",
+      "guncellenen",
+      "alici_kalmadi",
+      "suzulenler"
+    ],
+    "type": "object"
+  },
+  "kaldir": {
+    "properties": {
+      "an": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "kayit": {
+        "properties": {
+          "kimlik": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "modul_kaydi": {
+            "type": "string"
+          },
+          "tur": {
+            "enum": [
+              "PROJE",
+              "IS",
+              "GOREV",
+              "NESNE"
+            ]
+          }
+        },
+        "required": [
+          "tur",
+          "kimlik"
+        ],
+        "type": "object"
+      },
+      "kural": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "modul": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "servis_kimligi": {
+        "minLength": 1,
+        "type": "string"
+      }
+    },
+    "required": [
+      "servis_kimligi",
+      "modul",
+      "kural",
+      "kayit",
+      "an"
+    ],
+    "type": "object"
+  },
+  "olay_degil": true,
+  "surum": "10.2"
+}

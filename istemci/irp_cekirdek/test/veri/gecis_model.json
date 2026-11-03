@@ -1,0 +1,1186 @@
+[
+  {
+    "ad": "giris_bos",
+    "girdi": {
+      "hal": {
+        "durum": "MESAI_DISI",
+        "kova": null,
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "MESAI.GIRDIM",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "CALISMIYOR",
+        "kova": "TANIMSIZ",
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "giris_kilitli",
+    "girdi": {
+      "hal": {
+        "durum": "MESAI_DISI",
+        "kova": null,
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "MESAI.GIRDIM",
+      "kwargs": {
+        "bas_is": {
+          "kimlik": "I1",
+          "tur": "SURELI",
+          "durum": "ON_IS_BEKLIYOR",
+          "onay_gerekli": false
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "ON_IS_BEKLIYOR",
+        "kova": "BEKLEME_ON_IS",
+        "acik_is": null,
+        "aralik_is": "I1",
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      [
+        "R04"
+      ]
+    ]
+  },
+  {
+    "ad": "giris_onay",
+    "girdi": {
+      "hal": {
+        "durum": "MESAI_DISI",
+        "kova": null,
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "MESAI.GIRDIM",
+      "kwargs": {
+        "bas_is": {
+          "kimlik": "I1",
+          "tur": "SURELI",
+          "durum": "ONAY_BEKLIYOR",
+          "onay_gerekli": false
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "ONAY_BEKLIYOR",
+        "kova": "BEKLEME_ONAY",
+        "acik_is": null,
+        "aralik_is": "I1",
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "giris_ariza",
+    "girdi": {
+      "hal": {
+        "durum": "MESAI_DISI",
+        "kova": null,
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "MESAI.GIRDIM",
+      "kwargs": {
+        "bas_is": {
+          "kimlik": "I1",
+          "tur": "SURELI",
+          "durum": "SIRADA",
+          "onay_gerekli": false,
+          "acik_ariza": "ARIZA.X",
+          "devam_izni": true,
+          "calisma_kovasi": "YENIDEN_ISLEME"
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "ARIZADA",
+        "kova": "BEKLEME_ARIZA",
+        "acik_is": "I1",
+        "aralik_is": "I1",
+        "neden": "ARIZA.X",
+        "onceki_kova": "YENIDEN_ISLEME",
+        "devam_izni": true,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "paydos",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "PAYDOS",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "MESAI_DISI",
+        "kova": null,
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "mesai_cikis",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "MESAI.CIKTIM",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "MESAI_DISI",
+        "kova": null,
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "mesai_disi_mola",
+    "girdi": {
+      "hal": {
+        "durum": "MESAI_DISI",
+        "kova": null,
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "MOLA_BASI",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "MESAI_DISI",
+        "kova": null,
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "mola_basi",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "MOLA_BASI",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "SABIT_MOLADA",
+        "kova": "SABIT_MOLA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": {
+          "durum": "CALISIYOR",
+          "kova": "CALISMA",
+          "acik_is": "I1",
+          "aralik_is": null,
+          "neden": null,
+          "onceki_kova": "CALISMA",
+          "devam_izni": false,
+          "mola_onceki": null,
+          "baslangic": null,
+          "acan_olay": null,
+          "acan_kural": null,
+          "son_olay_ani": null
+        },
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "mola_sonu",
+    "girdi": {
+      "hal": {
+        "durum": "SABIT_MOLADA",
+        "kova": "SABIT_MOLA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": {
+          "durum": "CALISIYOR",
+          "kova": "CALISMA",
+          "acik_is": "I1",
+          "aralik_is": null,
+          "neden": null,
+          "onceki_kova": "CALISMA",
+          "devam_izni": false,
+          "mola_onceki": null,
+          "baslangic": null,
+          "acan_olay": null,
+          "acan_kural": null,
+          "son_olay_ani": null
+        },
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "MOLA_SONU",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "DEVAM_BEKLIYOR",
+        "kova": "TANIMSIZ",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "arizada_mola_sonu",
+    "girdi": {
+      "hal": {
+        "durum": "SABIT_MOLADA",
+        "kova": "SABIT_MOLA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": {
+          "durum": "ARIZADA",
+          "kova": "CALISMA",
+          "acik_is": "I1",
+          "aralik_is": null,
+          "neden": null,
+          "onceki_kova": "CALISMA",
+          "devam_izni": false,
+          "mola_onceki": null,
+          "baslangic": null,
+          "acan_olay": null,
+          "acan_kural": null,
+          "son_olay_ani": null
+        },
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "MOLA_SONU",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "ARIZADA",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "basla",
+    "girdi": {
+      "hal": {
+        "durum": "MESAI_DISI",
+        "kova": null,
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "IS.BASLADIM",
+      "kwargs": {
+        "is_": {
+          "kimlik": "I1",
+          "tur": "SURELI",
+          "durum": "SIRADA",
+          "onay_gerekli": false
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": "I1",
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "mola",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "IS.MOLA_VERDIM",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "MOLADA",
+        "kova": "MOLA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "ariza",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "IS.ARIZA_BILDIRDIM",
+      "kwargs": {
+        "is_": {
+          "kimlik": "I1",
+          "tur": "SURELI",
+          "durum": "SIRADA",
+          "onay_gerekli": false
+        },
+        "neden": "ARIZA.X"
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "ARIZADA",
+        "kova": "BEKLEME_ARIZA",
+        "acik_is": "I1",
+        "aralik_is": "I1",
+        "neden": "ARIZA.X",
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      [
+        "R07"
+      ]
+    ]
+  },
+  {
+    "ad": "devam_onayi",
+    "girdi": {
+      "hal": {
+        "durum": "ARIZADA",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "IS.DEVAM_ONAYLADIM",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "ARIZADA",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": true,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "devam",
+    "girdi": {
+      "hal": {
+        "durum": "ARIZADA",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "IS.DEVAM_ETTIM",
+      "kwargs": {
+        "is_": {
+          "kimlik": "I1",
+          "tur": "SURELI",
+          "durum": "SIRADA",
+          "onay_gerekli": false
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": "I1",
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "yeniden_isleme",
+    "girdi": {
+      "hal": {
+        "durum": "ARIZADA",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "IS.DEVAM_ETTIM",
+      "kwargs": {
+        "is_": {
+          "kimlik": "I1",
+          "tur": "SURELI",
+          "durum": "REDDEDILDI",
+          "onay_gerekli": false
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "CALISIYOR",
+        "kova": "YENIDEN_ISLEME",
+        "acik_is": "I1",
+        "aralik_is": "I1",
+        "neden": null,
+        "onceki_kova": "YENIDEN_ISLEME",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "anlik_devam",
+    "girdi": {
+      "hal": {
+        "durum": "ARIZADA",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "IS.DEVAM_ETTIM",
+      "kwargs": {
+        "is_": {
+          "kimlik": "I1",
+          "tur": "ANLIK",
+          "durum": "SIRADA",
+          "onay_gerekli": false
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "CALISMIYOR",
+        "kova": "TANIMSIZ",
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "onayli_tamamlama",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "IS.TAMAMLADIM",
+      "kwargs": {
+        "is_": {
+          "kimlik": "I1",
+          "tur": "SURELI",
+          "durum": "SIRADA",
+          "onay_gerekli": true
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "ONAY_BEKLIYOR",
+        "kova": "BEKLEME_ONAY",
+        "acik_is": null,
+        "aralik_is": "I1",
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      [
+        "R05"
+      ]
+    ]
+  },
+  {
+    "ad": "anlik_tamamlama",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "IS.TAMAMLADIM",
+      "kwargs": {
+        "is_": {
+          "kimlik": "I1",
+          "tur": "ANLIK",
+          "durum": "SIRADA",
+          "onay_gerekli": false
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "tamamlama",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "IS.TAMAMLADIM",
+      "kwargs": {
+        "is_": {
+          "kimlik": "I1",
+          "tur": "SURELI",
+          "durum": "SIRADA",
+          "onay_gerekli": false
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "CALISMIYOR",
+        "kova": "TANIMSIZ",
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "onay",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "IS.ONAYLADIM",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "CALISMIYOR",
+        "kova": "TANIMSIZ",
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "ret",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "IS.REDDETTIM",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "CALISMIYOR",
+        "kova": "GECIS",
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  },
+  {
+    "ad": "liste_bos",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "LISTE_DEGISTI",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "CALISMIYOR",
+        "kova": "TANIMSIZ",
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      [
+        "R08"
+      ]
+    ]
+  },
+  {
+    "ad": "liste_degisti",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "LISTE_DEGISTI",
+      "kwargs": {
+        "bas_is": {
+          "kimlik": "I2",
+          "tur": "SURELI",
+          "durum": "SIRADA",
+          "onay_gerekli": false
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "CALISMIYOR",
+        "kova": "GECIS",
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      [
+        "R01"
+      ]
+    ]
+  },
+  {
+    "ad": "liste_kilitli",
+    "girdi": {
+      "hal": {
+        "durum": "CALISIYOR",
+        "kova": "CALISMA",
+        "acik_is": "I1",
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "LISTE_DEGISTI",
+      "kwargs": {
+        "bas_is": {
+          "kimlik": "I2",
+          "tur": "SURELI",
+          "durum": "SIRADA",
+          "onay_gerekli": false,
+          "kilitli": true
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "ON_IS_BEKLIYOR",
+        "kova": "BEKLEME_ON_IS",
+        "acik_is": null,
+        "aralik_is": "I2",
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      [
+        "R04",
+        "R01"
+      ]
+    ]
+  },
+  {
+    "ad": "liste_bosta_kilitli",
+    "girdi": {
+      "hal": {
+        "durum": "CALISMIYOR",
+        "kova": null,
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "LISTE_DEGISTI",
+      "kwargs": {
+        "bas_is": {
+          "kimlik": "I1",
+          "tur": "SURELI",
+          "durum": "SIRADA",
+          "onay_gerekli": false,
+          "kilitli": true
+        }
+      }
+    },
+    "beklenen": [
+      {
+        "durum": "ON_IS_BEKLIYOR",
+        "kova": "BEKLEME_ON_IS",
+        "acik_is": null,
+        "aralik_is": "I1",
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      [
+        "R04"
+      ]
+    ]
+  },
+  {
+    "ad": "on_is_bitti",
+    "girdi": {
+      "hal": {
+        "durum": "ON_IS_BEKLIYOR",
+        "kova": null,
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      "kod": "ON_IS_BITTI",
+      "kwargs": {}
+    },
+    "beklenen": [
+      {
+        "durum": "CALISMIYOR",
+        "kova": null,
+        "acik_is": null,
+        "aralik_is": null,
+        "neden": null,
+        "onceki_kova": "CALISMA",
+        "devam_izni": false,
+        "mola_onceki": null,
+        "baslangic": null,
+        "acan_olay": null,
+        "acan_kural": null,
+        "son_olay_ani": null
+      },
+      []
+    ]
+  }
+]

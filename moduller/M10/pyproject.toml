@@ -1,0 +1,34 @@
+[project]
+name = "m10"
+version = "0.1.1"
+description = "Sibernetik IRP · M1.0 Teklif hazırlama"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi",
+  "pydantic>=2",
+  "psycopg[binary,pool]>=3.2",
+  "uvicorn",
+  "fpdf2>=2.8",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "httpx",
+  "pypdf",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["m10*"]
+
+[tool.setuptools.package-data]
+m10 = ["pdf/yazitipi/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["testler"]
+pythonpath = ["."]
+filterwarnings = ["ignore:Using `httpx` with `starlette.testclient`"]

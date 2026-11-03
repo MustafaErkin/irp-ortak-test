@@ -1,0 +1,68 @@
+{
+ "kunye_surumu": 1,
+ "kod": "M3",
+ "ad": "Satın alma (örnek, küçük M3)",
+ "surum": "0.1.0",
+ "cekirdek": ">=10.2",
+ "sahip": "Örnek",
+ "aciklama": "Paketin örnek modülü: parçanın siparişini izler, gecikeni bildirir. Gerçek M3 değildir.",
+ "servis_kimligi": "SRV-M3",
+ "arka_yuz": true,
+ "olay_yolu": "ARKA_YUZ",
+ "cihaz_harfi": "P",
+ "kapilar": {
+  "okumalar": [
+   "PROJE",
+   "NESNE",
+   "NESNELER",
+   "TOP_KIMDE",
+   "KISILER"
+  ],
+  "servis_okumalari": [
+   "NESNE",
+   "TOP_KIMDE"
+  ],
+  "olaylar": [
+   "NESNE.ACTIM",
+   "NESNE.ASAMA_GECIRDIM",
+   "NOT.YAZDIM"
+  ],
+  "bildirimler": [
+   {
+    "kural": "SIPARIS_GECIKTI",
+    "ad": "Siparişin termini geçti",
+    "onem": "UYARI",
+    "kayit_turleri": [
+     "NESNE"
+    ],
+    "alici_turleri": [
+     "NESNE_SORUMLUSU",
+     "BIRIM_YONETICILERI"
+    ]
+   }
+  ],
+  "abonelikler": [
+   "proje:*"
+  ]
+ },
+ "tur_uzantilari": [
+  {
+   "tur": "PARCA",
+   "tablo": "mod_m3.siparisler"
+  }
+ ],
+ "veritabani": {
+  "sema": "mod_m3",
+  "gocler": "veritabani/"
+ },
+ "on_yuz": {
+  "tur": "YOK"
+ },
+ "kisisel_veri": [],
+ "para": true,
+ "sinirlar": {
+  "bildirim_dakika": 30,
+  "okuma_dakika": 300,
+  "servis_okuma_dakika": 60
+ }
+}

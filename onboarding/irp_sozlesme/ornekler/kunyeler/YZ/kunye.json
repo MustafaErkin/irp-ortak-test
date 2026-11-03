@@ -1,0 +1,76 @@
+{
+ "kunye_surumu": 1,
+ "kod": "YZ",
+ "ad": "Tahmin ve risk",
+ "surum": "0.1.0",
+ "cekirdek": ">=10.2",
+ "sahip": "Ekip",
+ "aciklama": "Benzer projelerden adam/ay tahmini, gecikme riski. Öneri verir; kararı insan yazar (sistem olay yazmaz).",
+ "servis_kimligi": "SRV-YZ",
+ "arka_yuz": true,
+ "olay_yolu": "YOK",
+ "kapilar": {
+  "okumalar": [
+   "PROJE",
+   "PROJELER",
+   "GANTT",
+   "PLAN",
+   "TAHMIN_GERCEK",
+   "PROJE_ISCILIGI"
+  ],
+  "servis_okumalari": [
+   "PROJELER",
+   "ETAPLAR",
+   "NESNELER",
+   "TOP_KIMDE"
+  ],
+  "bildirimler": [
+   {
+    "kural": "GECIKME_RISKI",
+    "ad": "Etap planı gecikme riski taşıyor",
+    "onem": "BILGI",
+    "kayit_turleri": [
+     "PROJE"
+    ],
+    "alici_turleri": [
+     "PROJEDE_YETKILILER"
+    ]
+   }
+  ],
+  "abonelikler": [
+   "proje:*"
+  ]
+ },
+ "veritabani": {
+  "sema": "mod_yz",
+  "gocler": "veritabani/"
+ },
+ "on_yuz": {
+  "tur": "AYRI_UYGULAMA",
+  "derin_baglantilar": [
+   {
+    "ad": "Tahmin",
+    "baglam": "PROJE",
+    "yol": "/proje/{kimlik}",
+    "kimler": [
+     "YONETICI",
+     "YETKILI"
+    ]
+   }
+  ]
+ },
+ "kisisel_veri": [],
+ "para": false,
+ "sinirlar": {
+  "bildirim_dakika": 10,
+  "okuma_dakika": 120,
+  "servis_okuma_dakika": 60
+ },
+ "istekler": [
+  {
+   "kod": "İ-6",
+   "baslik": "Toplu ve anonim geçmiş okuması (eğitim verisi; kişi yok, para yok)",
+   "durum": "ACIK"
+  }
+ ]
+}

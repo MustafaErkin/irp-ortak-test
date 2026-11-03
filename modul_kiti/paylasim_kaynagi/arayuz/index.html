@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+  <title>Sibernetik IRP · Arayüz Örneği</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="ortak/styles.css">
+  <link rel="stylesheet" href="ortak/erp.css">
+  <link rel="stylesheet" href="onizleme.css">
+  <script type="module" src="onizleme.js"></script>
+</head>
+<body>
+  <div class="app-shell erp-shell">
+    <aside class="sidebar">
+      <a href="../README.md" class="brand"><div class="brand-mark">S</div><div><strong>Sibernetik IRP</strong><small>İŞ YÖNETİMİ</small></div></a>
+      <nav class="nav" aria-label="Örnek gezinme"><div class="nav-label">Çalışma Alanı</div><a href="#ornek" class="nav-link active"><span class="nav-icon">▤</span><span>Modül Ekranı Örneği</span></a><a href="proje_planlama_ornegi.png" class="nav-link"><span class="nav-icon">▦</span><span>Çalışan Ekran Görseli</span></a><a href="../02_TEKNOLOJI_VE_ARAYUZ.md" class="nav-link"><span class="nav-icon">≡</span><span>Arayüz Standardı</span></a></nav>
+      <div class="sidebar-foot"><span>Geliştirici Paketi</span><span>Sentetik Arayüz Örneği</span></div>
+    </aside>
+    <header class="topbar"><div class="topbar-breadcrumb"><span>Çalışma Alanı</span><span>›</span><strong>Modül Ekranı Örneği</strong></div><div class="topbar-user"><span class="sample-label">Önizleme</span><div class="user-copy"><strong>Yönetici</strong><small>Proje Yönetimi</small></div></div></header>
+    <main class="content">
+      <div class="page-heading"><div><div class="page-eyebrow">İş Alanı</div><h1>Proje Çalışmaları</h1><p>Ortak tablo, filtre, düğme ve pencere düzeni.</p></div></div>
+      <div class="notice preview-notice">Bu sayfa yalnız arayüz örneğidir. Çekirdeğe bağlanmaz; iş olayı veya gerçek iş verisi üretmez.</div>
+      <div class="preview-controls"><label class="field"><span>Örnek Proje</span><select id="preview-project"><option value="DEMO-01">Örnek Montaj Hattı</option><option value="DEMO-02">Örnek Paketleme Makinesi</option></select></label><label class="field"><span>Gösterilecek Durum</span><select id="preview-mode"><option value="normal">Dolu Görünüm</option><option value="empty">Boş Görünüm</option><option value="error">Hata Görünümü</option></select></label><button type="button" class="btn" id="preview-refresh">Veri Yenilemesini Dene</button><button type="button" class="btn" id="preview-remount">Ekranı Yeniden Aç</button></div>
+      <div id="module-preview"></div>
+    </main>
+  </div>
+  <div id="dialogs"></div><div id="toasts" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

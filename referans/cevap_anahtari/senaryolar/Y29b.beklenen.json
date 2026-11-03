@@ -1,0 +1,100 @@
+{
+  "cihaz_denemeleri": [
+    {
+      "cevap": {
+        "deger": "K017-2610220001-T"
+      },
+      "harf": "T",
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {
+          "261022": 1
+        }
+      }
+    },
+    {
+      "cevap": {
+        "deger": null
+      },
+      "harf": null,
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {}
+      }
+    },
+    {
+      "cevap": {
+        "hata_turu": "ConnectionError",
+        "neden": "Yeni cihaz kaydi cevrimici ister"
+      },
+      "harf": null,
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {}
+      }
+    },
+    {
+      "cevap": {
+        "hata_turu": "ConnectionError",
+        "neden": "Cihaz kaydi cevrimici ister"
+      },
+      "harf": null,
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {}
+      }
+    },
+    {
+      "cevap": {
+        "deger": "U"
+      },
+      "harf": "U",
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {}
+      }
+    },
+    {
+      "cevap": {
+        "deger": "K017-2610220001-U"
+      },
+      "harf": "U",
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {
+          "261022": 1
+        }
+      }
+    },
+    {
+      "cevap": {
+        "deger": null
+      },
+      "harf": null,
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {}
+      }
+    },
+    {
+      "cevap": {
+        "deger": "V"
+      },
+      "harf": "V",
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {}
+      }
+    }
+  ],
+  "depolar": [],
+  "saf_sorgular": []
+}

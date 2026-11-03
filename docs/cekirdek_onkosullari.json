@@ -1,0 +1,57 @@
+{
+  "belge": {
+    "kod": "BELGE",
+    "ad": "Belge",
+    "acabilenler": {
+      "kapsam": "FIRMA",
+      "kimler": [
+        "YONETICI",
+        "BEYAZ_YAKA"
+      ]
+    },
+    "asamalar": [
+      "CALISILIYOR",
+      {
+        "kod": "TAMAM",
+        "son": true
+      }
+    ],
+    "baslangic_asamasi": "CALISILIYOR",
+    "gecisler": [
+      {
+        "den": "CALISILIYOR",
+        "e": "TAMAM",
+        "kimler": [
+          "YONETICI"
+        ]
+      }
+    ],
+    "baglanabilir_turler": [
+      "PROJE",
+      "NESNE",
+      "IS",
+      "GOREV"
+    ],
+    "surum_onaylayanlar": null
+  },
+  "izinler": [
+    {
+      "liste": "IZIN",
+      "kod": "YILLIK",
+      "ad": "Yıllık İzin",
+      "aktif": true
+    },
+    {
+      "liste": "IZIN",
+      "kod": "SAATLIK",
+      "ad": "Saatlik İzin",
+      "aktif": true
+    },
+    {
+      "liste": "IZIN",
+      "kod": "MAZERET",
+      "ad": "Mazeret İzni",
+      "aktif": true
+    }
+  ]
+}

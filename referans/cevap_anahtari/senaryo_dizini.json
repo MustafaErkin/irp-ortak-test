@@ -1,0 +1,1291 @@
+{
+  "dosya_cifti": 213,
+  "senaryolar": [
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "D1",
+      "test": "testler.test_senaryolar.Senaryolar.test_D1"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "D2",
+      "test": "testler.test_senaryolar.Senaryolar.test_D2"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "D2b",
+      "test": "testler.test_senaryolar.Senaryolar.test_D2b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "D3",
+      "test": "testler.test_senaryolar.Senaryolar.test_D3"
+    },
+    {
+      "cihaz_deneyi": 1,
+      "depo": 2,
+      "senaryo": "D4",
+      "test": "testler.test_senaryolar.Senaryolar.test_D4"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S1",
+      "test": "testler.test_senaryolar.Senaryolar.test_S1"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "S10",
+      "test": "testler.test_senaryolar.Senaryolar.test_S10"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "S10b",
+      "test": "testler.test_senaryolar.Senaryolar.test_S10b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S11",
+      "test": "testler.test_senaryolar.Senaryolar.test_S11"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S12",
+      "test": "testler.test_senaryolar.Senaryolar.test_S12"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S13",
+      "test": "testler.test_senaryolar.Senaryolar.test_S13"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S14",
+      "test": "testler.test_senaryolar.Senaryolar.test_S14"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S14b",
+      "test": "testler.test_senaryolar.Senaryolar.test_S14b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S15",
+      "test": "testler.test_senaryolar.Senaryolar.test_S15"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S16",
+      "test": "testler.test_senaryolar.Senaryolar.test_S16"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S17",
+      "test": "testler.test_senaryolar.Senaryolar.test_S17"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S18",
+      "test": "testler.test_senaryolar.Senaryolar.test_S18"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "S2",
+      "test": "testler.test_senaryolar.Senaryolar.test_S2"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "S3",
+      "test": "testler.test_senaryolar.Senaryolar.test_S3"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S4",
+      "test": "testler.test_senaryolar.Senaryolar.test_S4"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S5",
+      "test": "testler.test_senaryolar.Senaryolar.test_S5"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S6",
+      "test": "testler.test_senaryolar.Senaryolar.test_S6"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S7",
+      "test": "testler.test_senaryolar.Senaryolar.test_S7"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "S8",
+      "test": "testler.test_senaryolar.Senaryolar.test_S8"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 4,
+      "senaryo": "S9",
+      "test": "testler.test_senaryolar.Senaryolar.test_S9"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y1",
+      "test": "testler.test_senaryolar.Senaryolar.test_Y1"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y2",
+      "test": "testler.test_senaryolar.Senaryolar.test_Y2"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y3",
+      "test": "testler.test_senaryolar.Senaryolar.test_Y3"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y4",
+      "test": "testler.test_senaryolar.Senaryolar.test_Y4"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y5",
+      "test": "testler.test_senaryolar.Senaryolar.test_Y5"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y6",
+      "test": "testler.test_senaryolar.Senaryolar.test_Y6"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y7",
+      "test": "testler.test_senaryolar.Senaryolar.test_Y7"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y10",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y10"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y11",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y11"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y12",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y12"
+    },
+    {
+      "cihaz_deneyi": 3,
+      "depo": 1,
+      "senaryo": "Y13",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y13"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y14",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y14"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y15a",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y15a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y15b",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y15b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y15c",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y15c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y15d",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y15d"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y16",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y16"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y16_canli_E8",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y16_canli_E8"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y17",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y17"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y18",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y18"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y19",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y19"
+    },
+    {
+      "cihaz_deneyi": 3,
+      "depo": 1,
+      "senaryo": "Y20",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y20"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y21",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y21"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y22",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y22"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y23",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y23"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y24",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y24"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y25",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y25"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y26",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y26"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y27",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y27"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y28",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y28"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y6_guncellemesi",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y6_guncellemesi"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y8",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y8"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y9a",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y9a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y9b",
+      "test": "testler.senaryolar_v2.SenaryolarV2.test_Y9b"
+    },
+    {
+      "cihaz_deneyi": 9,
+      "depo": 1,
+      "senaryo": "Y29a",
+      "test": "testler.test_v3.SenaryolarV3.test_Y29a"
+    },
+    {
+      "cihaz_deneyi": 8,
+      "depo": 0,
+      "senaryo": "Y29b",
+      "test": "testler.test_v3.SenaryolarV3.test_Y29b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y30",
+      "test": "testler.test_v3.SenaryolarV3.test_Y30"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y31a",
+      "test": "testler.test_v3.SenaryolarV3.test_Y31a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y31b",
+      "test": "testler.test_v3.SenaryolarV3.test_Y31b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y32a",
+      "test": "testler.test_v3.SenaryolarV3.test_Y32a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y32b",
+      "test": "testler.test_v3.SenaryolarV3.test_Y32b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y32c",
+      "test": "testler.test_v3.SenaryolarV3.test_Y32c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y33a",
+      "test": "testler.test_v3.SenaryolarV3.test_Y33a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y33b",
+      "test": "testler.test_v3.SenaryolarV3.test_Y33b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 7,
+      "senaryo": "Y34",
+      "test": "testler.test_v3.SenaryolarV3.test_Y34"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y35",
+      "test": "testler.test_v3.SenaryolarV3.test_Y35"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 4,
+      "senaryo": "Y36",
+      "test": "testler.test_v3.SenaryolarV3.test_Y36"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y37_ayar",
+      "test": "testler.test_v3.SenaryolarV3.test_Y37_ayar"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y37_maas_takvim",
+      "test": "testler.test_v3.SenaryolarV3.test_Y37_maas_takvim"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y38",
+      "test": "testler.test_v3.SenaryolarV3.test_Y38"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y39",
+      "test": "testler.test_v3.SenaryolarV3.test_Y39"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 3,
+      "senaryo": "Y40",
+      "test": "testler.test_v3.SenaryolarV3.test_Y40"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y41",
+      "test": "testler.test_v3.SenaryolarV3.test_Y41"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y42",
+      "test": "testler.test_v3.SenaryolarV3.test_Y42"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y43",
+      "test": "testler.test_v3.SenaryolarV3.test_Y43"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y44",
+      "test": "testler.test_v4.SenaryolarV4.test_Y44"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y45a",
+      "test": "testler.test_v4.SenaryolarV4.test_Y45a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y45b",
+      "test": "testler.test_v4.SenaryolarV4.test_Y45b"
+    },
+    {
+      "cihaz_deneyi": 5,
+      "depo": 1,
+      "senaryo": "Y46",
+      "test": "testler.test_v4.SenaryolarV4.test_Y46"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y47",
+      "test": "testler.test_v4.SenaryolarV4.test_Y47"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y48",
+      "test": "testler.test_v4.SenaryolarV4.test_Y48"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y49",
+      "test": "testler.test_v4.SenaryolarV4.test_Y49"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y50",
+      "test": "testler.test_v5.SenaryolarV5.test_Y50"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y51",
+      "test": "testler.test_v5.SenaryolarV5.test_Y51"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y52",
+      "test": "testler.test_v5.SenaryolarV5.test_Y52"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y53",
+      "test": "testler.test_v5.SenaryolarV5.test_Y53"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y54",
+      "test": "testler.test_v5.SenaryolarV5.test_Y54"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y55",
+      "test": "testler.test_v5.SenaryolarV5.test_Y55"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y56",
+      "test": "testler.test_v5.SenaryolarV5.test_Y56"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y57",
+      "test": "testler.test_v5.SenaryolarV5.test_Y57"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y58",
+      "test": "testler.test_v5.SenaryolarV5.test_Y58"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y59",
+      "test": "testler.test_v5.SenaryolarV5.test_Y59"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y60",
+      "test": "testler.test_v5.SenaryolarV5.test_Y60"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y61",
+      "test": "testler.test_v5.SenaryolarV5.test_Y61"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y62",
+      "test": "testler.test_v5.SenaryolarV5.test_Y62"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y63",
+      "test": "testler.test_v5.SenaryolarV5.test_Y63"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y64",
+      "test": "testler.test_v5.SenaryolarV5.test_Y64"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y65",
+      "test": "testler.test_v5.SenaryolarV5.test_Y65"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y66",
+      "test": "testler.test_v5.SenaryolarV5.test_Y66"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y67",
+      "test": "testler.test_v5.SenaryolarV5.test_Y67"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y68a",
+      "test": "testler.test_v6.SenaryolarV6.test_Y68a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 4,
+      "senaryo": "Y68b",
+      "test": "testler.test_v6.SenaryolarV6.test_Y68b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y68c",
+      "test": "testler.test_v6.SenaryolarV6.test_Y68c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y69a",
+      "test": "testler.test_v6.SenaryolarV6.test_Y69a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y69b",
+      "test": "testler.test_v6.SenaryolarV6.test_Y69b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y69c",
+      "test": "testler.test_v6.SenaryolarV6.test_Y69c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y70a",
+      "test": "testler.test_v6.SenaryolarV6.test_Y70a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y70b",
+      "test": "testler.test_v6.SenaryolarV6.test_Y70b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y70c",
+      "test": "testler.test_v6.SenaryolarV6.test_Y70c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y70d",
+      "test": "testler.test_v6.SenaryolarV6.test_Y70d"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y70e",
+      "test": "testler.test_v6.SenaryolarV6.test_Y70e"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 4,
+      "senaryo": "Y71a",
+      "test": "testler.test_v6.SenaryolarV6.test_Y71a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y71b",
+      "test": "testler.test_v6.SenaryolarV6.test_Y71b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 4,
+      "senaryo": "Y71c",
+      "test": "testler.test_v6.SenaryolarV6.test_Y71c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y72",
+      "test": "testler.test_v6.SenaryolarV6.test_Y72"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y73_ileri_rol",
+      "test": "testler.test_v6.SenaryolarV6.test_Y73_ileri_rol"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y73_kodlar",
+      "test": "testler.test_v6.SenaryolarV6.test_Y73_kodlar"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 4,
+      "senaryo": "Y73_kurulum",
+      "test": "testler.test_v6.SenaryolarV6.test_Y73_kurulum"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y73_tatil",
+      "test": "testler.test_v6.SenaryolarV6.test_Y73_tatil"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y73_teslim",
+      "test": "testler.test_v6.SenaryolarV6.test_Y73_teslim"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y73_yonlendirme",
+      "test": "testler.test_v6.SenaryolarV6.test_Y73_yonlendirme"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y74a",
+      "test": "testler.test_v7.SenaryolarV7.test_Y74a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y74b",
+      "test": "testler.test_v7.SenaryolarV7.test_Y74b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y74c",
+      "test": "testler.test_v7.SenaryolarV7.test_Y74c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y75",
+      "test": "testler.test_v7.SenaryolarV7.test_Y75"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y76a",
+      "test": "testler.test_v7.SenaryolarV7.test_Y76a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y76b",
+      "test": "testler.test_v7.SenaryolarV7.test_Y76b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y76c",
+      "test": "testler.test_v7.SenaryolarV7.test_Y76c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y77",
+      "test": "testler.test_v7.SenaryolarV7.test_Y77"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y78a",
+      "test": "testler.test_v7.SenaryolarV7.test_Y78a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y78b",
+      "test": "testler.test_v7.SenaryolarV7.test_Y78b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y78c",
+      "test": "testler.test_v7.SenaryolarV7.test_Y78c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y79",
+      "test": "testler.test_v7.SenaryolarV7.test_Y79"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y80",
+      "test": "testler.test_v7.SenaryolarV7.test_Y80"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y80_mavi",
+      "test": "testler.test_v7.SenaryolarV7.test_Y80_mavi"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y81",
+      "test": "testler.test_v7.SenaryolarV7.test_Y81"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y82",
+      "test": "testler.test_v7.SenaryolarV7.test_Y82"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y83",
+      "test": "testler.test_v7.SenaryolarV7.test_Y83"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y83b",
+      "test": "testler.test_v7.SenaryolarV7.test_Y83b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 3,
+      "senaryo": "Y84",
+      "test": "testler.test_v7.SenaryolarV7.test_Y84"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y85",
+      "test": "testler.test_v7.SenaryolarV7.test_Y85"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y86",
+      "test": "testler.test_v7.SenaryolarV7.test_Y86"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y87",
+      "test": "testler.test_v9.SenaryolarV9.test_Y87"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y88",
+      "test": "testler.test_v9.SenaryolarV9.test_Y88"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y88b",
+      "test": "testler.test_v9.SenaryolarV9.test_Y88b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y89",
+      "test": "testler.test_v9.SenaryolarV9.test_Y89"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y89c",
+      "test": "testler.test_v9.SenaryolarV9.test_Y89c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y89d",
+      "test": "testler.test_v9.SenaryolarV9.test_Y89d"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y90",
+      "test": "testler.test_v9.SenaryolarV9.test_Y90"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y90b",
+      "test": "testler.test_v9.SenaryolarV9.test_Y90b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y90c",
+      "test": "testler.test_v9.SenaryolarV9.test_Y90c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y90d",
+      "test": "testler.test_v9.SenaryolarV9.test_Y90d"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y90e",
+      "test": "testler.test_v9.SenaryolarV9.test_Y90e"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y91",
+      "test": "testler.test_v9.SenaryolarV9.test_Y91"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y92b",
+      "test": "testler.test_v9.SenaryolarV9.test_Y92b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y93",
+      "test": "testler.test_v9.SenaryolarV9.test_Y93"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y93b",
+      "test": "testler.test_v9.SenaryolarV9.test_Y93b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y94",
+      "test": "testler.test_v9.SenaryolarV9.test_Y94"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y94b",
+      "test": "testler.test_v9.SenaryolarV9.test_Y94b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y94c",
+      "test": "testler.test_v9.SenaryolarV9.test_Y94c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y95",
+      "test": "testler.test_v9.SenaryolarV9.test_Y95"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y95b",
+      "test": "testler.test_v9.SenaryolarV9.test_Y95b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y95c",
+      "test": "testler.test_v9.SenaryolarV9.test_Y95c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 2,
+      "senaryo": "Y95d",
+      "test": "testler.test_v9.SenaryolarV9.test_Y95d"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y96",
+      "test": "testler.test_v9.SenaryolarV9.test_Y96"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y97",
+      "test": "testler.test_v9.SenaryolarV9.test_Y97"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y97_makine",
+      "test": "testler.test_v9.SenaryolarV9.test_Y97_makine"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y97_makine_kapilar",
+      "test": "testler.test_v9.SenaryolarV9.test_Y97_makine_kapilar"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y89b",
+      "test": "testler.test_v9.SenaryolarV9.test_Y89b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y92",
+      "test": "testler.test_v9.SenaryolarV9.test_Y92"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y98",
+      "test": "testler.test_v10.SenaryolarV10.test_Y98"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y98b",
+      "test": "testler.test_v10.SenaryolarV10.test_Y98b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y99",
+      "test": "testler.test_v10.SenaryolarV10.test_Y99"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y99a",
+      "test": "testler.test_v10.SenaryolarV10.test_Y99a"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y99b",
+      "test": "testler.test_v10.SenaryolarV10.test_Y99b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y99c",
+      "test": "testler.test_v10.SenaryolarV10.test_Y99c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y99d",
+      "test": "testler.test_v10.SenaryolarV10.test_Y99d"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y99e",
+      "test": "testler.test_v10.SenaryolarV10.test_Y99e"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y100",
+      "test": "testler.test_v10_1.SenaryolarV10_1.test_Y100"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y101",
+      "test": "testler.test_v10_1.SenaryolarV10_1.test_Y101"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y101b",
+      "test": "testler.test_v10_1.SenaryolarV10_1.test_Y101b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y102",
+      "test": "testler.test_v10_1.SenaryolarV10_1.test_Y102"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y102b",
+      "test": "testler.test_v10_1.SenaryolarV10_1.test_Y102b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y101c",
+      "test": "testler.test_karar99.SenaryolarKarar99.test_Y101c"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y101d",
+      "test": "testler.test_karar99.SenaryolarKarar99.test_Y101d"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "KP01_sorumlu_taslagi_tarihsel_denetim",
+      "test": "testler.test_kapsam_senaryolari.KapsamSenaryolari.test_KP01_sorumlu_taslagi_tarihsel_denetim"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "KP02_onay_maliyeti_kisiye_ozel",
+      "test": "testler.test_kapsam_senaryolari.KapsamSenaryolari.test_KP02_onay_maliyeti_kisiye_ozel"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "KP03_modul_tekillik_ve_ret",
+      "test": "testler.test_kapsam_senaryolari.KapsamSenaryolari.test_KP03_modul_tekillik_ve_ret"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "KP04_cok_bicimli_kanit_baglari",
+      "test": "testler.test_kapsam_senaryolari.KapsamSenaryolari.test_KP04_cok_bicimli_kanit_baglari"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y103",
+      "test": "testler.test_v10_2.SenaryolarV10_2.test_Y103"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y104",
+      "test": "testler.test_v10_2.SenaryolarV10_2.test_Y104"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y105",
+      "test": "testler.test_v10_2.SenaryolarV10_2.test_Y105"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y106",
+      "test": "testler.test_v10_2.SenaryolarV10_2.test_Y106"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y107",
+      "test": "testler.test_v10_2.SenaryolarV10_2.test_Y107"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y108",
+      "test": "testler.test_v10_2.SenaryolarV10_2.test_Y108"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y109",
+      "test": "testler.test_v10_2.SenaryolarV10_2.test_Y109"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y110",
+      "test": "testler.test_v10_2.SenaryolarV10_2.test_Y110"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y111",
+      "test": "testler.test_v10_2.SenaryolarV10_2.test_Y111"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y112",
+      "test": "testler.test_v10_2.SenaryolarV10_2.test_Y112"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "modul": "M3",
+      "senaryo": "M3S01_parca_satin_alma",
+      "yol": "modul_sozlesmeleri/modul3/M3S01_parca_satin_alma.girdi.json"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "modul": "M3",
+      "senaryo": "M3S02_ic_imalat_plan",
+      "yol": "modul_sozlesmeleri/modul3/M3S02_ic_imalat_plan.girdi.json"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "modul": "M3",
+      "senaryo": "M3S03_planlama_girdileri",
+      "yol": "modul_sozlesmeleri/modul3/M3S03_planlama_girdileri.girdi.json"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "modul": "M3",
+      "senaryo": "M3S04_modul_bildirimi",
+      "yol": "modul_sozlesmeleri/modul3/M3S04_modul_bildirimi.girdi.json"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "modul": "M3",
+      "senaryo": "M3S05_belge_surumu",
+      "yol": "modul_sozlesmeleri/modul3/M3S05_belge_surumu.girdi.json"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "modul": "M3",
+      "senaryo": "M3S06_plan_aktarimi",
+      "yol": "modul_sozlesmeleri/modul3/M3S06_plan_aktarimi.girdi.json"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y113",
+      "test": "testler.test_v10_2_duzeltme.SenaryolarV10_2Duzeltme.test_Y113"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y113b",
+      "test": "testler.test_v10_2_duzeltme.SenaryolarV10_2Duzeltme.test_Y113b"
+    },
+    {
+      "cihaz_deneyi": 0,
+      "depo": 1,
+      "senaryo": "Y114",
+      "test": "testler.test_v10_2_duzeltme.SenaryolarV10_2Duzeltme.test_Y114"
+    }
+  ],
+  "surum": "10.2",
+  "temel_senaryo": 136
+}

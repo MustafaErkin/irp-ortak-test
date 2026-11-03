@@ -1,0 +1,176 @@
+{
+ "kunye_surumu": 1,
+ "kod": "M11B",
+ "ad": "Siparişin proje ekibine devri",
+ "surum": "0.1.2",
+ "cekirdek": ">=10.2",
+ "sahip": "A ekibi",
+ "aciklama": "Siparişten sonra projeyi ekibe devreder: 10 etaplık başlangıç planı ve plan sürümleri, Gantt (plan, gerçekleşen, renkler), klasör ve dosya kayıtları, tasarım girdisi kapısı, bilgi notları ve 'gördüm', görev atama, projeler listesi.",
+ "servis_kimligi": "SRV-M11B",
+ "arka_yuz": true,
+ "olay_yolu": "ARKA_YUZ",
+ "cihaz_harfi": "R",
+ "kapilar": {
+  "okumalar": [
+   "PROJE",
+   "ETAPLAR",
+   "ETAP",
+   "PLAN",
+   "GANTT",
+   "GOREV",
+   "NOT",
+   "KISILER",
+   "BIRIMLER",
+   "PROJELER",
+   "M11A.BASLANGIC_PLANI",
+   "M11A.TEKLIF_GIRDILERI",
+   "NOT_ALICILARI"
+  ],
+  "servis_okumalari": [
+   "PROJE",
+   "ETAPLAR"
+  ],
+  "olaylar": [
+   "ETAP.TANIMLADIM",
+   "ETAP.DEGISTIRDIM",
+   "PLAN.ONAYLADIM",
+   "GOREV.ATADIM",
+   "NOT.YAZDIM",
+   "GOREV.KABUL_ETTIM",
+   "PROJE.DEGISTIRDIM"
+  ],
+  "plan": false,
+  "belge_surumu": false,
+  "bildirimler": [
+   {
+    "kural": "PLAN_YAYIMLANDI",
+    "ad": "Proje planı yayımlandı ya da değişti",
+    "onem": "BILGI",
+    "kayit_turleri": [
+     "PROJE"
+    ],
+    "alici_turleri": [
+     "BIRIM_YONETICILERI",
+     "KISI"
+    ]
+   }
+  ],
+  "abonelikler": [],
+  "dosyalar": true
+ },
+ "nesne_turleri": [],
+ "tur_uzantilari": [],
+ "roller": [],
+ "kod_listeleri": [],
+ "yetki_onerileri": [],
+ "veritabani": {
+  "sema": "mod_m11b",
+  "gocler": "veritabani/"
+ },
+ "on_yuz": {
+  "tur": "UYGULAMA_ICI",
+  "derin_baglantilar": [
+   {
+    "ad": "Proje devri ve plan (M1.1B)",
+    "baglam": "PROJE",
+    "yol": "/proje/{kimlik}"
+   }
+  ]
+ },
+ "saglananlar": [
+  {
+   "ad": "M11B.TASARIM_KAPISI",
+   "parametreler": [
+    "proje"
+   ],
+   "gorme": "KAYDI_GOREN",
+   "kisisel": false,
+   "para": false,
+   "aciklama": "Projede tasarım görevi atanabilir mi: tasarım girdisi var, gerekçeyle geçildi ya da kapalı (P0395)"
+  },
+  {
+   "ad": "M11B.PROJE_SATIRI",
+   "parametreler": [
+    "proje"
+   ],
+   "gorme": "KAYDI_GOREN",
+   "kisisel": false,
+   "para": false,
+   "aciklama": "Projeler listesinin satırı: etap renkleri, açılış listesinin durumu, geciken etap sayısı"
+  }
+ ],
+ "bagimliliklar": [
+  {
+   "modul": "M11A",
+   "zorunlu": false,
+   "okumalar": [
+    "M11A.BASLANGIC_PLANI",
+    "M11A.TEKLIF_GIRDILERI"
+   ]
+  }
+ ],
+ "kisisel_veri": [
+  {
+   "alan": "not_alicilari.kisi,kabul_ani",
+   "neden": "Yetkili kullanıcının bilgi notunun gerçek alıcı/kabul dökümü."
+  }
+ ],
+ "para": false,
+ "sinirlar": {
+  "bildirim_dakika": 30,
+  "okuma_dakika": 600,
+  "servis_okuma_dakika": 60
+ },
+ "istekler": [
+  {
+   "kod": "M11B-01",
+   "baslik": "Proje sorumlusu projesindeki başka birimlerin görevlerini göremiyor; GANTT'ta etabın gerçekleşeni okuyana göre değişiyor",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11B-02",
+   "baslik": "GANTT ve PLAN okumaları MVP'de yok (T16 katman S)",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11B-03",
+   "baslik": "PLAN okuması plan sürümlerinin listesini vermiyor (no, onay anı, onaylayan, gerekçe)",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11B-04",
+   "baslik": "PROJELER okuması simülatörde yok; yeni açılan projeyi öğrenme yolu yok",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11B-05",
+   "baslik": "Dosya depolama kapısı yok (yükleme, dosya kimliği, parmak izi, klasör yetkisi)",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11B-06",
+   "baslik": "NOT okuması alıcıları ve 'gördüm' durumlarını vermiyor",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11B-07",
+   "baslik": "ETAP.TANIMLADIM/DEGISTIRDIM yetkisi PROJE_SORUMLUSU'na verilemiyor (V17 sözde rolü kabul etmiyor)",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11B-08",
+   "baslik": "'Planlandı' görev durumu: kişinin kendi tahmini (P0103)",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11B-09",
+   "baslik": "Not görevini alan kişi notun projesini ve NOT kaydını göremiyor",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11B-10",
+   "baslik": "Etap sorumlusu proje ekibine giriyor mu? (SPEC M11B07 PROJEYI_GOREMEZ bekliyor; simülatörde görüyor)",
+   "durum": "ACIK"
+  }
+ ]
+}

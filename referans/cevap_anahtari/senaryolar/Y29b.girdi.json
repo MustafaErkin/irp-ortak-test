@@ -1,0 +1,168 @@
+{
+  "bicim_surumu": 1,
+  "cihaz_denemeleri": [
+    {
+      "ad": "olay_kimligi_uret",
+      "args": [],
+      "harf": "T",
+      "kisi": "K017",
+      "kwargs": {},
+      "saat": {
+        "demo": false,
+        "gercek": "2026-10-22T08:00:00+03:00",
+        "simdi": "2026-10-22T08:00:00+03:00"
+      },
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {}
+      }
+    },
+    {
+      "ad": "depo_kayboldu",
+      "args": [],
+      "harf": "T",
+      "kisi": "K017",
+      "kwargs": {},
+      "saat": {
+        "demo": false,
+        "gercek": "2026-10-22T08:00:00+03:00",
+        "simdi": "2026-10-22T08:00:00+03:00"
+      },
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {
+          "261022": 1
+        }
+      }
+    },
+    {
+      "ad": "olay_kimligi_uret",
+      "args": [],
+      "harf": null,
+      "kisi": "K017",
+      "kwargs": {},
+      "saat": {
+        "demo": false,
+        "gercek": "2026-10-22T08:00:00+03:00",
+        "simdi": "2026-10-22T08:00:00+03:00"
+      },
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {}
+      }
+    },
+    {
+      "ad": "yeniden_kaydol",
+      "args": [
+        {
+          "$kume": [
+            "T"
+          ]
+        },
+        false
+      ],
+      "harf": null,
+      "kisi": "K017",
+      "kwargs": {},
+      "saat": {
+        "demo": false,
+        "gercek": "2026-10-22T08:00:00+03:00",
+        "simdi": "2026-10-22T08:00:00+03:00"
+      },
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {}
+      }
+    },
+    {
+      "ad": "yeniden_kaydol",
+      "args": [
+        {
+          "$kume": [
+            "T"
+          ]
+        }
+      ],
+      "harf": null,
+      "kisi": "K017",
+      "kwargs": {},
+      "saat": {
+        "demo": false,
+        "gercek": "2026-10-22T08:00:00+03:00",
+        "simdi": "2026-10-22T08:00:00+03:00"
+      },
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {}
+      }
+    },
+    {
+      "ad": "olay_kimligi_uret",
+      "args": [],
+      "harf": "U",
+      "kisi": "K017",
+      "kwargs": {},
+      "saat": {
+        "demo": false,
+        "gercek": "2026-10-22T08:00:00+03:00",
+        "simdi": "2026-10-22T08:00:00+03:00"
+      },
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {}
+      }
+    },
+    {
+      "ad": "depo_kayboldu",
+      "args": [],
+      "harf": "U",
+      "kisi": "K017",
+      "kwargs": {},
+      "saat": {
+        "demo": false,
+        "gercek": "2026-10-22T08:00:00+03:00",
+        "simdi": "2026-10-22T08:00:00+03:00"
+      },
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {
+          "261022": 1
+        }
+      }
+    },
+    {
+      "ad": "yeniden_kaydol",
+      "args": [
+        {
+          "$kume": [
+            "T",
+            "U"
+          ]
+        }
+      ],
+      "harf": null,
+      "kisi": "K017",
+      "kwargs": {},
+      "saat": {
+        "demo": false,
+        "gercek": "2026-10-22T08:00:00+03:00",
+        "simdi": "2026-10-22T08:00:00+03:00"
+      },
+      "veri": {
+        "fark_saniye": 0,
+        "gunluk": {},
+        "sayaclar": {}
+      }
+    }
+  ],
+  "depolar": [],
+  "saf_sorgular": [],
+  "senaryo": "Y29b"
+}

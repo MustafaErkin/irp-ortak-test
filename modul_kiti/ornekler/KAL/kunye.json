@@ -1,0 +1,222 @@
+{
+ "kunye_surumu": 1,
+ "kod": "KAL",
+ "ad": "Kalite kontrol",
+ "surum": "0.1.0",
+ "cekirdek": ">=10.2",
+ "sahip": "B ekibi",
+ "aciklama": "Gelen ve içeride yapılan parçanın ölçümü, kabul, şartlı kabul, karantina ve ret (N:P1396–P1405).",
+ "servis_kimligi": "SRV-KAL",
+ "arka_yuz": true,
+ "olay_yolu": "ISTEMCI",
+ "kapilar": {
+  "okumalar": [
+   "PROJE",
+   "PROJELER",
+   "NESNE",
+   "NESNELER",
+   "TOP_KIMDE",
+   "GECERLI_SURUM",
+   "KISILER",
+   "M3.SIPARIS_DURUMU"
+  ],
+  "servis_okumalari": [
+   "NESNELER",
+   "TOP_KIMDE"
+  ],
+  "olaylar": [
+   "NESNE.ACTIM",
+   "NESNE.ASAMA_GECIRDIM",
+   "NESNE.GUNCELLEDIM",
+   "NOT.YAZDIM"
+  ],
+  "bildirimler": [
+   {
+    "kural": "KABUL_BEKLIYOR",
+    "ad": "Gelen parça kalite kontrolü bekliyor",
+    "onem": "UYARI",
+    "kayit_turleri": [
+     "NESNE"
+    ],
+    "alici_turleri": [
+     "ROL"
+    ],
+    "roller": [
+     "KALITECI"
+    ]
+   },
+   {
+    "kural": "RET_EDILDI",
+    "ad": "Parça kalite kontrolünde reddedildi",
+    "onem": "UYARI",
+    "kayit_turleri": [
+     "NESNE"
+    ],
+    "alici_turleri": [
+     "NESNE_SORUMLUSU"
+    ]
+   }
+  ],
+  "abonelikler": [
+   "proje:*"
+  ]
+ },
+ "nesne_turleri": [
+  {
+   "kod": "KALITE_KAYDI",
+   "ad": "Kalite kaydı",
+   "asamalar": [
+    {
+     "kod": "BEKLIYOR",
+     "son": false
+    },
+    {
+     "kod": "OLCULDU",
+     "son": false
+    },
+    {
+     "kod": "KARANTINA",
+     "son": false
+    },
+    {
+     "kod": "KABUL",
+     "son": true
+    },
+    {
+     "kod": "SARTLI_KABUL",
+     "son": true
+    },
+    {
+     "kod": "RET",
+     "son": true
+    }
+   ],
+   "baslangic_asamasi": "BEKLIYOR",
+   "gecisler": [
+    {
+     "den": "BEKLIYOR",
+     "e": "OLCULDU",
+     "kapsam": "FIRMA",
+     "kimler": [
+      "KALITECI"
+     ]
+    },
+    {
+     "den": "OLCULDU",
+     "e": "KABUL",
+     "kapsam": "FIRMA",
+     "kimler": [
+      "KALITECI"
+     ]
+    },
+    {
+     "den": "OLCULDU",
+     "e": "SARTLI_KABUL",
+     "kapsam": "FIRMA",
+     "kimler": [
+      "YONETICI"
+     ]
+    },
+    {
+     "den": "OLCULDU",
+     "e": "KARANTINA",
+     "kapsam": "FIRMA",
+     "kimler": [
+      "KALITECI"
+     ]
+    },
+    {
+     "den": "OLCULDU",
+     "e": "RET",
+     "kapsam": "FIRMA",
+     "kimler": [
+      "KALITECI"
+     ]
+    },
+    {
+     "den": "KARANTINA",
+     "e": "KABUL",
+     "kapsam": "FIRMA",
+     "kimler": [
+      "YONETICI"
+     ]
+    },
+    {
+     "den": "KARANTINA",
+     "e": "RET",
+     "kapsam": "FIRMA",
+     "kimler": [
+      "KALITECI"
+     ]
+    }
+   ],
+   "baglanabilir_turler": [
+    "PROJE",
+    "NESNE"
+   ],
+   "acabilenler": {
+    "kapsam": "FIRMA",
+    "kimler": [
+     "KALITECI",
+     "YONETICI"
+    ]
+   }
+  }
+ ],
+ "tur_uzantilari": [
+  {
+   "tur": "KALITE_KAYDI",
+   "tablo": "mod_kal.olcumler"
+  },
+  {
+   "tur": "PARCA",
+   "tablo": "mod_kal.parca_kriterleri"
+  }
+ ],
+ "roller": [
+  {
+   "kod": "KALITECI",
+   "ad": "Kaliteci"
+  }
+ ],
+ "veritabani": {
+  "sema": "mod_kal",
+  "gocler": "veritabani/"
+ },
+ "on_yuz": {
+  "tur": "AYRI_UYGULAMA",
+  "derin_baglantilar": [
+   {
+    "ad": "Kalite geçmişi",
+    "baglam": "NESNE",
+    "nesne_turleri": [
+     "PARCA"
+    ],
+    "yol": "/parca/{kimlik}"
+   }
+  ]
+ },
+ "bagimliliklar": [
+  {
+   "modul": "M3",
+   "zorunlu": false,
+   "okumalar": [
+    "M3.SIPARIS_DURUMU"
+   ]
+  }
+ ],
+ "kisisel_veri": [],
+ "para": false,
+ "sinirlar": {
+  "bildirim_dakika": 30,
+  "okuma_dakika": 300,
+  "servis_okuma_dakika": 60
+ },
+ "istekler": [
+  {
+   "kod": "İ-4",
+   "baslik": "PARCA'nın KALITE_ONAYLI geçişi yalnızca KALITECI'ye (sorumlunun her geçişi yapması kapanmalı)",
+   "durum": "ACIK"
+  }
+ ]
+}

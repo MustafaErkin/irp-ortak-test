@@ -1,0 +1,3769 @@
+{
+  "AYAR.DEGISTIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "anahtar": {
+          "enum": [
+            "standart_gunluk_saat",
+            "fazla_mesai_katsayilari",
+            "gun_sonu_raporu_zorunlu",
+            "gun_sonu_hatirlatma",
+            "izin_ik_onayi",
+            "proje_gorunurlugu",
+            "sessiz_kabul_is_gunu"
+          ]
+        },
+        "deger": {},
+        "gecerli_baslangic": {
+          "description": "ISO 8601 + saat dilimi; tarih tek basina ise yerel 00:00. Bos AYAR icin olay ani, TAKVIM icin ertesi gun 00:00.",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "anahtar",
+        "deger"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "AYAR.MAAS_PAYDASI": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "deger": {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        "gecerli_baslangic": {
+          "description": "ISO 8601 + saat dilimi; tarih tek basina ise yerel 00:00. Bos AYAR icin olay ani, TAKVIM icin ertesi gun 00:00.",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "deger",
+        "gecerli_baslangic"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "AYAR.ONAY_ORANI": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "deger": {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        "gecerli_baslangic": {
+          "description": "ISO 8601 + saat dilimi; tarih tek basina ise yerel 00:00. Bos AYAR icin olay ani, TAKVIM icin ertesi gun 00:00.",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "deger"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "AYAR.PARCA_KODU_DESENI": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "deger": {
+          "type": "string"
+        },
+        "gecerli_baslangic": {
+          "description": "ISO 8601 + saat dilimi; tarih tek basina ise yerel 00:00. Bos AYAR icin olay ani, TAKVIM icin ertesi gun 00:00.",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "deger"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "AYAR.SAAT_KAYDIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "hedef": {
+          "format": "date-time",
+          "type": "string"
+        }
+      },
+      "required": [
+        "hedef"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "AYAR.YONLENDIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "birim": {
+          "type": "string"
+        },
+        "kisiler": {
+          "items": {
+            "pattern": "^K[0-9]{3}$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "birim",
+        "kisiler"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "BILDIRIM.GORDUM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "bildirimler": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "bildirimler"
+      ],
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "BIRIM.TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "dependentRequired": {
+        "takvim": [
+          "takvim_gecerli"
+        ]
+      },
+      "properties": {
+        "ad": {
+          "type": "string"
+        },
+        "basi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kod": {
+          "type": "string"
+        },
+        "takvim": {
+          "properties": {
+            "gunler": {
+              "items": {
+                "maximum": 7,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "minItems": 1,
+              "type": "array",
+              "uniqueItems": true
+            },
+            "mesai_baslangic": {
+              "type": "string"
+            },
+            "mesai_bitis": {
+              "type": "string"
+            },
+            "sabit_molalar": {
+              "items": {
+                "properties": {
+                  "ad": {
+                    "type": "string"
+                  },
+                  "bas": {
+                    "type": "string"
+                  },
+                  "bit": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "ad",
+                  "bas",
+                  "bit"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "mesai_baslangic",
+            "mesai_bitis",
+            "gunler",
+            "sabit_molalar"
+          ],
+          "type": "object"
+        },
+        "takvim_gecerli": {
+          "format": "date",
+          "type": "string"
+        },
+        "tur": {
+          "type": "string"
+        },
+        "ust_birim": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "kod",
+        "ad",
+        "tur",
+        "basi"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "DURUS.BASLADI": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "kapsam": {
+          "oneOf": [
+            {
+              "const": "FIRMA"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1,
+              "type": "array",
+              "uniqueItems": true
+            }
+          ]
+        },
+        "neden": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "kapsam",
+        "neden"
+      ],
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "DURUS.BITTI": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "hedef": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hedef"
+      ],
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "EK_MESAI.IPTAL_ETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "hedef": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hedef"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "EK_MESAI.ONAYLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "baslangic": {
+          "description": "Etapta YYYY-MM-DD; elle surede saat dilimli ISO 8601 an.",
+          "type": "string"
+        },
+        "bitis": {
+          "description": "Etapta YYYY-MM-DD; elle surede saat dilimli ISO 8601 an.",
+          "type": "string"
+        },
+        "kisi": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        },
+        "tarih": {
+          "format": "date",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kisi",
+        "tarih",
+        "baslangic",
+        "bitis"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "EK_MESAI.PLANLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "aciklama": {
+          "type": "string"
+        },
+        "baslangic": {
+          "description": "Etapta YYYY-MM-DD; elle surede saat dilimli ISO 8601 an.",
+          "type": "string"
+        },
+        "bitis": {
+          "description": "Etapta YYYY-MM-DD; elle surede saat dilimli ISO 8601 an.",
+          "type": "string"
+        },
+        "kisi": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        },
+        "tarih": {
+          "format": "date",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kisi",
+        "tarih",
+        "baslangic",
+        "bitis",
+        "aciklama"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "ETAP.DEGISTIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "degisenler": {
+          "properties": {
+            "sorumlu": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "type": "object"
+        }
+      },
+      "required": [
+        "degisenler"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "YETKILI ve kök yönetimi; yetki tablosuyla PROJE_SORUMLUSU veya rol devri. UYELER ise olay anında proje yetkisi de gerekli.",
+    "zorunlu_hedef_turu": "ETAP"
+  },
+  "ETAP.TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "ad": {
+          "type": "string"
+        },
+        "baslangic": {
+          "description": "Etapta YYYY-MM-DD; elle surede saat dilimli ISO 8601 an.",
+          "type": "string"
+        },
+        "birim": {
+          "type": "string"
+        },
+        "bitis": {
+          "description": "Etapta YYYY-MM-DD; elle surede saat dilimli ISO 8601 an.",
+          "type": "string"
+        },
+        "hedef_saat": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "proje": {
+          "type": "string"
+        },
+        "sorumlu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "proje",
+        "ad",
+        "birim",
+        "baslangic",
+        "bitis",
+        "hedef_saat"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "YETKILI ve kök yönetimi; yetki tablosuyla PROJE_SORUMLUSU veya rol devri. UYELER ise olay anında proje yetkisi de gerekli.",
+    "zorunlu_hedef_turu": null
+  },
+  "GECIKME.DEGERLENDIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gerekce": {
+          "type": "string"
+        },
+        "hedef": {
+          "type": "string"
+        },
+        "neden": {
+          "type": "string"
+        },
+        "sorumlular": {
+          "items": {
+            "properties": {
+              "kimlik": {
+                "type": "string"
+              },
+              "tur": {
+                "enum": [
+                  "KISI",
+                  "BIRIM",
+                  "DIS"
+                ]
+              },
+              "yuzde": {
+                "maximum": 100,
+                "minimum": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "tur",
+              "kimlik",
+              "yuzde"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "hedef",
+        "neden",
+        "sorumlular",
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "GOREV.ATADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "ek_mesai": {
+          "properties": {
+            "aciklama": {
+              "type": "string"
+            },
+            "baslangic": {
+              "type": "string"
+            },
+            "bitis": {
+              "type": "string"
+            },
+            "tarih": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "tarih",
+            "baslangic",
+            "bitis"
+          ],
+          "type": "object"
+        },
+        "gorevler": {
+          "items": {
+            "additionalProperties": true,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "nereye": {
+                      "const": "PROJE_DISI"
+                    }
+                  },
+                  "required": [
+                    "nereye"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "kategori"
+                  ]
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "onay_gerekli": {
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "onay_gerekli"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "onaylayan"
+                  ]
+                }
+              }
+            ],
+            "properties": {
+              "ad": {
+                "type": "string"
+              },
+              "birim": {
+                "type": "string"
+              },
+              "degisiklik": {
+                "properties": {
+                  "kaynak": {
+                    "type": "string"
+                  },
+                  "neden": {
+                    "enum": [
+                      "MUSTERI",
+                      "HATA",
+                      "IYILESTIRME"
+                    ]
+                  },
+                  "sorumlular": {
+                    "items": {
+                      "properties": {
+                        "kimlik": {
+                          "type": "string"
+                        },
+                        "tur": {
+                          "enum": [
+                            "KISI",
+                            "BIRIM"
+                          ]
+                        },
+                        "yuzde": {
+                          "maximum": 100,
+                          "minimum": 0,
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "tur",
+                        "kimlik",
+                        "yuzde"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "kaynak",
+                  "neden"
+                ],
+                "type": "object"
+              },
+              "dosya_gerekli": {
+                "type": "boolean"
+              },
+              "etap": {
+                "type": "string"
+              },
+              "is_tanimi": {
+                "type": "string"
+              },
+              "islem": {
+                "type": "string"
+              },
+              "kategori": {
+                "type": "string"
+              },
+              "kisi": {
+                "pattern": "^K[0-9]{3}$",
+                "type": "string"
+              },
+              "kisi_sayisi": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "nereye": {
+                "type": "string"
+              },
+              "on_isler": {
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "additionalProperties": false,
+                      "properties": {
+                        "satir": {
+                          "minimum": 1,
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "satir"
+                      ],
+                      "type": "object"
+                    }
+                  ]
+                },
+                "type": "array"
+              },
+              "on_kosul": {
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "additionalProperties": false,
+                      "properties": {
+                        "satir": {
+                          "minimum": 1,
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "satir"
+                      ],
+                      "type": "object"
+                    }
+                  ]
+                },
+                "type": "array"
+              },
+              "onay_gerekli": {
+                "type": "boolean"
+              },
+              "onaylayan": {
+                "pattern": "^K[0-9]{3}$",
+                "type": "string"
+              },
+              "oncelik": {
+                "enum": [
+                  "NORMAL",
+                  "YUKSEK",
+                  "ACIL"
+                ]
+              },
+              "parca_kodu": {
+                "type": "string"
+              },
+              "planlanan_baslangic": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "planlanan_bitis": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "proje": {
+                "type": "string"
+              },
+              "sorun_kaynakli": {
+                "type": "boolean"
+              },
+              "tahmini_sure_dk": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "teslim_saati": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "teslim_tarihi": {
+                "format": "date",
+                "type": "string"
+              },
+              "tezgah": {
+                "type": "string"
+              },
+              "tezgah_rolu": {
+                "type": "string"
+              },
+              "tur": {
+                "type": "string"
+              },
+              "zaman_degeri": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "zorluk": {
+                "maximum": 5,
+                "minimum": 1,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "ad",
+              "nereye",
+              "teslim_tarihi",
+              "zaman_degeri",
+              "zorluk",
+              "kisi",
+              "onay_gerekli",
+              "dosya_gerekli"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "gorevler"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "GOREV.DEGISTIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "degisenler": {
+          "properties": {
+            "oncelik": {
+              "enum": [
+                "NORMAL",
+                "YUKSEK",
+                "ACIL"
+              ]
+            }
+          },
+          "type": "object"
+        },
+        "gerekce": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "degisenler"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": true,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "GOREV"
+  },
+  "GOREV.IPTAL_ETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": true,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "GOREV"
+  },
+  "GOREV.KABUL_ETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "GOREV"
+  },
+  "GOREV.ONAYLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "GOREV"
+  },
+  "GOREV.REDDETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "revizyon_ver": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "yeni_teslim_tarihi",
+              "zaman_degeri",
+              "kime"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "kime": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        },
+        "not": {
+          "type": "string"
+        },
+        "revizyon_ver": {
+          "type": "boolean"
+        },
+        "sebep_olan": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        },
+        "sorumlular": {
+          "items": {
+            "properties": {
+              "kimlik": {
+                "type": "string"
+              },
+              "tur": {
+                "enum": [
+                  "KISI",
+                  "BIRIM"
+                ]
+              },
+              "yuzde": {
+                "maximum": 100,
+                "minimum": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "tur",
+              "kimlik",
+              "yuzde"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "yeni_teslim_tarihi": {
+          "format": "date",
+          "type": "string"
+        },
+        "zaman_degeri": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "not",
+        "revizyon_ver"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": true,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "GOREV"
+  },
+  "GOREV.TAMAMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gecikme_aciklamasi": {
+          "type": "string"
+        },
+        "gecikme_nedeni": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": true,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "GOREV"
+  },
+  "GUN.KALDIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "tarih": {
+          "format": "date",
+          "type": "string"
+        }
+      },
+      "required": [
+        "tarih"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "GUN.TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "tur": {
+                "enum": [
+                  "YARIM_GUN",
+                  "OZEL_MESAI"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "mesai_baslangic",
+              "mesai_bitis",
+              "sabit_molalar"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "ad": {
+          "type": "string"
+        },
+        "mesai_baslangic": {
+          "type": "string"
+        },
+        "mesai_bitis": {
+          "type": "string"
+        },
+        "sabit_molalar": {
+          "items": {
+            "properties": {
+              "ad": {
+                "type": "string"
+              },
+              "bas": {
+                "type": "string"
+              },
+              "bit": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "ad",
+              "bas",
+              "bit"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "tarih": {
+          "format": "date",
+          "type": "string"
+        },
+        "tur": {
+          "enum": [
+            "TATIL",
+            "YARIM_GUN",
+            "OZEL_MESAI"
+          ]
+        }
+      },
+      "required": [
+        "tarih",
+        "tur",
+        "ad"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "GUN_ONAYI.AYARLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "birim": {
+          "type": "string"
+        },
+        "gecerli_baslangic": {
+          "format": "date",
+          "type": "string"
+        },
+        "gerekli": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "birim",
+        "gerekli",
+        "gecerli_baslangic"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "GUN_SONU.GONDERDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "aciklama": {
+          "type": "string"
+        },
+        "gun": {
+          "format": "date",
+          "type": "string"
+        },
+        "kisi": {
+          "type": "string"
+        },
+        "tanimsiz_aciklama": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "gun"
+      ],
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "GUN_SONU.IADE_ETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gerekce": {
+          "type": "string"
+        },
+        "gun": {
+          "type": "string"
+        },
+        "kisi": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kisi",
+        "gun",
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "GUN_SONU.ONAYLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "oneOf": [
+        {
+          "not": {
+            "required": [
+              "gunler"
+            ]
+          },
+          "required": [
+            "kisi",
+            "gun",
+            "ozet_surumu"
+          ]
+        },
+        {
+          "required": [
+            "gunler"
+          ]
+        }
+      ],
+      "properties": {
+        "gun": {
+          "format": "date",
+          "type": "string"
+        },
+        "gunler": {
+          "items": {
+            "properties": {
+              "gun": {
+                "format": "date",
+                "type": "string"
+              },
+              "kisi": {
+                "type": "string"
+              },
+              "ozet_surumu": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "kisi",
+              "gun",
+              "ozet_surumu"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "kisi": {
+          "type": "string"
+        },
+        "not": {
+          "type": "string"
+        },
+        "ozet_surumu": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "IS.ARIZA_BILDIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "required": [
+            "neden"
+          ]
+        },
+        {
+          "required": [
+            "not"
+          ]
+        }
+      ],
+      "properties": {
+        "neden": {
+          "type": "string"
+        },
+        "not": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.ATADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "required": [
+            "kisi"
+          ]
+        },
+        {
+          "required": [
+            "kisiler"
+          ]
+        }
+      ],
+      "properties": {
+        "ek_mesai": {
+          "properties": {
+            "aciklama": {
+              "type": "string"
+            },
+            "baslangic": {
+              "type": "string"
+            },
+            "bitis": {
+              "type": "string"
+            },
+            "tarih": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "tarih",
+            "baslangic",
+            "bitis"
+          ],
+          "type": "object"
+        },
+        "kisi": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        },
+        "kisi_sayisi": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "kisiler": {
+          "items": {
+            "pattern": "^K[0-9]{3}$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "sira": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "sira"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.BAGLANTI_DUZELTTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "degisenler": {
+          "additionalProperties": false,
+          "minProperties": 1,
+          "properties": {
+            "etap": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "kategori": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "nereye": {
+              "type": "string"
+            },
+            "nesne": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "parca_kodu": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "proje": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "type": "object"
+        },
+        "gerekce": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "degisenler",
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.BASLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.DEGISTIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "degisenler": {
+          "minProperties": 1,
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "nereye"
+                ]
+              },
+              {
+                "required": [
+                  "proje"
+                ]
+              },
+              {
+                "required": [
+                  "etap"
+                ]
+              },
+              {
+                "required": [
+                  "parca_kodu"
+                ]
+              },
+              {
+                "required": [
+                  "kategori"
+                ]
+              }
+            ]
+          },
+          "properties": {
+            "yetkinlik": {
+              "minLength": 1,
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "type": "object"
+        }
+      },
+      "required": [
+        "degisenler"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.DEVAM_ETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.DEVAM_ONAYLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.DEVRETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "kimden": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        },
+        "kimden_yeni_is": {
+          "type": "string"
+        },
+        "kime": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        },
+        "kime_sira": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "kimden",
+        "kime"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.IPTAL_ETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gerekce": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.MOLA_VERDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.ONAYLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.PLANSIZ_TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "onay_gerekli": {
+                "const": true
+              }
+            },
+            "required": [
+              "onay_gerekli"
+            ]
+          },
+          "then": {
+            "required": [
+              "onay_beklet"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "birim": {
+          "type": "string"
+        },
+        "degisiklik": {
+          "properties": {
+            "kaynak": {
+              "type": "string"
+            },
+            "neden": {
+              "enum": [
+                "MUSTERI",
+                "HATA",
+                "IYILESTIRME"
+              ]
+            },
+            "sorumlular": {
+              "items": {
+                "properties": {
+                  "kimlik": {
+                    "type": "string"
+                  },
+                  "tur": {
+                    "enum": [
+                      "KISI",
+                      "BIRIM"
+                    ]
+                  },
+                  "yuzde": {
+                    "maximum": 100,
+                    "minimum": 0,
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "tur",
+                  "kimlik",
+                  "yuzde"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "kaynak",
+            "neden"
+          ],
+          "type": "object"
+        },
+        "etap": {
+          "type": "string"
+        },
+        "is_tanimi": {
+          "type": "string"
+        },
+        "kategori": {
+          "type": "string"
+        },
+        "kisi": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        },
+        "nereye": {
+          "type": "string"
+        },
+        "onay_beklet": {
+          "type": "boolean"
+        },
+        "onay_gerekli": {
+          "type": "boolean"
+        },
+        "planlanan_baslangic": {
+          "format": "date-time",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "planlanan_bitis": {
+          "format": "date-time",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "proje": {
+          "type": "string"
+        },
+        "sira": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "tahmini_sure_dk": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "teslim_tarihi": {
+          "format": "date",
+          "type": "string"
+        },
+        "tur": {
+          "type": "string"
+        },
+        "yetkinlik": {
+          "minLength": 1,
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "nereye",
+        "is_tanimi",
+        "tur",
+        "onay_gerekli",
+        "kisi",
+        "sira"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "IS.REDDETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "not": {
+          "type": "string"
+        },
+        "sorumlular": {
+          "items": {
+            "properties": {
+              "kimlik": {
+                "type": "string"
+              },
+              "tur": {
+                "enum": [
+                  "KISI",
+                  "BIRIM"
+                ]
+              },
+              "yuzde": {
+                "maximum": 100,
+                "minimum": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "tur",
+              "kimlik",
+              "yuzde"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "not"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.SIRALADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "kisi": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        },
+        "yeni_sira": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "kisi",
+        "yeni_sira"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.SURE_EKLEDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "aciklama": {
+          "type": "string"
+        },
+        "baslangic": {
+          "description": "Etapta YYYY-MM-DD; elle surede saat dilimli ISO 8601 an.",
+          "type": "string"
+        },
+        "bitis": {
+          "description": "Etapta YYYY-MM-DD; elle surede saat dilimli ISO 8601 an.",
+          "type": "string"
+        },
+        "is_bitti": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "baslangic",
+        "bitis",
+        "aciklama",
+        "is_bitti"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.TAMAMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "makine_bitis_ani": {
+          "format": "date-time",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "IS"
+  },
+  "IS.TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "isler": {
+          "items": {
+            "additionalProperties": true,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "nereye": {
+                      "const": "PROJE_DISI"
+                    }
+                  },
+                  "required": [
+                    "nereye"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "kategori"
+                  ]
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "onay_gerekli": {
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "onay_gerekli"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "onay_beklet"
+                  ]
+                }
+              }
+            ],
+            "properties": {
+              "ad": {
+                "type": "string"
+              },
+              "birim": {
+                "type": "string"
+              },
+              "degisiklik": {
+                "properties": {
+                  "kaynak": {
+                    "type": "string"
+                  },
+                  "neden": {
+                    "enum": [
+                      "MUSTERI",
+                      "HATA",
+                      "IYILESTIRME"
+                    ]
+                  },
+                  "sorumlular": {
+                    "items": {
+                      "properties": {
+                        "kimlik": {
+                          "type": "string"
+                        },
+                        "tur": {
+                          "enum": [
+                            "KISI",
+                            "BIRIM"
+                          ]
+                        },
+                        "yuzde": {
+                          "maximum": 100,
+                          "minimum": 0,
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "tur",
+                        "kimlik",
+                        "yuzde"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "kaynak",
+                  "neden"
+                ],
+                "type": "object"
+              },
+              "dosya_gerekli": {
+                "type": "boolean"
+              },
+              "etap": {
+                "type": "string"
+              },
+              "is_tanimi": {
+                "type": "string"
+              },
+              "islem": {
+                "type": "string"
+              },
+              "kategori": {
+                "type": "string"
+              },
+              "kisi": {
+                "pattern": "^K[0-9]{3}$",
+                "type": "string"
+              },
+              "kisi_sayisi": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "nereye": {
+                "type": "string"
+              },
+              "on_isler": {
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "additionalProperties": false,
+                      "properties": {
+                        "satir": {
+                          "minimum": 1,
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "satir"
+                      ],
+                      "type": "object"
+                    }
+                  ]
+                },
+                "type": "array"
+              },
+              "on_kosul": {
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "additionalProperties": false,
+                      "properties": {
+                        "satir": {
+                          "minimum": 1,
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "satir"
+                      ],
+                      "type": "object"
+                    }
+                  ]
+                },
+                "type": "array"
+              },
+              "onay_beklet": {
+                "type": "boolean"
+              },
+              "onay_gerekli": {
+                "type": "boolean"
+              },
+              "onaylayan": {
+                "pattern": "^K[0-9]{3}$",
+                "type": "string"
+              },
+              "parca_kodu": {
+                "type": "string"
+              },
+              "planlanan_baslangic": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "planlanan_bitis": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "proje": {
+                "type": "string"
+              },
+              "sorun_kaynakli": {
+                "type": "boolean"
+              },
+              "tahmini_sure_dk": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "teslim_saati": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "teslim_tarihi": {
+                "format": "date",
+                "type": "string"
+              },
+              "tezgah": {
+                "type": "string"
+              },
+              "tezgah_rolu": {
+                "type": "string"
+              },
+              "tur": {
+                "type": "string"
+              },
+              "yetkinlik": {
+                "minLength": 1,
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "zaman_degeri": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "zorluk": {
+                "maximum": 5,
+                "minimum": 1,
+                "type": "integer"
+              }
+            },
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "isler"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "IZIN.IK_ONAYLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "hedef": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hedef"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "IZIN.IPTAL_ETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "hedef": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hedef"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "IZIN.ONAYLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "hedef": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hedef"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "IZIN.REDDETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gerekce": {
+          "type": "string"
+        },
+        "hedef": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hedef",
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "IZIN.TALEP_ETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "baslangic": {
+          "description": "Etapta YYYY-MM-DD; elle surede saat dilimli ISO 8601 an.",
+          "type": "string"
+        },
+        "bitis": {
+          "description": "Etapta YYYY-MM-DD; elle surede saat dilimli ISO 8601 an.",
+          "type": "string"
+        },
+        "gerekce": {
+          "type": "string"
+        },
+        "kisi": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        },
+        "tur": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "kisi",
+        "tur",
+        "baslangic",
+        "bitis",
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "KAYIT.GECERSIZ_SAYDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gerekce": {
+          "type": "string"
+        },
+        "hedef": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hedef",
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "KISI.AYRILDI": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "oneOf": [
+        {
+          "not": {
+            "properties": {
+              "iptal": {
+                "const": true
+              }
+            },
+            "required": [
+              "iptal"
+            ]
+          },
+          "required": [
+            "ayrilis_tarihi"
+          ]
+        },
+        {
+          "not": {
+            "required": [
+              "ayrilis_tarihi"
+            ]
+          },
+          "properties": {
+            "iptal": {
+              "const": true
+            }
+          },
+          "required": [
+            "iptal"
+          ]
+        }
+      ],
+      "properties": {
+        "ayrilis_tarihi": {
+          "format": "date",
+          "type": "string"
+        },
+        "iptal": {
+          "type": "boolean"
+        },
+        "kisi": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kisi"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "KISI.DEGISTIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "degisenler": {
+          "type": "object"
+        },
+        "gecerli_baslangic": {
+          "description": "ISO 8601 + saat dilimi; tarih tek basina ise yerel 00:00. Bos AYAR icin olay ani, TAKVIM icin ertesi gun 00:00.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kisi": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kisi",
+        "degisenler",
+        "gecerli_baslangic"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "KISI.EKLEDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "ad": {
+          "type": "string"
+        },
+        "birim": {
+          "type": "string"
+        },
+        "giris_tarihi": {
+          "format": "date",
+          "type": "string"
+        },
+        "kod": {
+          "type": "string"
+        },
+        "roller": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "yaka": {
+          "enum": [
+            "MAVI",
+            "BEYAZ"
+          ]
+        }
+      },
+      "required": [
+        "kod",
+        "ad",
+        "birim",
+        "yaka",
+        "roller",
+        "giris_tarihi"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "KISI.YETKINLIK_TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gecerli_baslangic": {
+          "format": "date",
+          "type": "string"
+        },
+        "kisi": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "yetkinlikler": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "kisi",
+        "yetkinlikler",
+        "gecerli_baslangic"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "KOD.TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "ad": {
+          "type": "string"
+        },
+        "aktif": {
+          "type": "boolean"
+        },
+        "kod": {
+          "type": "string"
+        },
+        "liste": {
+          "enum": [
+            "ARIZA",
+            "MOLA",
+            "PD",
+            "ROL",
+            "IZIN",
+            "DURUS",
+            "DURUS_NEDENI",
+            "YETKINLIK"
+          ]
+        },
+        "ust": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "liste",
+        "kod",
+        "ad",
+        "aktif"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "KURULUM.TAMAMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "MAAS.GUNCELLEDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gecerli_baslangic": {
+          "description": "ISO 8601 + saat dilimi; tarih tek basina ise yerel 00:00. Bos AYAR icin olay ani, TAKVIM icin ertesi gun 00:00.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kisi": {
+          "description": "Kisi ya da tezgah kodu; tutar hassas ekte.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kisi",
+        "gecerli_baslangic"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "MESAI.CIKTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "MESAI.GIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "MODUL.TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "ad": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "aktif": {
+          "type": "boolean"
+        },
+        "cihaz_harfi": {
+          "pattern": "^[A-Z]$",
+          "type": "string"
+        },
+        "kod": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "servis_kimligi": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "kod",
+        "ad",
+        "servis_kimligi",
+        "aktif"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T10: yetki tablosu ve sabit ilişkiler; canlı hedef sürümü zorunlu.",
+    "zorunlu_hedef_turu": null
+  },
+  "NESNE.ACTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "ad": {
+          "type": "string"
+        },
+        "baglar": {
+          "items": {
+            "properties": {
+              "kimlik": {
+                "type": "string"
+              },
+              "tur": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "tur",
+              "kimlik"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "kod": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "proje": {
+          "minLength": 1,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sorumlu": {
+          "type": "string"
+        },
+        "tur": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tur",
+        "ad",
+        "sorumlu"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "NESNE.ASAMA_GECIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gerekce": {
+          "type": "string"
+        },
+        "hedef": {
+          "type": "string"
+        },
+        "yeni_asama": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hedef",
+        "yeni_asama",
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "NESNE.GUNCELLEDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "degisenler": {
+          "type": "object"
+        },
+        "hedef": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hedef",
+        "degisenler"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "NESNE.SURUM_EKLEDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "aciklama": {
+          "type": "string"
+        },
+        "dosyalar": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "hedef": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "surum_adi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "hedef",
+        "dosyalar"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T10: yetki tablosu ve sabit ilişkiler; canlı hedef sürümü zorunlu.",
+    "zorunlu_hedef_turu": "NESNE"
+  },
+  "NESNE.SURUM_GERI_CEKTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gerekce": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "hedef": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "surum_no": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "hedef",
+        "surum_no",
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T10: yetki tablosu ve sabit ilişkiler; canlı hedef sürümü zorunlu.",
+    "zorunlu_hedef_turu": "NESNE"
+  },
+  "NESNE.SURUM_ONAYLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gerekce": {
+          "type": "string"
+        },
+        "hedef": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "surum_no": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "hedef",
+        "surum_no"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T10: yetki tablosu ve sabit ilişkiler; canlı hedef sürümü zorunlu.",
+    "zorunlu_hedef_turu": "NESNE"
+  },
+  "NESNE_TURU.TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "acabilenler": {
+          "oneOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "properties": {
+                "kapsam": {
+                  "enum": [
+                    "BIRIM",
+                    "FIRMA"
+                  ]
+                },
+                "kimler": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "kimler"
+              ],
+              "type": "object"
+            }
+          ]
+        },
+        "ad": {
+          "type": "string"
+        },
+        "asamalar": {
+          "items": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "properties": {
+                  "kod": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "kod"
+                ],
+                "type": "object"
+              }
+            ]
+          },
+          "type": "array"
+        },
+        "baglanabilir_turler": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "baslangic_asamasi": {
+          "type": "string"
+        },
+        "gecisler": {
+          "items": {
+            "properties": {
+              "den": {
+                "type": "string"
+              },
+              "e": {
+                "type": "string"
+              },
+              "kimler": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            },
+            "required": [
+              "den",
+              "e",
+              "kimler"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "kod": {
+          "type": "string"
+        },
+        "son_asamalar": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "surum_onaylayanlar": {
+          "properties": {
+            "kapsam": {
+              "enum": [
+                "BIRIM",
+                "FIRMA"
+              ]
+            },
+            "kimler": {
+              "items": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "type": "array",
+              "uniqueItems": true
+            }
+          },
+          "type": [
+            "object",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "kod",
+        "ad",
+        "asamalar",
+        "baslangic_asamasi",
+        "gecisler",
+        "baglanabilir_turler",
+        "acabilenler"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "NOT.YAZDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "etiketler": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "metin": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "metin"
+      ],
+      "type": "object"
+    },
+    "izinli_hedef_turleri": [
+      "PARCA",
+      "GOREV",
+      "PROJE",
+      "NESNE"
+    ],
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "PLAN.ONAYLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "proje": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "proje"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "Yeni kurulum: proje sorumlusu/üstleri veya YETKILI. Eski ortak veri v9 tablosuna sabittir.",
+    "zorunlu_hedef_turu": null
+  },
+  "PLAN.TARIHLEDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gerekce": {
+          "type": "string"
+        },
+        "hedefler": {
+          "items": {
+            "properties": {
+              "kimlik": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "planlanan_baslangic": {
+                "format": "date-time",
+                "type": "string"
+              },
+              "planlanan_bitis": {
+                "format": "date-time",
+                "type": "string"
+              },
+              "tur": {
+                "enum": [
+                  "IS",
+                  "GOREV"
+                ]
+              }
+            },
+            "required": [
+              "tur",
+              "kimlik",
+              "planlanan_baslangic",
+              "planlanan_bitis"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "kaynak": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hedefler"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T10: yetki tablosu ve sabit ilişkiler; canlı hedef sürümü zorunlu.",
+    "zorunlu_hedef_turu": null
+  },
+  "PROJE.ACTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "ad": {
+          "type": "string"
+        },
+        "aktif": {
+          "type": "boolean"
+        },
+        "ana_proje": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "baslangic_tarihi": {
+          "format": "date",
+          "type": "string"
+        },
+        "ek": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kesin_kabul_tarihi": {
+          "format": "date",
+          "type": "string"
+        },
+        "kimlik": {
+          "type": "string"
+        },
+        "kod": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "musteri": {
+          "type": "string"
+        },
+        "sorumlu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "teslim_tarihi": {
+          "format": "date",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kod",
+        "ad"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "PROJE.DEGISTIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "degisenler": {
+          "properties": {
+            "baslangic_tarihi": {
+              "format": "date",
+              "type": "string"
+            },
+            "kesin_kabul_tarihi": {
+              "format": "date",
+              "type": "string"
+            },
+            "sorumlu": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "type": "object"
+        }
+      },
+      "required": [
+        "degisenler"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "PROJE"
+  },
+  "PROJE.ERISIM_KALDIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gerekce": {
+          "type": "string"
+        },
+        "kisi": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        },
+        "proje": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "proje",
+        "kisi",
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "UYELER: projede_yetkili sabit ilişkisi. Ek erişim yönetim yetkisi değildir.",
+    "zorunlu_hedef_turu": null
+  },
+  "PROJE.ERISIM_VERDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gerekce": {
+          "type": "string"
+        },
+        "kisi": {
+          "pattern": "^K[0-9]{3}$",
+          "type": "string"
+        },
+        "proje": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "proje",
+        "kisi",
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "UYELER: projede_yetkili sabit ilişkisi. Ek erişim yönetim yetkisi değildir.",
+    "zorunlu_hedef_turu": null
+  },
+  "PROJE.KAPATTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "PROJE"
+  },
+  "PROJE.KOD_DEGISTIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "ek": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gerekce": {
+          "type": "string"
+        },
+        "kod": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "kod",
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": "PROJE"
+  },
+  "SORUMLULUK.DOGRULADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "hedef": {
+          "type": "string"
+        },
+        "karar": {
+          "enum": [
+            "ONAY",
+            "DEGISTIR",
+            "KALDIR"
+          ]
+        },
+        "satir": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "yuzde": {
+          "maximum": 100,
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "hedef",
+        "karar"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "SORUMLULUK.ITIRAZI_DEGERLENDIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "hedef": {
+          "type": "string"
+        },
+        "karar": {
+          "enum": [
+            "KABUL",
+            "RET"
+          ]
+        },
+        "satir": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "yuzde": {
+          "maximum": 100,
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "hedef",
+        "karar"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "SORUMLULUK.ITIRAZ_ETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gerekce": {
+          "type": "string"
+        },
+        "hedef": {
+          "type": "string"
+        },
+        "satir": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "yuzde": {
+          "maximum": 100,
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "hedef",
+        "gerekce"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "TAKVIM.TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "calisma_gunleri": {
+          "items": {
+            "maximum": 7,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "gecerli_baslangic": {
+          "description": "ISO 8601 + saat dilimi; tarih tek basina ise yerel 00:00. Bos AYAR icin olay ani, TAKVIM icin ertesi gun 00:00.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mesai_baslangic": {
+          "type": "string"
+        },
+        "mesai_bitis": {
+          "type": "string"
+        },
+        "sabit_molalar": {
+          "items": {
+            "properties": {
+              "ad": {
+                "type": "string"
+              },
+              "bas": {
+                "type": "string"
+              },
+              "bit": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "ad",
+              "bas",
+              "bit"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "mesai_baslangic",
+        "mesai_bitis",
+        "calisma_gunleri",
+        "sabit_molalar"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "TATIL.EKLEDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "ad": {
+          "type": "string"
+        },
+        "gecerli_baslangic": {
+          "description": "ISO 8601 + saat dilimi; tarih tek basina ise yerel 00:00. Bos AYAR icin olay ani, TAKVIM icin ertesi gun 00:00.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tarih": {
+          "format": "date",
+          "type": "string"
+        }
+      },
+      "required": [
+        "tarih",
+        "ad"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "TATIL.KALDIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "tarih": {
+          "format": "date",
+          "type": "string"
+        }
+      },
+      "required": [
+        "tarih"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "TEZGAH.BAKIM_IPTAL_ETTIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "hedef": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hedef"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "TEZGAH.BAKIM_PLANLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "aciklama": {
+          "type": "string"
+        },
+        "baslangic": {
+          "description": "Etapta YYYY-MM-DD; elle surede saat dilimli ISO 8601 an.",
+          "type": "string"
+        },
+        "bitis": {
+          "description": "Etapta YYYY-MM-DD; elle surede saat dilimli ISO 8601 an.",
+          "type": "string"
+        },
+        "tezgah": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tezgah",
+        "baslangic",
+        "bitis",
+        "aciklama"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "TEZGAH.DURUS_BILDIRDIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "neden": {
+          "type": "string"
+        },
+        "tezgah": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tezgah",
+        "neden"
+      ],
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "TEZGAH.DURUS_BITTI": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "tezgah": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tezgah"
+      ],
+      "type": "object"
+    },
+    "sinif": "TANIKLIK",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "TEZGAH.TAKVIM_TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "gecerli_baslangic": {
+          "description": "ISO 8601 + saat dilimi; tarih tek basina ise yerel 00:00. Bos AYAR icin olay ani, TAKVIM icin ertesi gun 00:00.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tezgah": {
+          "type": "string"
+        },
+        "vardiyalar": {
+          "items": {
+            "properties": {
+              "bas": {
+                "type": "string"
+              },
+              "bit": {
+                "type": "string"
+              },
+              "gunler": {
+                "items": {
+                  "maximum": 7,
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "type": "array"
+              }
+            },
+            "required": [
+              "gunler",
+              "bas",
+              "bit"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "tezgah",
+        "vardiyalar",
+        "gecerli_baslangic"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T8 14 + sabit iliski + birim zinciri; kabul aninda model/irp/kurallar_v7.py denetler.",
+    "zorunlu_hedef_turu": null
+  },
+  "TEZGAH.TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "ad": {
+          "type": "string"
+        },
+        "aktif": {
+          "type": "boolean"
+        },
+        "birim": {
+          "type": "string"
+        },
+        "kod": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "kod",
+        "ad",
+        "birim"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  },
+  "YETKI.TANIMLADIM": {
+    "eylem_versiyonu": 1,
+    "girdi_semasi": {
+      "additionalProperties": true,
+      "properties": {
+        "eylem_kodu": {
+          "enum": [
+            "AYAR.DEGISTIRDIM",
+            "AYAR.MAAS_PAYDASI",
+            "AYAR.ONAY_ORANI",
+            "AYAR.PARCA_KODU_DESENI",
+            "AYAR.SAAT_KAYDIRDIM",
+            "AYAR.YONLENDIRDIM",
+            "BILDIRIM.GORDUM",
+            "BIRIM.TANIMLADIM",
+            "DURUS.BASLADI",
+            "DURUS.BITTI",
+            "EK_MESAI.IPTAL_ETTIM",
+            "EK_MESAI.ONAYLADIM",
+            "EK_MESAI.PLANLADIM",
+            "ETAP.DEGISTIRDIM",
+            "ETAP.TANIMLADIM",
+            "GECIKME.DEGERLENDIRDIM",
+            "GOREV.ATADIM",
+            "GOREV.DEGISTIRDIM",
+            "GOREV.IPTAL_ETTIM",
+            "GOREV.KABUL_ETTIM",
+            "GOREV.ONAYLADIM",
+            "GOREV.REDDETTIM",
+            "GOREV.TAMAMLADIM",
+            "GUN.KALDIRDIM",
+            "GUN.TANIMLADIM",
+            "GUN_ONAYI.AYARLADIM",
+            "GUN_SONU.GONDERDIM",
+            "GUN_SONU.IADE_ETTIM",
+            "GUN_SONU.ONAYLADIM",
+            "IS.ARIZA_BILDIRDIM",
+            "IS.ATADIM",
+            "IS.BAGLANTI_DUZELTTIM",
+            "IS.BASLADIM",
+            "IS.DEGISTIRDIM",
+            "IS.DEVAM_ETTIM",
+            "IS.DEVAM_ONAYLADIM",
+            "IS.DEVRETTIM",
+            "IS.IPTAL_ETTIM",
+            "IS.MOLA_VERDIM",
+            "IS.ONAYLADIM",
+            "IS.PLANSIZ_TANIMLADIM",
+            "IS.REDDETTIM",
+            "IS.SIRALADIM",
+            "IS.SURE_EKLEDIM",
+            "IS.TAMAMLADIM",
+            "IS.TANIMLADIM",
+            "IZIN.IK_ONAYLADIM",
+            "IZIN.IPTAL_ETTIM",
+            "IZIN.ONAYLADIM",
+            "IZIN.REDDETTIM",
+            "IZIN.TALEP_ETTIM",
+            "KAYIT.GECERSIZ_SAYDIM",
+            "KISI.AYRILDI",
+            "KISI.DEGISTIRDIM",
+            "KISI.EKLEDIM",
+            "KISI.YETKINLIK_TANIMLADIM",
+            "KOD.TANIMLADIM",
+            "KURULUM.TAMAMLADIM",
+            "MAAS.GUNCELLEDIM",
+            "MESAI.CIKTIM",
+            "MESAI.GIRDIM",
+            "MODUL.TANIMLADIM",
+            "NESNE.ACTIM",
+            "NESNE.ASAMA_GECIRDIM",
+            "NESNE.GUNCELLEDIM",
+            "NESNE.SURUM_EKLEDIM",
+            "NESNE.SURUM_GERI_CEKTIM",
+            "NESNE.SURUM_ONAYLADIM",
+            "NESNE_TURU.TANIMLADIM",
+            "NOT.YAZDIM",
+            "PLAN.ONAYLADIM",
+            "PLAN.TARIHLEDIM",
+            "PROJE.ACTIM",
+            "PROJE.DEGISTIRDIM",
+            "PROJE.ERISIM_KALDIRDIM",
+            "PROJE.ERISIM_VERDIM",
+            "PROJE.KAPATTIM",
+            "PROJE.KOD_DEGISTIRDIM",
+            "SORUMLULUK.DOGRULADIM",
+            "SORUMLULUK.ITIRAZI_DEGERLENDIRDIM",
+            "SORUMLULUK.ITIRAZ_ETTIM",
+            "TAKVIM.TANIMLADIM",
+            "TATIL.EKLEDIM",
+            "TATIL.KALDIRDIM",
+            "TEZGAH.BAKIM_IPTAL_ETTIM",
+            "TEZGAH.BAKIM_PLANLADIM",
+            "TEZGAH.DURUS_BILDIRDIM",
+            "TEZGAH.DURUS_BITTI",
+            "TEZGAH.TAKVIM_TANIMLADIM",
+            "TEZGAH.TANIMLADIM",
+            "YETKI.TANIMLADIM",
+            "PROJE.HEPSINI_GORUR"
+          ]
+        },
+        "kapsam": {
+          "enum": [
+            "BIRIM",
+            "FIRMA"
+          ]
+        },
+        "kimler": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "eylem_kodu",
+        "kimler",
+        "kapsam"
+      ],
+      "type": "object"
+    },
+    "sinif": "YONETIM",
+    "tek_gorev_hedefi": false,
+    "yazabilen": "T3 v5: sabit iliski VEYA olay anindaki yetki tablosu VEYA birim zincirinden miras; sabit guvenceler her zaman uygulanir.",
+    "zorunlu_hedef_turu": null
+  }
+}

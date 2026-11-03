@@ -1,0 +1,38 @@
+{
+ "kunye_surumu": 1,
+ "kod": "ORN",
+ "ad": "Modülün adı",
+ "surum": "0.1.0",
+ "cekirdek": ">=10.2",
+ "sahip": "Ekip ya da kişi",
+ "aciklama": "Modül ne yapar, bir iki cümle. Kodu ve cihaz harfini biz veririz.",
+ "servis_kimligi": "SRV-ORN",
+ "arka_yuz": true,
+ "olay_yolu": "ARKA_YUZ",
+ "cihaz_harfi": "O",
+ "kapilar": {
+  "okumalar": ["PROJE", "NESNE", "NESNELER", "KISILER"],
+  "servis_okumalari": ["NESNE"],
+  "olaylar": ["NESNE.ASAMA_GECIRDIM", "NOT.YAZDIM"],
+  "plan": false,
+  "belge_surumu": false,
+  "bildirimler": [
+   {"kural": "ORNEK_KURAL", "ad": "Kişinin anlayacağı ad", "onem": "BILGI",
+    "kayit_turleri": ["NESNE"], "alici_turleri": ["NESNE_SORUMLUSU"]}
+  ],
+  "abonelikler": []
+ },
+ "nesne_turleri": [],
+ "tur_uzantilari": [{"tur": "PARCA", "tablo": "mod_orn.ornek"}],
+ "roller": [],
+ "kod_listeleri": [],
+ "yetki_onerileri": [],
+ "veritabani": {"sema": "mod_orn", "gocler": "veritabani/"},
+ "on_yuz": {"tur": "AYRI_UYGULAMA", "derin_baglantilar": []},
+ "saglananlar": [],
+ "bagimliliklar": [],
+ "kisisel_veri": [],
+ "para": false,
+ "sinirlar": {"bildirim_dakika": 30, "okuma_dakika": 300, "servis_okuma_dakika": 60},
+ "istekler": []
+}

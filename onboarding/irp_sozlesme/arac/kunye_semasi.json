@@ -1,0 +1,615 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "modul_kiti/kunye_semasi.json",
+ "title": "Sibernetik IRP modül künyesi",
+ "description": "Editör yardımı içindir. Asıl denetim kunye_denetle.py'dedir (T18 › 5); şema ile denetleyicinin alanları test_kunye.py'de karşılaştırılır.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "kunye_surumu",
+  "kod",
+  "ad",
+  "surum",
+  "cekirdek",
+  "sahip",
+  "servis_kimligi",
+  "arka_yuz",
+  "olay_yolu",
+  "kapilar",
+  "veritabani",
+  "sinirlar",
+  "para",
+  "kisisel_veri"
+ ],
+ "properties": {
+  "kunye_surumu": {
+   "const": 1
+  },
+  "kod": {
+   "type": "string",
+   "pattern": "^[A-Z][A-Z0-9]{1,5}$",
+   "description": "Modülün değişmez kodu (ör. M3, KAL). Bir kez kullanılır, geri alınmaz."
+  },
+  "ad": {
+   "type": "string",
+   "minLength": 1
+  },
+  "surum": {
+   "type": "string",
+   "pattern": "^\\d+\\.\\d+\\.\\d+$"
+  },
+  "cekirdek": {
+   "type": "string",
+   "pattern": "^>=\\d+\\.\\d+$",
+   "description": "Gereken en eski çekirdek sürümü, ör. >=10.2"
+  },
+  "sahip": {
+   "type": "string",
+   "minLength": 1
+  },
+  "aciklama": {
+   "type": "string"
+  },
+  "servis_kimligi": {
+   "type": "string",
+   "pattern": "^SRV-[A-Z][A-Z0-9]{1,5}$",
+   "description": "SRV-<kod>. Üründe bağlantının kimliğidir, parametre değil."
+  },
+  "arka_yuz": {
+   "type": "boolean",
+   "description": "Modülün kendi sunucusu (bildirim, servis okuması, abonelik için) var mı"
+  },
+  "olay_yolu": {
+   "enum": [
+    "ARKA_YUZ",
+    "ISTEMCI",
+    "YOK"
+   ],
+   "description": "Çekirdeğe olayı kim gönderir: modülün sunucusu (cihaz harfi gerekir), modülün istemcisi (normal cihaz kaydı) ya da hiç"
+  },
+  "cihaz_harfi": {
+   "type": "string",
+   "pattern": "^[A-Z]$",
+   "description": "Yalnızca olay_yolu ARKA_YUZ ise; tekil ve değişmez"
+  },
+  "kapilar": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "okumalar": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "Kullanıcının oturumuyla: çekirdeğin okumaları ya da <MODUL>.<AD>"
+    },
+    "servis_okumalari": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "Servis gözüyle (kişisel veri ve para yok)"
+    },
+    "olaylar": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "plan": {
+     "type": "boolean"
+    },
+    "belge_surumu": {
+     "type": "boolean"
+    },
+    "bildirimler": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "kural",
+       "ad",
+       "onem",
+       "kayit_turleri",
+       "alici_turleri"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "kural": {
+        "type": "string",
+        "pattern": "^[A-Z][A-Z0-9_]{2,40}$"
+       },
+       "ad": {
+        "type": "string",
+        "minLength": 1
+       },
+       "onem": {
+        "enum": [
+         "BILGI",
+         "UYARI"
+        ]
+       },
+       "kayit_turleri": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+         "enum": [
+          "PROJE",
+          "IS",
+          "GOREV",
+          "NESNE",
+          "MODUL"
+         ]
+        }
+       },
+       "alici_turleri": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+         "enum": [
+          "KISI",
+          "BIRIM_YONETICILERI",
+          "ROL",
+          "PROJEDE_YETKILILER",
+          "NESNE_SORUMLUSU"
+         ]
+        }
+       },
+       "roller": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "aciklama": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "abonelikler": {
+     "type": "array",
+     "items": {
+      "enum": [
+       "firma",
+       "proje:*"
+      ]
+     }
+    },
+    "dosyalar": {
+     "type": "boolean",
+     "description": "Paket 1.2 ortak özel dosya API'si; normal oturum ve sahibi modülün nesne izni."
+    }
+   }
+  },
+  "nesne_turleri": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "kod",
+     "ad",
+     "asamalar",
+     "baslangic_asamasi",
+     "gecisler",
+     "baglanabilir_turler",
+     "acabilenler"
+    ],
+    "properties": {
+     "kod": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z_]{2,20}$"
+     },
+     "ad": {
+      "type": "string"
+     },
+     "asamalar": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+       "type": "object",
+       "required": [
+        "kod"
+       ],
+       "properties": {
+        "kod": {
+         "type": "string"
+        },
+        "son": {
+         "type": "boolean"
+        }
+       }
+      }
+     },
+     "baslangic_asamasi": {
+      "type": "string"
+     },
+     "gecisler": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "required": [
+        "den",
+        "e",
+        "kimler"
+       ],
+       "properties": {
+        "den": {
+         "type": "string"
+        },
+        "e": {
+         "type": "string"
+        },
+        "kapsam": {
+         "enum": [
+          "FIRMA",
+          "BIRIM"
+         ]
+        },
+        "kimler": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       }
+      }
+     },
+     "baglanabilir_turler": {
+      "type": "array",
+      "items": {
+       "enum": [
+        "PROJE",
+        "NESNE",
+        "IS",
+        "GOREV"
+       ]
+      }
+     },
+     "acabilenler": {
+      "type": "object",
+      "required": [
+       "kimler"
+      ],
+      "properties": {
+       "kapsam": {
+        "enum": [
+         "FIRMA",
+         "BIRIM"
+        ]
+       },
+       "kimler": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "surum_onaylayanlar": {
+      "type": "object",
+      "required": [
+       "kimler"
+      ],
+      "properties": {
+       "kapsam": {
+        "enum": [
+         "FIRMA",
+         "BIRIM"
+        ]
+       },
+       "kimler": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "tur_uzantilari": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "tur",
+     "tablo"
+    ],
+    "properties": {
+     "tur": {
+      "type": "string"
+     },
+     "tablo": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "roller": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "kod",
+     "ad"
+    ],
+    "properties": {
+     "kod": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z_]{2,20}$"
+     },
+     "ad": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "kod_listeleri": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "liste",
+     "kod",
+     "ad"
+    ],
+    "properties": {
+     "liste": {
+      "enum": [
+       "ARIZA",
+       "DURUS",
+       "DURUS_NEDENI",
+       "IZIN",
+       "MOLA",
+       "PD",
+       "YETKINLIK"
+      ]
+     },
+     "kod": {
+      "type": "string"
+     },
+     "ad": {
+      "type": "string"
+     },
+     "ust": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "yetki_onerileri": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "eylem_kodu",
+     "kimler",
+     "kapsam"
+    ],
+    "properties": {
+     "eylem_kodu": {
+      "type": "string"
+     },
+     "kimler": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "kapsam": {
+      "enum": [
+       "FIRMA",
+       "BIRIM"
+      ]
+     }
+    }
+   }
+  },
+  "veritabani": {
+   "type": "object",
+   "required": [
+    "sema"
+   ],
+   "properties": {
+    "sema": {
+     "type": "string",
+     "pattern": "^mod_[a-z0-9]+$"
+    },
+    "gocler": {
+     "type": "string"
+    }
+   }
+  },
+  "on_yuz": {
+   "type": "object",
+   "required": [
+    "tur"
+   ],
+   "properties": {
+    "tur": {
+     "enum": [
+      "UYGULAMA_ICI",
+      "AYRI_UYGULAMA",
+      "YOK"
+     ],
+     "description": "UYGULAMA_ICI: ekranlar çekirdeğin uygulamasının içinde (Flutter paketi). AYRI_UYGULAMA: aynı adresin altında ayrı uygulama, ortak kabukla. YOK: ekran yok (T18 › 6, S1)"
+    },
+    "derin_baglantilar": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "ad",
+       "baglam",
+       "yol"
+      ],
+      "properties": {
+       "ad": {
+        "type": "string"
+       },
+       "baglam": {
+        "enum": [
+         "PROJE",
+         "NESNE",
+         "IS",
+         "GOREV",
+         "TEZGAH",
+         "KISI"
+        ]
+       },
+       "nesne_turleri": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "yol": {
+        "type": "string",
+        "pattern": "^/.*\\{kimlik\\}"
+       },
+       "kimler": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "saglananlar": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "ad",
+     "gorme"
+    ],
+    "properties": {
+     "ad": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9]{1,5}\\.[A-Z][A-Z0-9_]{1,40}$"
+     },
+     "parametreler": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "gorme": {
+      "enum": [
+       "KAYDI_GOREN",
+       "YETKILI",
+       "KENDISI_VE_USTLERI",
+       "ROL"
+      ]
+     },
+     "kisisel": {
+      "type": "boolean"
+     },
+     "para": {
+      "type": "boolean"
+     },
+     "aciklama": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "bagimliliklar": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "modul",
+     "zorunlu"
+    ],
+    "properties": {
+     "modul": {
+      "type": "string"
+     },
+     "zorunlu": {
+      "const": false
+     },
+     "okumalar": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "kisisel_veri": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "alan",
+     "neden"
+    ],
+    "properties": {
+     "alan": {
+      "type": "string"
+     },
+     "neden": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "para": {
+   "type": "boolean"
+  },
+  "sinirlar": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "bildirim_dakika": {
+     "type": "integer",
+     "minimum": 1,
+     "maximum": 120
+    },
+    "okuma_dakika": {
+     "type": "integer",
+     "minimum": 1,
+     "maximum": 1200
+    },
+    "servis_okuma_dakika": {
+     "type": "integer",
+     "minimum": 1,
+     "maximum": 600
+    }
+   }
+  },
+  "istekler": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "baslik",
+     "durum"
+    ],
+    "properties": {
+     "kod": {
+      "type": "string"
+     },
+     "baslik": {
+      "type": "string"
+     },
+     "durum": {
+      "enum": [
+       "ACIK",
+       "KARSILANDI",
+       "REDDEDILDI",
+       "MODULDE_COZULDU"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

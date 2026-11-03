@@ -1,0 +1,216 @@
+{
+ "kunye_surumu": 1,
+ "kod": "M11A",
+ "ad": "Sipariş alma ve muhasebeye devir",
+ "surum": "0.1.1",
+ "cekirdek": ">=10.2",
+ "sahip": "A ekibi",
+ "aciklama": "Gönderilmiş ve kazanılmış teklif sürümünü tek tıkla siparişe dönüştürür: proje kodunu verir, projeyi çekirdekte açar, teklifin maliyet kırılımını başlangıç bütçesi, takvimini başlangıç planı olarak dondurur. Ticari devir formu, muhasebe gelen kutusu, VEGA kart kodları, tutar değişikliği, bütçe şeridi (dolum ile ilerleme yan yana) ve kesin kabulde bütçe kapanışı.",
+ "servis_kimligi": "SRV-M11A",
+ "arka_yuz": true,
+ "olay_yolu": "ARKA_YUZ",
+ "cihaz_harfi": "Q",
+ "kapilar": {
+  "okumalar": [
+   "PROJE",
+   "KISILER",
+   "BIRIMLER",
+   "ETAPLAR",
+   "PROJE_DURUM",
+   "NESNELER",
+   "M10.KAZANAN_SURUM",
+   "PROJELER",
+   "M10.KAZANAN_SURUMLER"
+  ],
+  "servis_okumalari": [
+   "PROJE"
+  ],
+  "olaylar": [
+   "PROJE.ACTIM"
+  ],
+  "plan": false,
+  "belge_surumu": false,
+  "bildirimler": [
+   {
+    "kural": "TICARI_DEVIR",
+    "ad": "Ticari devir muhasebeye geldi",
+    "onem": "BILGI",
+    "kayit_turleri": [
+     "PROJE"
+    ],
+    "alici_turleri": [
+     "ROL"
+    ],
+    "roller": [
+     "MUHASEBE"
+    ]
+   },
+   {
+    "kural": "TUTAR_DEGISTI",
+    "ad": "Sözleşmenin güncel tutarı ya da güncel bütçe değişti",
+    "onem": "BILGI",
+    "kayit_turleri": [
+     "PROJE"
+    ],
+    "alici_turleri": [
+     "ROL"
+    ],
+    "roller": [
+     "MUHASEBE"
+    ]
+   },
+   {
+    "kural": "BUTCE_SAPMASI",
+    "ad": "Bütçe dolumu ilerlemeyi eşikten fazla geçti",
+    "onem": "UYARI",
+    "kayit_turleri": [
+     "PROJE"
+    ],
+    "alici_turleri": [
+     "KISI",
+     "ROL"
+    ],
+    "roller": [
+     "YETKILI"
+    ]
+   }
+  ],
+  "abonelikler": [],
+  "dosyalar": true
+ },
+ "nesne_turleri": [],
+ "tur_uzantilari": [],
+ "roller": [
+  {
+   "kod": "MUHASEBE",
+   "ad": "Muhasebe ve finans"
+  }
+ ],
+ "kod_listeleri": [],
+ "yetki_onerileri": [],
+ "veritabani": {
+  "sema": "mod_m11a",
+  "gocler": "veritabani/"
+ },
+ "on_yuz": {
+  "tur": "UYGULAMA_ICI",
+  "derin_baglantilar": [
+   {
+    "ad": "Ticari bilgiler ve bütçe (M1.1A)",
+    "baglam": "PROJE",
+    "yol": "/proje/{kimlik}"
+   }
+  ]
+ },
+ "saglananlar": [
+  {
+   "ad": "M11A.BASLANGIC_PLANI",
+   "parametreler": [
+    "proje"
+   ],
+   "gorme": "KAYDI_GOREN",
+   "kisisel": false,
+   "para": false,
+   "aciklama": "Kazanan teklifin donmuş takvimi, sipariş tarihine göre tarihlenmiş: etap kodu (M1.1B şablonuyla ortak), ad, sıra, paralel grup, başlangıç, bitiş. M1.1B'nin başlangıç planı için"
+  },
+  {
+   "ad": "M11A.BUTCE_YUZDELERI",
+   "parametreler": [
+    "proje"
+   ],
+   "gorme": "KAYDI_GOREN",
+   "kisisel": false,
+   "para": false,
+   "aciklama": "Bütçe şeridi, yalnızca yüzdeler: dolum, ilerleme, sapma puanı, renk, hangi kalemlerin hesaba girdiği; tutar yok"
+  },
+  {
+   "ad": "M11A.TEKLIF_GIRDILERI",
+   "parametreler": [
+    "proje"
+   ],
+   "gorme": "KAYDI_GOREN",
+   "kisisel": false,
+   "para": false,
+   "aciklama": "Kazanan teklifin gereksinim listesi, kapsamı (dahil, hariç), talep dosyalarının kayıtları ve müşteri PDF'inin kaydı. M1.1B klasör arşivi ve M2 tasarım girdisi için; maliyet ve kâr yok"
+  },
+  {
+   "ad": "M11A.PROJE_BUTCESI",
+   "parametreler": [
+    "proje"
+   ],
+   "gorme": "ROL",
+   "kisisel": false,
+   "para": true,
+   "aciklama": "Sözleşme tutarı, güncel tutar, dört kalemde başlangıç ve güncel bütçe, tahmini gerçekleşen, değişiklik kayıtları, kapanış farkı. Yalnızca SATIS, MUHASEBE, YETKILI. M8 için"
+  }
+ ],
+ "bagimliliklar": [
+  {
+   "modul": "M10",
+   "zorunlu": false,
+   "okumalar": [
+    "M10.KAZANAN_SURUM",
+    "M10.KAZANAN_SURUMLER"
+   ]
+  }
+ ],
+ "kisisel_veri": [
+  {
+   "alan": "projeler.donmus_teklif.musteri.kisiler: ad, unvan, telefon, e-posta",
+   "neden": "Kazanan teklifin donmuş kopyasındaki müşteri iletişim kişileri; muhasebenin eksik ticari bilgiyi müşteriden istemesi için (KVKK m.5/2-c)"
+  }
+ ],
+ "para": true,
+ "sinirlar": {
+  "bildirim_dakika": 30,
+  "okuma_dakika": 600,
+  "servis_okuma_dakika": 60
+ },
+ "istekler": [
+  {
+   "kod": "M11A-01",
+   "baslik": "Muhasebe ve projeyi açan satış yöneticisi projeyi göremiyor (UYELER): açan ekibe girmiyor, rol bazlı proje görünürlüğü yok",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11A-02",
+   "baslik": "Modüller arası okumaların yönlendirmesi yok: oku('M10.KAZANAN_SURUM') simülatörde TANIMSIZ_VERI",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11A-03",
+   "baslik": "Parça ilerlemesi (montaja hazır + montajda / toplam parça) çekirdekte hesaplansın",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11A-04",
+   "baslik": "Proje ve birim bazında saat okuması simülatörde yok (PROJE_ISCILIGI, PROJE_MALIYETI); şimdilik PROJE_DURUM etap saatleri",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11A-05",
+   "baslik": "M3'e: proje bazında satın alma ve fason sipariş tutarları (M3.PROJE_ALIMLARI)",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11A-06",
+   "baslik": "PROJE.ACTIM'da kaynak kayıt alanı yok: M1.0 kazanan teklifinin hangi projeye dönüştüğünü bilemiyor (geri bağlantı döngüye takılıyor)",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11A-07",
+   "baslik": "Dosya depolama kapısı yok (PO, sözleşme, teminat mektubu yalnızca kayıt)",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11A-08",
+   "baslik": "Sahte bulut tek künye kuruyor: ortak geliştirme ortamında yalnızca bir modülün servis anahtarı çalışıyor",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "M11A-09",
+   "baslik": "PROJE.ACTIM retlerinin nedeni ayırt edilemiyor: kod çakışması ve ana proje hatası aynı DURUM nedeniyle dönüyor",
+   "durum": "ACIK"
+  }
+ ]
+}

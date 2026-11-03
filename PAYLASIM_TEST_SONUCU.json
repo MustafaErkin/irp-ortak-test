@@ -1,0 +1,17 @@
+{
+  "kontroller": [
+    "Yetkisiz ilk açılış erişim dosyası ekranına geldi",
+    "Dosya ile giriş ve dört web profili hazır",
+    "Gerçek giriş/okuma K004",
+    "Gerçek giriş/okuma K009",
+    "Gerçek giriş/okuma K041",
+    "Gerçek giriş/okuma K001",
+    "Gerçek projeler sayfası açıldı",
+    "Modül sınırı açık mesajla gösteriliyor",
+    "Bağımsız olay ekranı gerçek Supabase bağlantısı hazır",
+    "CEO örnek görünümü açıldı",
+    "Erişim unutma sonrası olay ekranı yeniden giriş istiyor",
+    "Yakalanmamış JavaScript hatası yok"
+  ],
+  "canli_is_yazilmadi": true
+}

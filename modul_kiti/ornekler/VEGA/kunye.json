@@ -1,0 +1,66 @@
+{
+ "kunye_surumu": 1,
+ "kod": "VEGA",
+ "ad": "VEGA köprüsü",
+ "surum": "0.1.0",
+ "cekirdek": ">=10.2",
+ "sahip": "Ekip",
+ "aciklama": "Proje işçilik ve maliyetini muhasebeye (VEGA) aktarır. Para okumaları yetkilinin oturumuyla, onun bastığı düğmeyle.",
+ "servis_kimligi": "SRV-VEGA",
+ "arka_yuz": true,
+ "olay_yolu": "YOK",
+ "kapilar": {
+  "okumalar": [
+   "PROJELER",
+   "PROJE",
+   "ISCILIK_MALIYETI",
+   "PROJE_MALIYETI",
+   "MAAS_DAGILIMI"
+  ],
+  "servis_okumalari": [
+   "PROJELER"
+  ],
+  "bildirimler": [
+   {
+    "kural": "AKTARIM_HATASI",
+    "ad": "VEGA'ya aktarım yapılamadı",
+    "onem": "UYARI",
+    "kayit_turleri": [
+     "PROJE"
+    ],
+    "alici_turleri": [
+     "ROL"
+    ],
+    "roller": [
+     "YETKILI",
+     "MALIYET"
+    ]
+   }
+  ]
+ },
+ "veritabani": {
+  "sema": "mod_vega",
+  "gocler": "veritabani/"
+ },
+ "on_yuz": {
+  "tur": "AYRI_UYGULAMA",
+  "derin_baglantilar": [
+   {
+    "ad": "VEGA eşleşmesi",
+    "baglam": "PROJE",
+    "yol": "/proje/{kimlik}",
+    "kimler": [
+     "YETKILI",
+     "MALIYET"
+    ]
+   }
+  ]
+ },
+ "kisisel_veri": [],
+ "para": true,
+ "sinirlar": {
+  "bildirim_dakika": 10,
+  "okuma_dakika": 120,
+  "servis_okuma_dakika": 30
+ }
+}

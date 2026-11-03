@@ -1,0 +1,1715 @@
+{
+ "aciklama": "Üretilmiş dosya; elle değiştirme. Kaynak: modul_kiti/katalog_uret.py (T18 › 5).",
+ "cekirdek_surumu": "10.2",
+ "okumalar": {
+  "ATAMA_UYARILARI": {
+   "gorme": "`GOREV.ATADIM` yetkisi olan roller (`YONETICI`, `EKIP_LIDERI`, `YETKILI`)",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "BILDIRIMLER": {
+   "gorme": "yalnızca alıcının kendisi",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "BIRIMLER": {
+   "gorme": "istihdamda olan herkes",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "BIRIM_DOLULUGU": {
+   "gorme": "`UYGUNLUK`",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "BIRIM_PERFORMANS": {
+   "gorme": "birimi, yöneticileri, üstleri, `YETKILI`",
+   "katman": "B",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "BUGUNKU_KIMLIKLER": {
+   "gorme": "yalnızca kendisi",
+   "katman": "A",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "DOSYA": {
+   "gorme": "`gorebilir_mi` (proje kapısı)",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "EKIP": {
+   "gorme": "`HAVUZ` ile aynı",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "ELLE_SURELER": {
+   "gorme": "`BIRIM_PERFORMANS`",
+   "katman": "B",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "ETAP": {
+   "gorme": "`gorebilir_mi` (proje kapısı)",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "ETAPLAR": {
+   "gorme": "`proje_gorebilir_mi`",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "ETAP_DURUM": {
+   "gorme": "herkes + proje kapısı; tutarlar yalnızca `TUTAR` görene",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "FAZLA_MESAI": {
+   "gorme": "`GUN` gibi; prim yalnızca `TUTAR` görene",
+   "katman": "B",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "GANTT": {
+   "gorme": "proje kapısı",
+   "katman": "S",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "GECERLI_SURUM": {
+   "gorme": "belge kuralları (T10 › 2)",
+   "katman": "B",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "GECIKME_RAPORU": {
+   "gorme": "fonksiyonun kendi `cagiran` süzgeci",
+   "katman": "B",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "GOREV": {
+   "gorme": "`gorebilir_mi(IS/GOREV)`",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "GUN": {
+   "gorme": "kendisi, üstleri, `YETKILI`",
+   "katman": "B",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "GUN_ISLERI": {
+   "gorme": "`GUN`",
+   "katman": "B",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "HAM_OLAY": {
+   "gorme": "kendisi ya da `YETKILI`; sürüm olayı süzgeci",
+   "katman": "B",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "HAVUZ": {
+   "gorme": "`kabul.lider(kim, b)`, birimin yöneticileri ve üstleri, `YETKILI`",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "IS": {
+   "gorme": "`gorebilir_mi(IS/GOREV)`",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "ISCILIK_MALIYETI": {
+   "gorme": "`TUTAR` + proje kapısı",
+   "katman": "A",
+   "kisisel": false,
+   "para": true,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "IZIN": {
+   "gorme": "kendisi, üstleri, `YETKILI`",
+   "katman": "S",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "IZIN_DETAY": {
+   "gorme": "kendisi, üstleri, `YETKILI`",
+   "katman": "S",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "KAPASITE": {
+   "gorme": "İstihdamda olan herkes; fonksiyonların kendi maskeleri (T11 › 7)",
+   "katman": "B",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "KAYNAK_YUKU": {
+   "gorme": "İstihdamda olan herkes; fonksiyonların kendi maskeleri (T11 › 7)",
+   "katman": "B",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "KIM_NEREDE": {
+   "gorme": "`UYGUNLUK`. `KIM_NEREDE`'de kişiler `GUN` kuralıyla süzülür. Görülmeyen proje \"erişim dışı proje\" olur",
+   "katman": "A",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "KISILER": {
+   "gorme": "istihdamda olan herkes",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "KISININ_GUNU": {
+   "gorme": "`GUN`",
+   "katman": "A",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "KODLAR": {
+   "gorme": "istihdamda olan herkes",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "LISTE": {
+   "gorme": "`gorebilir_mi(IS, kisi)`",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "MAAS": {
+   "gorme": "`YETKILI`",
+   "katman": "A",
+   "kisisel": false,
+   "para": true,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "MAAS_DAGILIMI": {
+   "gorme": "`MAAS` (`YETKILI`)",
+   "katman": "A",
+   "kisisel": false,
+   "para": true,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "NESNE": {
+   "gorme": "`NESNE` + proje kapısı",
+   "katman": "B",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "NESNELER": {
+   "gorme": "`NESNE` + proje kapısı",
+   "katman": "B",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "NOT": {
+   "gorme": "`gorebilir_mi` (proje kapısı)",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "NOT_ALICILARI": {
+   "gorme": "not görünürlüğü + her alıcı görevinin görünürlüğü; gizlenen varsa `liste_tam=false`",
+   "katman": "A",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/154_modul_dosya_ve_not.sql",
+    "satir": 62,
+    "islev": "public.oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "ONAY_LISTESI": {
+   "gorme": "yalnızca kendisi (onaylayan)",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "PERFORMANS": {
+   "gorme": "kendisi, üstleri, `YETKILI`",
+   "katman": "A",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "PERSONEL_DAGILIMI": {
+   "gorme": "`SAAT_NEREYE_GITTI`",
+   "katman": "A",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "PLAN": {
+   "gorme": "proje kapısı",
+   "katman": "S",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "PLAN_CAKISMALARI": {
+   "gorme": "proje kapısı",
+   "katman": "S",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "PROJE": {
+   "gorme": "`gorebilir_mi` (proje kapısı)",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "PROJELER": {
+   "gorme": "`proje_gorebilir_mi` ile süzülür",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "PAKET_UYARLAMASI"
+  },
+  "PROJE_DURUM": {
+   "gorme": "herkes + proje kapısı; tutarlar yalnızca `TUTAR` görene",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "PROJE_ISCILIGI": {
+   "gorme": "aynı",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "PROJE_MALIYETI": {
+   "gorme": "Saat sütunları projeyi görene, tutar sütunları yalnızca `YETKILI`'ye (T12 › 0)",
+   "katman": "A",
+   "kisisel": false,
+   "para": true,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "SAAT_MALIYETI": {
+   "gorme": "`YETKILI`",
+   "katman": "A",
+   "kisisel": false,
+   "para": true,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "SAAT_NEREYE_GITTI": {
+   "gorme": "`UYGUNLUK`. `KIM_NEREDE`'de kişiler `GUN` kuralıyla süzülür. Görülmeyen proje \"erişim dışı proje\" olur",
+   "katman": "A",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "SUPHELILER": {
+   "gorme": "`YETKILI`",
+   "katman": "B",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "SURUMLER": {
+   "gorme": "belge kuralları (T10 › 2)",
+   "katman": "B",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "TAHMIN_GERCEK": {
+   "gorme": "projeyi gören; tutar yok",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "TAKVIM": {
+   "gorme": "İstihdamda olan herkes; fonksiyonların kendi maskeleri (T11 › 7)",
+   "katman": "B",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "TELEFON": {
+   "gorme": "yalnızca kendisi",
+   "katman": "A",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "TEZGAHLAR": {
+   "gorme": "istihdamda olan herkes",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "TEZGAH_GOSTERGESI": {
+   "gorme": "istihdamda olan herkes",
+   "katman": "S",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "TEZGAH_UCRETI": {
+   "gorme": "`YETKILI` ya da `MALIYET`",
+   "katman": "S",
+   "kisisel": false,
+   "para": true,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "TEZGAH_UYGUNLUK": {
+   "gorme": "istihdamda olan herkes",
+   "katman": "S",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "TOP_KIMDE": {
+   "gorme": "`NESNE` + proje kapısı",
+   "katman": "B",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "UYGUNLUK": {
+   "gorme": "İstihdamda olan herkes; fonksiyonların kendi maskeleri (T11 › 7)",
+   "katman": "B",
+   "kisisel": true,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/120_okuma_kapisi.sql",
+    "satir": 58,
+    "islev": "okuma.oku"
+   },
+   "simulator": "MODEL"
+  },
+  "YONLENDIRME": {
+   "gorme": "birimin yöneticileri, `YETKILI`",
+   "katman": "B",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  },
+  "YUK": {
+   "gorme": "`IS`",
+   "katman": "A",
+   "kisisel": false,
+   "para": false,
+   "urunde_mevcut": true,
+   "urun_kaynagi": {
+    "dosya": "urun/veritabani/121_ekran_okumalari.sql",
+    "satir": 14,
+    "islev": "okuma.ek_oku"
+   },
+   "simulator": "URUN_SQL_GEREKLI"
+  }
+ },
+ "servis_okumalari": [
+  "BIRIMLER",
+  "ETAP",
+  "ETAPLAR",
+  "GECERLI_SURUM",
+  "KISILER",
+  "KODLAR",
+  "NESNE",
+  "NESNELER",
+  "PROJE",
+  "PROJELER",
+  "TEZGAHLAR",
+  "TEZGAH_GOSTERGESI",
+  "TEZGAH_UYGUNLUK",
+  "TOP_KIMDE"
+ ],
+ "servis_kanallari": [
+  "firma",
+  "proje:*"
+ ],
+ "eylemler": {
+  "AYAR.DEGISTIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "anahtar",
+    "deger"
+   ]
+  },
+  "AYAR.MAAS_PAYDASI": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "deger",
+    "gecerli_baslangic"
+   ]
+  },
+  "AYAR.ONAY_ORANI": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "deger"
+   ]
+  },
+  "AYAR.PARCA_KODU_DESENI": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "deger"
+   ]
+  },
+  "AYAR.SAAT_KAYDIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "hedef"
+   ]
+  },
+  "AYAR.YONLENDIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "birim",
+    "kisiler"
+   ]
+  },
+  "BILDIRIM.GORDUM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "bildirimler"
+   ]
+  },
+  "BIRIM.TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "ad",
+    "basi",
+    "kod",
+    "tur"
+   ]
+  },
+  "DURUS.BASLADI": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "kapsam",
+    "neden"
+   ]
+  },
+  "DURUS.BITTI": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "hedef"
+   ]
+  },
+  "EK_MESAI.IPTAL_ETTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "hedef"
+   ]
+  },
+  "EK_MESAI.ONAYLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "baslangic",
+    "bitis",
+    "kisi",
+    "tarih"
+   ]
+  },
+  "EK_MESAI.PLANLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "aciklama",
+    "baslangic",
+    "bitis",
+    "kisi",
+    "tarih"
+   ]
+  },
+  "ETAP.DEGISTIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "degisenler"
+   ]
+  },
+  "ETAP.TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "ad",
+    "baslangic",
+    "birim",
+    "bitis",
+    "hedef_saat",
+    "proje"
+   ]
+  },
+  "GECIKME.DEGERLENDIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gerekce",
+    "hedef",
+    "neden",
+    "sorumlular"
+   ]
+  },
+  "GOREV.ATADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gorevler"
+   ]
+  },
+  "GOREV.DEGISTIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "degisenler"
+   ]
+  },
+  "GOREV.IPTAL_ETTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "GOREV.KABUL_ETTIM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "GOREV.ONAYLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "GOREV.REDDETTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "not",
+    "revizyon_ver"
+   ]
+  },
+  "GOREV.TAMAMLADIM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "GUN.KALDIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "tarih"
+   ]
+  },
+  "GUN.TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "ad",
+    "tarih",
+    "tur"
+   ]
+  },
+  "GUN_ONAYI.AYARLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "birim",
+    "gecerli_baslangic",
+    "gerekli"
+   ]
+  },
+  "GUN_SONU.GONDERDIM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gun"
+   ]
+  },
+  "GUN_SONU.IADE_ETTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gerekce",
+    "gun",
+    "kisi"
+   ]
+  },
+  "GUN_SONU.ONAYLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "IS.ARIZA_BILDIRDIM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "IS.ATADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "sira"
+   ]
+  },
+  "IS.BAGLANTI_DUZELTTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "degisenler",
+    "gerekce"
+   ]
+  },
+  "IS.BASLADIM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "IS.DEGISTIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "degisenler"
+   ]
+  },
+  "IS.DEVAM_ETTIM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "IS.DEVAM_ONAYLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "IS.DEVRETTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "kimden",
+    "kime"
+   ]
+  },
+  "IS.IPTAL_ETTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gerekce"
+   ]
+  },
+  "IS.MOLA_VERDIM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "IS.ONAYLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "IS.PLANSIZ_TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "is_tanimi",
+    "kisi",
+    "nereye",
+    "onay_gerekli",
+    "sira",
+    "tur"
+   ]
+  },
+  "IS.REDDETTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "not"
+   ]
+  },
+  "IS.SIRALADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "kisi",
+    "yeni_sira"
+   ]
+  },
+  "IS.SURE_EKLEDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "aciklama",
+    "baslangic",
+    "bitis",
+    "is_bitti"
+   ]
+  },
+  "IS.TAMAMLADIM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "IS.TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "isler"
+   ]
+  },
+  "IZIN.IK_ONAYLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "hedef"
+   ]
+  },
+  "IZIN.IPTAL_ETTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "hedef"
+   ]
+  },
+  "IZIN.ONAYLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "hedef"
+   ]
+  },
+  "IZIN.REDDETTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gerekce",
+    "hedef"
+   ]
+  },
+  "IZIN.TALEP_ETTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "baslangic",
+    "bitis",
+    "gerekce",
+    "kisi",
+    "tur"
+   ]
+  },
+  "KAYIT.GECERSIZ_SAYDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gerekce",
+    "hedef"
+   ]
+  },
+  "KISI.AYRILDI": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "kisi"
+   ]
+  },
+  "KISI.DEGISTIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "degisenler",
+    "gecerli_baslangic",
+    "kisi"
+   ]
+  },
+  "KISI.EKLEDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "ad",
+    "birim",
+    "giris_tarihi",
+    "kod",
+    "roller",
+    "yaka"
+   ]
+  },
+  "KISI.YETKINLIK_TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gecerli_baslangic",
+    "kisi",
+    "yetkinlikler"
+   ]
+  },
+  "KOD.TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "ad",
+    "aktif",
+    "kod",
+    "liste"
+   ]
+  },
+  "KURULUM.TAMAMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "MAAS.GUNCELLEDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gecerli_baslangic",
+    "kisi"
+   ]
+  },
+  "MESAI.CIKTIM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "MESAI.GIRDIM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "MODUL.TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "ad",
+    "aktif",
+    "kod",
+    "servis_kimligi"
+   ]
+  },
+  "NESNE.ACTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "ad",
+    "sorumlu",
+    "tur"
+   ]
+  },
+  "NESNE.ASAMA_GECIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gerekce",
+    "hedef",
+    "yeni_asama"
+   ]
+  },
+  "NESNE.GUNCELLEDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "degisenler",
+    "hedef"
+   ]
+  },
+  "NESNE.SURUM_EKLEDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "dosyalar",
+    "hedef"
+   ]
+  },
+  "NESNE.SURUM_GERI_CEKTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gerekce",
+    "hedef",
+    "surum_no"
+   ]
+  },
+  "NESNE.SURUM_ONAYLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "hedef",
+    "surum_no"
+   ]
+  },
+  "NESNE_TURU.TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "acabilenler",
+    "ad",
+    "asamalar",
+    "baglanabilir_turler",
+    "baslangic_asamasi",
+    "gecisler",
+    "kod"
+   ]
+  },
+  "NOT.YAZDIM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "metin"
+   ]
+  },
+  "PLAN.ONAYLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "proje"
+   ]
+  },
+  "PLAN.TARIHLEDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "hedefler"
+   ]
+  },
+  "PROJE.ACTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "ad",
+    "kod"
+   ]
+  },
+  "PROJE.DEGISTIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "degisenler"
+   ]
+  },
+  "PROJE.ERISIM_KALDIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gerekce",
+    "kisi",
+    "proje"
+   ]
+  },
+  "PROJE.ERISIM_VERDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gerekce",
+    "kisi",
+    "proje"
+   ]
+  },
+  "PROJE.KAPATTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": []
+  },
+  "PROJE.KOD_DEGISTIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gerekce",
+    "kod"
+   ]
+  },
+  "SORUMLULUK.DOGRULADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "hedef",
+    "karar"
+   ]
+  },
+  "SORUMLULUK.ITIRAZI_DEGERLENDIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "hedef",
+    "karar"
+   ]
+  },
+  "SORUMLULUK.ITIRAZ_ETTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gerekce",
+    "hedef"
+   ]
+  },
+  "TAKVIM.TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "calisma_gunleri",
+    "mesai_baslangic",
+    "mesai_bitis",
+    "sabit_molalar"
+   ]
+  },
+  "TATIL.EKLEDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "ad",
+    "tarih"
+   ]
+  },
+  "TATIL.KALDIRDIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "tarih"
+   ]
+  },
+  "TEZGAH.BAKIM_IPTAL_ETTIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "hedef"
+   ]
+  },
+  "TEZGAH.BAKIM_PLANLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "aciklama",
+    "baslangic",
+    "bitis",
+    "tezgah"
+   ]
+  },
+  "TEZGAH.DURUS_BILDIRDIM": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "neden",
+    "tezgah"
+   ]
+  },
+  "TEZGAH.DURUS_BITTI": {
+   "sinif": "TANIKLIK",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "tezgah"
+   ]
+  },
+  "TEZGAH.TAKVIM_TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "gecerli_baslangic",
+    "tezgah",
+    "vardiyalar"
+   ]
+  },
+  "TEZGAH.TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "ad",
+    "birim",
+    "kod"
+   ]
+  },
+  "YETKI.TANIMLADIM": {
+   "sinif": "YONETIM",
+   "eylem_versiyonu": 1,
+   "zorunlu": [
+    "eylem_kodu",
+    "kapsam",
+    "kimler"
+   ]
+  }
+ },
+ "kurulum_eylemleri": [
+  "KOD.TANIMLADIM",
+  "MODUL.TANIMLADIM",
+  "NESNE_TURU.TANIMLADIM",
+  "YETKI.TANIMLADIM"
+ ],
+ "cekirdek_ekrani": [
+  "AYAR.*",
+  "GUN_ONAYI.AYARLADIM",
+  "KAYIT.GECERSIZ_SAYDIM",
+  "KURULUM.TAMAMLADIM",
+  "PROJE.ERISIM_KALDIRDIM",
+  "PROJE.ERISIM_VERDIM"
+ ],
+ "mavi_yaka_dugmeleri": [
+  "DURUS.BASLADI",
+  "DURUS.BITTI",
+  "IS.ARIZA_BILDIRDIM",
+  "IS.BASLADIM",
+  "IS.DEVAM_ETTIM",
+  "IS.MOLA_VERDIM",
+  "IS.TAMAMLADIM",
+  "MESAI.CIKTIM",
+  "MESAI.GIRDIM"
+ ],
+ "hassas_eylemler": {
+  "KISI.*": "kisisel_veri",
+  "IZIN.*": "kisisel_veri",
+  "MAAS.*": "para",
+  "EK_MESAI.*": "kisisel_veri"
+ },
+ "roller": [
+  "YETKILI",
+  "YONETICI",
+  "EKIP_LIDERI",
+  "CALISAN",
+  "BEYAZ_YAKA",
+  "IK",
+  "MALIYET"
+ ],
+ "sozde_roller": [
+  "BIRIM_BASI",
+  "BIRIM_YONETICISI",
+  "BIRIM_UYESI",
+  "PROJE_SORUMLUSU"
+ ],
+ "kod_listeleri": {
+  "ARIZA": [
+   "ARIZA.DIGER",
+   "ARIZA.MAKINE"
+  ],
+  "DURUS": [
+   "ARIZA",
+   "BAKIM",
+   "ELEKTRIK"
+  ],
+  "DURUS_NEDENI": [],
+  "IZIN": [
+   "MAZERET",
+   "SAATLIK",
+   "SAGLIK",
+   "SERBEST_ZAMAN",
+   "UCRETLI",
+   "UCRETSIZ",
+   "YILLIK"
+  ],
+  "MOLA": [
+   "KISISEL"
+  ],
+  "PD": [
+   "PD.BAKIM_ONARIM",
+   "PD.DIGER",
+   "PD.EGITIM_GELISIM",
+   "PD.IDARI_MALI",
+   "PD.SOSYAL",
+   "PD.TERTIP_DUZEN"
+  ],
+  "YETKINLIK": []
+ },
+ "mavi_yaka_listeleri": [
+  "ARIZA",
+  "DURUS",
+  "DURUS_NEDENI",
+  "MOLA"
+ ],
+ "nesne_turleri": [
+  "BELGE",
+  "PARCA"
+ ],
+ "nesne_kapsamlari": [
+  "BIRIM",
+  "FIRMA"
+ ],
+ "baglanabilir_turler": [
+  "GOREV",
+  "IS",
+  "NESNE",
+  "PROJE"
+ ],
+ "bildirim": {
+  "kayit_turleri": [
+   "GOREV",
+   "IS",
+   "NESNE",
+   "PROJE",
+   "MODUL"
+  ],
+  "alici_turleri": [
+   "BIRIM_YONETICILERI",
+   "KISI",
+   "NESNE_SORUMLUSU",
+   "PROJEDE_YETKILILER",
+   "ROL"
+  ],
+  "onem": [
+   "BILGI",
+   "UYARI"
+  ]
+ },
+ "cihaz_harf_sirasi": "TUVWXYZABCDEFGHIJKLMNOPQRS",
+ "ayrilmis_kodlar": [
+  "AUTH",
+  "CEKIRDEK",
+  "IRP",
+  "KAPI",
+  "MAS",
+  "MODUL",
+  "MOTOR",
+  "PUBLIC",
+  "REALTIME",
+  "SISTEM",
+  "SRV",
+  "STORAGE",
+  "TEL",
+  "TEST",
+  "WEB"
+ ],
+ "cekirdek_semalari": [
+  "auth",
+  "cron",
+  "extensions",
+  "graphql",
+  "kapi",
+  "motor",
+  "net",
+  "pgsodium",
+  "public",
+  "realtime",
+  "storage",
+  "supabase_functions",
+  "test",
+  "vault"
+ ],
+ "izinli_fonksiyonlar": [
+  "auth.jwt",
+  "auth.uid",
+  "cron.schedule",
+  "cron.unschedule",
+  "public.modul_bildirimi_birak",
+  "public.modul_bildirimi_kaldir",
+  "public.servis_oku",
+  "public.simdi"
+ ]
+}

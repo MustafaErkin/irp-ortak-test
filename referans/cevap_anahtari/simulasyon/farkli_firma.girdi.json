@@ -1,0 +1,1173 @@
+{
+  "bicim_surumu": 1,
+  "cihaz_denemeleri": [],
+  "depolar": [
+    {
+      "adimlar": [],
+      "baslangic": {
+        "demo": false,
+        "gercek": "2026-10-01T07:00:00+03:00",
+        "simdi": "2026-10-01T07:00:00+03:00"
+      },
+      "son_saat": {
+        "demo": false,
+        "gercek": "2026-10-01T07:00:00+03:00",
+        "simdi": "2026-10-01T07:00:00+03:00"
+      },
+      "yontem": "kapsamli"
+    },
+    {
+      "adimlar": [
+        {
+          "args": [
+            [
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "AYAR.ONAY_ORANI",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "deger": 0.1
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010001-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "AYAR.MAAS_PAYDASI",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "deger": 180,
+                  "gecerli_baslangic": "2026-10-01T00:00:00+03:00"
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010002-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "AYAR.PARCA_KODU_DESENI",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "deger": "^\\d{7}_\\d{2}_\\d{2}-\\d{2}$"
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010003-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "TAKVIM.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "calisma_gunleri": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "gecerli_baslangic": "2026-10-01T00:00:00+03:00",
+                  "mesai_baslangic": "08:00",
+                  "mesai_bitis": "18:00",
+                  "sabit_molalar": [
+                    {
+                      "ad": "Cay",
+                      "bas": "10:00",
+                      "bit": "10:15"
+                    },
+                    {
+                      "ad": "Yemek",
+                      "bas": "12:00",
+                      "bit": "12:30"
+                    },
+                    {
+                      "ad": "Cay",
+                      "bas": "15:00",
+                      "bit": "15:15"
+                    }
+                  ]
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010004-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "TATIL.EKLEDIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "ad": "Cumhuriyet",
+                  "tarih": "2026-10-29"
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010005-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "BIRIM.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "ad": "Yonetim",
+                  "basi": null,
+                  "kod": "YONETIM",
+                  "tur": "MASA_BASI"
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010006-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "KISI.EKLEDIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "ad": "Yetkili",
+                  "birim": "YONETIM",
+                  "giris_tarihi": "2026-10-01",
+                  "kod": "K001",
+                  "roller": [
+                    "YETKILI",
+                    "YONETICI"
+                  ],
+                  "yaka": "BEYAZ"
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010007-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "BIRIM.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "ad": "Yonetim",
+                  "basi": "K001",
+                  "kod": "YONETIM",
+                  "tur": "MASA_BASI"
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010008-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "KOD.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "ad": "YETKILI",
+                  "aktif": true,
+                  "kod": "YETKILI",
+                  "liste": "ROL"
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010067-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "KOD.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "ad": "YONETICI",
+                  "aktif": true,
+                  "kod": "YONETICI",
+                  "liste": "ROL"
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010068-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "KOD.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "ad": "USTA",
+                  "aktif": true,
+                  "kod": "USTA",
+                  "liste": "ROL"
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010069-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "KOD.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "ad": "DAGITICI",
+                  "aktif": true,
+                  "kod": "DAGITICI",
+                  "liste": "ROL"
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010070-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "YETKI.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "eylem_kodu": "BIRIM.TANIMLADIM",
+                  "kapsam": "FIRMA",
+                  "kimler": [
+                    "YETKILI"
+                  ]
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010071-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "YETKI.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "eylem_kodu": "KISI.EKLEDIM",
+                  "kapsam": "FIRMA",
+                  "kimler": [
+                    "YETKILI"
+                  ]
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010072-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "YETKI.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "eylem_kodu": "PROJE.ACTIM",
+                  "kapsam": "FIRMA",
+                  "kimler": [
+                    "YETKILI"
+                  ]
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010073-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "YETKI.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "eylem_kodu": "IS.TANIMLADIM",
+                  "kapsam": "BIRIM",
+                  "kimler": [
+                    "USTA"
+                  ]
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010074-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "YETKI.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "eylem_kodu": "IS.ATADIM",
+                  "kapsam": "BIRIM",
+                  "kimler": [
+                    "DAGITICI"
+                  ]
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010075-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "YETKI.TANIMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {
+                  "eylem_kodu": "IS.BAGLANTI_DUZELTTIM",
+                  "kapsam": "BIRIM",
+                  "kimler": [
+                    "DAGITICI"
+                  ]
+                },
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010076-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              },
+              {
+                "adina": null,
+                "bildigi_son_hal_ani": "2026-10-01T07:00:00+03:00",
+                "cihaz": "MAS-K001",
+                "duzelttigi_olay": null,
+                "eylem_kodu": "KURULUM.TAMAMLADIM",
+                "eylem_versiyonu": 1,
+                "girdiler": {},
+                "giris_sekli": "AKTARIM",
+                "kanit": [],
+                "kim": "K001",
+                "neyin_ustunde": [],
+                "olay_kimligi": "K001-2610010077-M",
+                "oldugu_an": "2026-10-01T07:00:00+03:00",
+                "pc_ulasma_ani": null,
+                "saat_dilimi": "+03:00",
+                "uygulama_surumu": "WEB-0.1.0",
+                "yol": "DISARIDA"
+              }
+            ],
+            {}
+          ],
+          "kwargs": {
+            "servis": true
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T07:00:00+03:00",
+            "simdi": "2026-10-01T07:00:00+03:00"
+          },
+          "tur": "kurulum",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            "2026-10-01T09:00:00+03:00"
+          ],
+          "kontrol": true,
+          "kwargs": {},
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T07:00:00+03:00",
+            "simdi": "2026-10-01T07:00:00+03:00"
+          },
+          "tur": "ilerlet",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            {
+              "adina": null,
+              "bildigi_son_hal_ani": "2026-10-01T09:00:00+03:00",
+              "cihaz": "MAS-K001",
+              "duzelttigi_olay": null,
+              "eylem_kodu": "BIRIM.TANIMLADIM",
+              "eylem_versiyonu": 1,
+              "girdiler": {
+                "ad": "Uretim",
+                "basi": null,
+                "kod": "URETIM",
+                "tur": "ATOLYE",
+                "ust_birim": "YONETIM"
+              },
+              "giris_sekli": "LISTE",
+              "kanit": [],
+              "kim": "K001",
+              "neyin_ustunde": [],
+              "olay_kimligi": "K001-2610010078-M",
+              "oldugu_an": "2026-10-01T09:00:00+03:00",
+              "pc_ulasma_ani": null,
+              "saat_dilimi": "+03:00",
+              "uygulama_surumu": "WEB-0.1.0",
+              "yol": "DISARIDA"
+            }
+          ],
+          "kwargs": {
+            "hassas_ek": null,
+            "oturum": "K001"
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:00:00+03:00",
+            "simdi": "2026-10-01T09:00:00+03:00"
+          },
+          "tur": "olay",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            "2026-10-01T09:01:00+03:00"
+          ],
+          "kontrol": true,
+          "kwargs": {},
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:00:00+03:00",
+            "simdi": "2026-10-01T09:00:00+03:00"
+          },
+          "tur": "ilerlet",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            {
+              "adina": null,
+              "bildigi_son_hal_ani": "2026-10-01T09:01:00+03:00",
+              "cihaz": "MAS-K001",
+              "duzelttigi_olay": null,
+              "eylem_kodu": "KISI.EKLEDIM",
+              "eylem_versiyonu": 1,
+              "girdiler": {
+                "ad": "K002",
+                "birim": "URETIM",
+                "giris_tarihi": "2026-10-01",
+                "kod": "K002",
+                "roller": [
+                  "USTA"
+                ],
+                "yaka": "MAVI"
+              },
+              "giris_sekli": "LISTE",
+              "kanit": [],
+              "kim": "K001",
+              "neyin_ustunde": [],
+              "olay_kimligi": "K001-2610010079-M",
+              "oldugu_an": "2026-10-01T09:01:00+03:00",
+              "pc_ulasma_ani": null,
+              "saat_dilimi": "+03:00",
+              "uygulama_surumu": "WEB-0.1.0",
+              "yol": "DISARIDA"
+            }
+          ],
+          "kwargs": {
+            "hassas_ek": null,
+            "oturum": "K001"
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:01:00+03:00",
+            "simdi": "2026-10-01T09:01:00+03:00"
+          },
+          "tur": "olay",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            {
+              "adina": null,
+              "bildigi_son_hal_ani": "2026-10-01T09:01:00+03:00",
+              "cihaz": "MAS-K001",
+              "duzelttigi_olay": null,
+              "eylem_kodu": "KISI.EKLEDIM",
+              "eylem_versiyonu": 1,
+              "girdiler": {
+                "ad": "K003",
+                "birim": "URETIM",
+                "giris_tarihi": "2026-10-01",
+                "kod": "K003",
+                "roller": [
+                  "DAGITICI"
+                ],
+                "yaka": "MAVI"
+              },
+              "giris_sekli": "LISTE",
+              "kanit": [],
+              "kim": "K001",
+              "neyin_ustunde": [],
+              "olay_kimligi": "K001-2610010080-M",
+              "oldugu_an": "2026-10-01T09:01:00+03:00",
+              "pc_ulasma_ani": null,
+              "saat_dilimi": "+03:00",
+              "uygulama_surumu": "WEB-0.1.0",
+              "yol": "DISARIDA"
+            }
+          ],
+          "kwargs": {
+            "hassas_ek": null,
+            "oturum": "K001"
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:01:00+03:00",
+            "simdi": "2026-10-01T09:01:00+03:00"
+          },
+          "tur": "olay",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            "2026-10-01T09:02:00+03:00"
+          ],
+          "kontrol": true,
+          "kwargs": {},
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:01:00+03:00",
+            "simdi": "2026-10-01T09:01:00+03:00"
+          },
+          "tur": "ilerlet",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            {
+              "adina": null,
+              "bildigi_son_hal_ani": "2026-10-01T09:02:00+03:00",
+              "cihaz": "MAS-K001",
+              "duzelttigi_olay": null,
+              "eylem_kodu": "PROJE.ACTIM",
+              "eylem_versiyonu": 1,
+              "girdiler": {
+                "ad": "2509084",
+                "kod": "2509084",
+                "teslim_tarihi": "2026-11-30"
+              },
+              "giris_sekli": "LISTE",
+              "kanit": [],
+              "kim": "K001",
+              "neyin_ustunde": [],
+              "olay_kimligi": "K001-2610010081-M",
+              "oldugu_an": "2026-10-01T09:02:00+03:00",
+              "pc_ulasma_ani": null,
+              "saat_dilimi": "+03:00",
+              "uygulama_surumu": "WEB-0.1.0",
+              "yol": "DISARIDA"
+            }
+          ],
+          "kwargs": {
+            "hassas_ek": null,
+            "oturum": "K001"
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:02:00+03:00",
+            "simdi": "2026-10-01T09:02:00+03:00"
+          },
+          "tur": "olay",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            {
+              "adina": null,
+              "bildigi_son_hal_ani": "2026-10-01T09:02:00+03:00",
+              "cihaz": "MAS-K001",
+              "duzelttigi_olay": null,
+              "eylem_kodu": "PROJE.ACTIM",
+              "eylem_versiyonu": 1,
+              "girdiler": {
+                "ad": "2509091",
+                "kod": "2509091",
+                "teslim_tarihi": "2026-11-30"
+              },
+              "giris_sekli": "LISTE",
+              "kanit": [],
+              "kim": "K001",
+              "neyin_ustunde": [],
+              "olay_kimligi": "K001-2610010082-M",
+              "oldugu_an": "2026-10-01T09:02:00+03:00",
+              "pc_ulasma_ani": null,
+              "saat_dilimi": "+03:00",
+              "uygulama_surumu": "WEB-0.1.0",
+              "yol": "DISARIDA"
+            }
+          ],
+          "kwargs": {
+            "hassas_ek": null,
+            "oturum": "K001"
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:02:00+03:00",
+            "simdi": "2026-10-01T09:02:00+03:00"
+          },
+          "tur": "olay",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            "2026-10-01T09:03:00+03:00"
+          ],
+          "kontrol": true,
+          "kwargs": {},
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:02:00+03:00",
+            "simdi": "2026-10-01T09:02:00+03:00"
+          },
+          "tur": "ilerlet",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            {
+              "adina": null,
+              "bildigi_son_hal_ani": "2026-10-01T09:03:00+03:00",
+              "cihaz": "MAS-K002",
+              "duzelttigi_olay": null,
+              "eylem_kodu": "IS.TANIMLADIM",
+              "eylem_versiyonu": 1,
+              "girdiler": {
+                "isler": [
+                  {
+                    "birim": "URETIM",
+                    "islem": "Kaynak",
+                    "nereye": "PROJE",
+                    "onay_gerekli": false,
+                    "proje": "2509084",
+                    "tahmini_sure_dk": 60,
+                    "tur": "SURELI"
+                  }
+                ]
+              },
+              "giris_sekli": "LISTE",
+              "kanit": [],
+              "kim": "K002",
+              "neyin_ustunde": [],
+              "olay_kimligi": "K002-2610010001-M",
+              "oldugu_an": "2026-10-01T09:03:00+03:00",
+              "pc_ulasma_ani": null,
+              "saat_dilimi": "+03:00",
+              "uygulama_surumu": "WEB-0.1.0",
+              "yol": "DISARIDA"
+            }
+          ],
+          "kwargs": {
+            "hassas_ek": null,
+            "oturum": "K002"
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:03:00+03:00",
+            "simdi": "2026-10-01T09:03:00+03:00"
+          },
+          "tur": "olay",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            "2026-10-01T09:04:00+03:00"
+          ],
+          "kontrol": true,
+          "kwargs": {},
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:03:00+03:00",
+            "simdi": "2026-10-01T09:03:00+03:00"
+          },
+          "tur": "ilerlet",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            {
+              "adina": null,
+              "bildigi_son_hal_ani": "2026-10-01T09:04:00+03:00",
+              "cihaz": "MAS-K002",
+              "duzelttigi_olay": null,
+              "eylem_kodu": "IS.ATADIM",
+              "eylem_versiyonu": 1,
+              "girdiler": {
+                "kisi": "K002",
+                "sira": 1
+              },
+              "giris_sekli": "LISTE",
+              "kanit": [],
+              "kim": "K002",
+              "neyin_ustunde": [
+                {
+                  "kimlik": "K002-2610010001-M",
+                  "surum": "bc2492532e8ec0999d422c20b4c3da540294054a65b597287434bd527e26a9fc",
+                  "tur": "IS"
+                },
+                {
+                  "kimlik": "K002",
+                  "surum": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "tur": "LISTE"
+                }
+              ],
+              "olay_kimligi": "K002-2610010002-M",
+              "oldugu_an": "2026-10-01T09:04:00+03:00",
+              "pc_ulasma_ani": null,
+              "saat_dilimi": "+03:00",
+              "uygulama_surumu": "WEB-0.1.0",
+              "yol": "DISARIDA"
+            }
+          ],
+          "kwargs": {
+            "hassas_ek": null,
+            "oturum": "K002"
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:04:00+03:00",
+            "simdi": "2026-10-01T09:04:00+03:00"
+          },
+          "tur": "olay",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            "2026-10-01T09:05:00+03:00"
+          ],
+          "kontrol": true,
+          "kwargs": {},
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:04:00+03:00",
+            "simdi": "2026-10-01T09:04:00+03:00"
+          },
+          "tur": "ilerlet",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            {
+              "adina": null,
+              "bildigi_son_hal_ani": "2026-10-01T09:05:00+03:00",
+              "cihaz": "MAS-K003",
+              "duzelttigi_olay": null,
+              "eylem_kodu": "IS.ATADIM",
+              "eylem_versiyonu": 1,
+              "girdiler": {
+                "kisi": "K002",
+                "sira": 1
+              },
+              "giris_sekli": "LISTE",
+              "kanit": [],
+              "kim": "K003",
+              "neyin_ustunde": [
+                {
+                  "kimlik": "K002-2610010001-M",
+                  "surum": "bc2492532e8ec0999d422c20b4c3da540294054a65b597287434bd527e26a9fc",
+                  "tur": "IS"
+                },
+                {
+                  "kimlik": "K002",
+                  "surum": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "tur": "LISTE"
+                }
+              ],
+              "olay_kimligi": "K003-2610010001-M",
+              "oldugu_an": "2026-10-01T09:05:00+03:00",
+              "pc_ulasma_ani": null,
+              "saat_dilimi": "+03:00",
+              "uygulama_surumu": "WEB-0.1.0",
+              "yol": "DISARIDA"
+            }
+          ],
+          "kwargs": {
+            "hassas_ek": null,
+            "oturum": "K003"
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:05:00+03:00",
+            "simdi": "2026-10-01T09:05:00+03:00"
+          },
+          "tur": "olay",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            "2026-10-02T07:58:00+03:00"
+          ],
+          "kontrol": true,
+          "kwargs": {},
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-01T09:05:00+03:00",
+            "simdi": "2026-10-01T09:05:00+03:00"
+          },
+          "tur": "ilerlet",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            {
+              "adina": null,
+              "bildigi_son_hal_ani": "2026-10-02T07:58:00+03:00",
+              "cihaz": "MAS-K002",
+              "duzelttigi_olay": null,
+              "eylem_kodu": "MESAI.GIRDIM",
+              "eylem_versiyonu": 1,
+              "girdiler": {},
+              "giris_sekli": "LISTE",
+              "kanit": [],
+              "kim": "K002",
+              "neyin_ustunde": [],
+              "olay_kimligi": "K002-2610020001-M",
+              "oldugu_an": "2026-10-02T07:58:00+03:00",
+              "pc_ulasma_ani": null,
+              "saat_dilimi": "+03:00",
+              "uygulama_surumu": "WEB-0.1.0",
+              "yol": "DISARIDA"
+            }
+          ],
+          "kwargs": {
+            "hassas_ek": null,
+            "oturum": "K002"
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-02T07:58:00+03:00",
+            "simdi": "2026-10-02T07:58:00+03:00"
+          },
+          "tur": "olay",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            "2026-10-02T08:00:00+03:00"
+          ],
+          "kontrol": true,
+          "kwargs": {},
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-02T07:58:00+03:00",
+            "simdi": "2026-10-02T07:58:00+03:00"
+          },
+          "tur": "ilerlet",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            {
+              "adina": null,
+              "bildigi_son_hal_ani": "2026-10-02T08:00:00+03:00",
+              "cihaz": "MAS-K002",
+              "duzelttigi_olay": null,
+              "eylem_kodu": "IS.BASLADIM",
+              "eylem_versiyonu": 1,
+              "girdiler": {},
+              "giris_sekli": "LISTE",
+              "kanit": [],
+              "kim": "K002",
+              "neyin_ustunde": [
+                {
+                  "kimlik": "K002-2610010001-M",
+                  "surum": null,
+                  "tur": "IS"
+                }
+              ],
+              "olay_kimligi": "K002-2610020002-M",
+              "oldugu_an": "2026-10-02T08:00:00+03:00",
+              "pc_ulasma_ani": null,
+              "saat_dilimi": "+03:00",
+              "uygulama_surumu": "WEB-0.1.0",
+              "yol": "DISARIDA"
+            }
+          ],
+          "kwargs": {
+            "hassas_ek": null,
+            "oturum": "K002"
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-02T08:00:00+03:00",
+            "simdi": "2026-10-02T08:00:00+03:00"
+          },
+          "tur": "olay",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            "2026-10-02T09:00:00+03:00"
+          ],
+          "kontrol": true,
+          "kwargs": {},
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-02T08:00:00+03:00",
+            "simdi": "2026-10-02T08:00:00+03:00"
+          },
+          "tur": "ilerlet",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            {
+              "adina": null,
+              "bildigi_son_hal_ani": "2026-10-02T09:00:00+03:00",
+              "cihaz": "MAS-K002",
+              "duzelttigi_olay": null,
+              "eylem_kodu": "IS.TAMAMLADIM",
+              "eylem_versiyonu": 1,
+              "girdiler": {},
+              "giris_sekli": "LISTE",
+              "kanit": [],
+              "kim": "K002",
+              "neyin_ustunde": [
+                {
+                  "kimlik": "K002-2610010001-M",
+                  "surum": null,
+                  "tur": "IS"
+                }
+              ],
+              "olay_kimligi": "K002-2610020003-M",
+              "oldugu_an": "2026-10-02T09:00:00+03:00",
+              "pc_ulasma_ani": null,
+              "saat_dilimi": "+03:00",
+              "uygulama_surumu": "WEB-0.1.0",
+              "yol": "DISARIDA"
+            }
+          ],
+          "kwargs": {
+            "hassas_ek": null,
+            "oturum": "K002"
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-02T09:00:00+03:00",
+            "simdi": "2026-10-02T09:00:00+03:00"
+          },
+          "tur": "olay",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            "2026-10-02T09:01:00+03:00"
+          ],
+          "kontrol": true,
+          "kwargs": {},
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-02T09:00:00+03:00",
+            "simdi": "2026-10-02T09:00:00+03:00"
+          },
+          "tur": "ilerlet",
+          "yontem": "kapsamli"
+        },
+        {
+          "args": [
+            {
+              "adina": null,
+              "bildigi_son_hal_ani": "2026-10-02T09:01:00+03:00",
+              "cihaz": "MAS-K003",
+              "duzelttigi_olay": null,
+              "eylem_kodu": "IS.BAGLANTI_DUZELTTIM",
+              "eylem_versiyonu": 1,
+              "girdiler": {
+                "degisenler": {
+                  "proje": "2509091"
+                },
+                "gerekce": "Proje duzeltme"
+              },
+              "giris_sekli": "LISTE",
+              "kanit": [],
+              "kim": "K003",
+              "neyin_ustunde": [
+                {
+                  "kimlik": "K002-2610010001-M",
+                  "surum": "e431f917774f14dcf23bfd390d4768438077551bad2e9c23b32fd2effe0c30ed",
+                  "tur": "IS"
+                }
+              ],
+              "olay_kimligi": "K003-2610020001-M",
+              "oldugu_an": "2026-10-02T09:01:00+03:00",
+              "pc_ulasma_ani": null,
+              "saat_dilimi": "+03:00",
+              "uygulama_surumu": "WEB-0.1.0",
+              "yol": "DISARIDA"
+            }
+          ],
+          "kwargs": {
+            "hassas_ek": null,
+            "oturum": "K003"
+          },
+          "saat": {
+            "demo": false,
+            "gercek": "2026-10-02T09:01:00+03:00",
+            "simdi": "2026-10-02T09:01:00+03:00"
+          },
+          "tur": "olay",
+          "yontem": "kapsamli"
+        }
+      ],
+      "baslangic": {
+        "demo": false,
+        "gercek": "2026-10-01T07:00:00+03:00",
+        "simdi": "2026-10-01T07:00:00+03:00"
+      },
+      "son_saat": {
+        "demo": false,
+        "gercek": "2026-10-02T09:01:00+03:00",
+        "simdi": "2026-10-02T09:01:00+03:00"
+      },
+      "yontem": "kapsamli"
+    }
+  ],
+  "saf_sorgular": [],
+  "senaryo": "farkli_firma",
+  "tohum": 42
+}

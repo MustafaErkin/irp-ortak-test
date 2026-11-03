@@ -1,0 +1,8 @@
+# Satır sonları depoda ve her bilgisayarda LF kalır (Windows'ta CRLF'ye çevrilmez).
+# Cevap anahtarının parmak izleri (SHA-256) böylece her yerde tutar.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.zip binary

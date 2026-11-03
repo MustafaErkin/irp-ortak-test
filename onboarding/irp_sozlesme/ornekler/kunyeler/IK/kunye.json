@@ -1,0 +1,87 @@
+{
+ "kunye_surumu": 1,
+ "kod": "IK",
+ "ad": "İnsan kaynakları",
+ "surum": "0.1.0",
+ "cekirdek": ">=10.2",
+ "sahip": "Ekip",
+ "aciklama": "Özlük, izin bakiyesi, yetkinlik belgeleri (karar 87). Kişinin ana verisi çekirdekte; İK onu çekirdeğin olaylarıyla yönetir.",
+ "servis_kimligi": "SRV-IK",
+ "arka_yuz": true,
+ "olay_yolu": "ISTEMCI",
+ "kapilar": {
+  "okumalar": [
+   "KISILER",
+   "BIRIMLER",
+   "IZIN",
+   "IZIN_DETAY",
+   "MAAS"
+  ],
+  "servis_okumalari": [
+   "KISILER",
+   "BIRIMLER"
+  ],
+  "olaylar": [
+   "KISI.EKLEDIM",
+   "KISI.DEGISTIRDIM",
+   "KISI.AYRILDI",
+   "KISI.YETKINLIK_TANIMLADIM",
+   "IZIN.TALEP_ETTIM",
+   "IZIN.IK_ONAYLADIM",
+   "IZIN.REDDETTIM",
+   "MAAS.GUNCELLEDIM"
+  ],
+  "abonelikler": [
+   "firma"
+  ]
+ },
+ "veritabani": {
+  "sema": "mod_ik",
+  "gocler": "veritabani/"
+ },
+ "on_yuz": {
+  "tur": "AYRI_UYGULAMA",
+  "derin_baglantilar": [
+   {
+    "ad": "Özlük dosyası",
+    "baglam": "KISI",
+    "yol": "/kisi/{kimlik}",
+    "kimler": [
+     "IK",
+     "YETKILI"
+    ]
+   }
+  ]
+ },
+ "kisisel_veri": [
+  {
+   "alan": "özlük (kimlik, adres, sözleşme)",
+   "neden": "İK yükümlülüğü"
+  },
+  {
+   "alan": "izin bakiyesi",
+   "neden": "izin hakkı hesabı"
+  },
+  {
+   "alan": "yetkinlik belgeleri",
+   "neden": "yetkinliğin kanıtı"
+  }
+ ],
+ "para": true,
+ "sinirlar": {
+  "okuma_dakika": 300,
+  "servis_okuma_dakika": 30
+ },
+ "istekler": [
+  {
+   "kod": "İ-2",
+   "baslik": "IK rolü onayladığı izni okuyabilsin (IZIN, IZIN_DETAY)",
+   "durum": "ACIK"
+  },
+  {
+   "kod": "İ-3",
+   "baslik": "Bildirim kaydı KISI olabilsin (izin bakiyesi azaldı)",
+   "durum": "ACIK"
+  }
+ ]
+}

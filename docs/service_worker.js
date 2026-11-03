@@ -1,6 +1,6 @@
 // Yalnız uygulama dosyaları. Oturum, ayar, hesap ve RPC yanıtları bu depoya girmez.
-const CACHE='irp-is-a28aae02d8e57df1';
-const STATIC=["actions.js", "app.js", "assets/core.js", "assets/eylem_semalari.json", "assets/gosterim.json", "assignment.js", "cekirdek_onkosullari.json", "client.js", "daily_summary.js", "erisim.html", "erisim.js", "erisim_sayfasi.js", "erp.css", "erp.js", "flutter_service_worker.js", "forms.js", "icons.js", "index.html", "management.js", "modul_ui.js", "modules.js", "navigation.js", "notifications.js", "office.js", "olaylar.css", "olaylar.html", "olaylar.js", "pages.js", "plan_review.js", "prerequisites.js", "presentation.js", "project_model.js", "projects.js", "styles.css", "temporal.js", "ui.js", "workflow.js", "workshop.js", "workshop_model.js"];
+const CACHE='irp-is-95f7551e73a0b271';
+const STATIC=["actions.js", "app.js", "assets/core.js", "assets/eylem_semalari.json", "assets/gosterim.json", "assignment.js", "cekirdek_onkosullari.json", "client.js", "daily_summary.js", "erisim.html", "erisim.js", "erisim_sayfasi.js", "erp.css", "erp.js", "flutter_service_worker.js", "forms.js", "icons.js", "index.html", "management.js", "modul_ui.js", "modules.js", "navigation.js", "notifications.js", "office.js", "olaylar.css", "olaylar.html", "olaylar.js", "pages.js", "plan_review.js", "prerequisites.js", "presentation.js", "project_model.js", "projects.js", "read_schedule.js", "styles.css", "temporal.js", "ui.js", "workflow.js", "workshop.js", "workshop_model.js"];
 const urls=new Set(STATIC.map(path=>new URL(path,self.registration.scope).href));
 urls.add(self.registration.scope);
 self.addEventListener('install',event=>event.waitUntil((async()=>{

@@ -1,3 +1,4 @@
+import {ReadSchedule,RefreshSchedule} from './read_schedule.js';
 import {idOf, isoDay, arr} from './ui.js';
 import {navigationReads} from './navigation.js';
 
@@ -44,7 +45,7 @@ export class BrowserStore {
 
 export class IrpClient extends EventTarget {
  constructor(store,schemas,config={},sample=null) {
-  super();this.store=store;this.schemas=schemas;this.config=config;this.sample=sample;this.readonly=!!sample;this.cache=new Map();this.readVersions=new Map();this.session=null;this.person='';this.letter=null;this.online=navigator.onLine;this.subscriptions=new Map();this.queue=Promise.resolve();this.refreshing=null;this.delay=2000;this.files=[];this.signals=null;this.context={};this.pending=0;this.visible=[];this.generation=0;this.requests=new Set();this.writing=false;
+  super();this.readSchedule=new ReadSchedule(2);this.refreshSchedule=new RefreshSchedule();this.store=store;this.schemas=schemas;this.config=config;this.sample=sample;this.readonly=!!sample;this.cache=new Map();this.readVersions=new Map();this.session=null;this.person='';this.letter=null;this.online=navigator.onLine;this.subscriptions=new Map();this.queue=Promise.resolve();this.refreshing=null;this.delay=2000;this.files=[];this.signals=null;this.context={};this.pending=0;this.visible=[];this.generation=0;this.requests=new Set();this.writing=false;
  }
  emit(kind,detail={}){this.dispatchEvent(new CustomEvent(kind,{detail}));}
  get today(){return this.sample?.gosterim?.an?.slice(0,10) ?? isoDay(new Date(Date.now()+(this.offset??0)));}
@@ -76,7 +77,7 @@ export class IrpClient extends EventTarget {
    const res=await fetch(this.config.supabase_url.replace(/\/$/,'')+path,{method,body:body===undefined?undefined:JSON.stringify(body),headers:{apikey:this.config.supabase_anon,...(auth?{Authorization:'Bearer '+this.session?.access_token}:{}),...(body===undefined?{}:{'Content-Type':'application/json'}),...headers},signal:abort.signal,cache:'no-store'});
    if(res.status===401 && auth && retryAuth){await this.refreshSession();return this.request(path,{body,method,auth,timeout,headers,retryAuth:false});}
    const text=await res.text();if(generation!==this.generation)throw new UserError('Çalışma kişisi değişti.','STALE_SESSION');let value;try{value=text?JSON.parse(text):null;}catch{throw new UserError('Sunucunun cevabı okunamadı.');}
-   if(!res.ok){const msg=String(value?.message??value?.error_description??'');if(msg.includes('IRP|'))throw new UserError(responseMessage({kod:msg.split('IRP|')[1]?.split('|')[0],neden:msg}));throw new UserError(auth?'Sunucudan başarılı yanıt alınamadı.':'Giriş yapılamadı. Çalışan kodunu ve şifreyi kontrol edin.',String(res.status));}
+   if(!res.ok){if(path==='/rest/v1/rpc/oku'&&value?.code==='57014')throw new UserError('Bilgiler zamanında alınamadı. Biraz sonra sayfayı yeniden açın.','READ_TIMEOUT');const msg=String(value?.message??value?.error_description??'');if(msg.includes('IRP|'))throw new UserError(responseMessage({kod:msg.split('IRP|')[1]?.split('|')[0],neden:msg}));throw new UserError(auth?'Sunucudan başarılı yanıt alınamadı.':'Giriş yapılamadı. Çalışan kodunu ve şifreyi kontrol edin.',String(res.status));}
    const wasOnline=this.online;this.online=navigator.onLine;if(wasOnline!==this.online)this.emit('status');return value;
   } catch(e){if(generation!==this.generation)throw new UserError('Çalışma kişisi değişti.','STALE_SESSION');if(e instanceof UserError)throw e;this.online=false;this.emit('status');throw new UserError('Bağlantı kurulamadı. Gönderilmeyen işlemler bu bilgisayarda korunuyor.','NETWORK');}finally{clearTimeout(timer);this.requests.delete(abort);}
  }
@@ -127,10 +128,18 @@ export class IrpClient extends EventTarget {
   }
   const old=this.cache.get(key);if(!force && old && Date.now()-(old.fetched??0)<15000)return old;
   if(!navigator.onLine && old)return old;
-  const sequence=(this.readVersions.get(key)??0)+1;this.readVersions.set(key,sequence);const r=await this.rpc('oku',{veri,hedef,g});if(veri==='TELEFON'&&r.deger){const screen=await this.durable(()=>this.core({op:'screen',hal:r.deger.son_hal,isler:r.deger.isler,liste:r.deger.liste}));r.deger={...r.deger,son_hal:screen.son_hal,kapilar:screen.kapilar};}if(generation!==this.generation)throw new UserError('Çalışma kişisi değişti.','STALE_SESSION');if(this.readVersions.get(key)!==sequence&&this.cache.has(key))return this.cache.get(key);r.fetched=Date.now();this.cache.set(key,r);return r;
+  const sequence=(this.readVersions.get(key)??0)+1;this.readVersions.set(key,sequence);const r=await this.readSchedule.run(()=>{if(generation!==this.generation)throw new UserError('Çalışma kişisi değişti.','STALE_SESSION');return this.rpc('oku',{veri,hedef,g});});if(veri==='TELEFON'&&r.deger){const screen=await this.durable(()=>this.core({op:'screen',hal:r.deger.son_hal,isler:r.deger.isler,liste:r.deger.liste}));r.deger={...r.deger,son_hal:screen.son_hal,kapilar:screen.kapilar};}if(generation!==this.generation)throw new UserError('Çalışma kişisi değişti.','STALE_SESSION');if(this.readVersions.get(key)!==sequence&&this.cache.has(key))return this.cache.get(key);r.fetched=Date.now();this.cache.set(key,r);return r;
  }
  async pageReads(reads){const generation=this.generation;this.visible=reads;const rs=await Promise.allSettled(reads.map(([v,h=null,g={}])=>this.read(v,h,g,true)));if(generation===this.generation)await this.persistCache();return rs.map((r,i)=>r.status==='fulfilled'?{...r.value,veri:reads[i][0],hedef:reads[i][1]}:{veri:reads[i][0],hedef:reads[i][1],error:r.reason.message});}
- async refresh(){if(!this.person)return;const generation=this.generation;await this.base();if(generation!==this.generation)return;const data=await this.pageReads(this.visible);if(generation!==this.generation)return;this.emit('data',{data});if(data.some(r=>r.error))throw new UserError('Bazı bilgiler yenilenemedi. Son okunan bilgiler gösteriliyor.','REFRESH');}
+ async refresh(){
+  if(!this.person)return;const generation=this.generation;
+  return this.refreshSchedule.run(async()=>{
+   if(generation!==this.generation||!this.person)return;
+   await this.base();if(generation!==this.generation)return;
+   const data=await this.pageReads(this.visible);if(generation!==this.generation)return;
+   this.emit('data',{data});if(data.some(r=>r.error))throw new UserError('Bazı bilgiler yenilenemedi. Son okunan bilgiler gösteriliyor.','REFRESH');
+  });
+ }
  listen(extra=[]){
   if(this.readonly)return;
   const channels=new Set(['kisi:'+this.person,'firma',...(this.context.yonetilen_birimler??[]).map(b=>'birim:'+b),...extra]);
